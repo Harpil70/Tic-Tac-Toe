@@ -1,0 +1,14 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+geopandas==1.0.1
+shapely==2.0.6
+h3==3.7.7
+scikit-learn==1.5.2
+numpy==1.26.4
+pandas==2.2.3
+pydantic==2.9.2
+python-multipart==0.0.12
+requests==2.32.3
+reportlab==4.2.5
+geojson==3.1.0
+pyproj==3.7.0

@@ -1,0 +1,5651 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "id": 0,
+        "name": "NH-48 (Ahmedabad-Mumbai)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 6,
+        "speed_limit_kmh": 100
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.57,
+            23.02
+          ],
+          [
+            73.18,
+            22.3
+          ],
+          [
+            72.83,
+            21.17
+          ],
+          [
+            72.91,
+            20.39
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "id": 1,
+        "name": "NH-8 (Ahmedabad-Delhi)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.57,
+            23.02
+          ],
+          [
+            72.37,
+            23.59
+          ],
+          [
+            72.43,
+            24.17
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "id": 2,
+        "name": "NH-47 (Ahmedabad-Rajkot)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 8,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.57,
+            23.02
+          ],
+          [
+            71.65,
+            22.73
+          ],
+          [
+            70.8,
+            22.3
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "id": 3,
+        "name": "NH-64 (Rajkot-Jamnagar)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 6,
+        "speed_limit_kmh": 100
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.8,
+            22.3
+          ],
+          [
+            70.06,
+            22.47
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "id": 4,
+        "name": "NH-8D (Ahmedabad-Gandhinagar)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 120
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.57,
+            23.02
+          ],
+          [
+            72.64,
+            23.22
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "id": 5,
+        "name": "NH-53 (Vadodara-Surat)",
+        "type": "highway",
+        "category": "national_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.18,
+            22.31
+          ],
+          [
+            73.0,
+            21.71
+          ],
+          [
+            72.83,
+            21.17
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "id": 6,
+        "name": "Ahmedabad_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.567871,
+            22.984347
+          ],
+          [
+            72.502426,
+            22.904167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "id": 7,
+        "name": "Ahmedabad_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.629341,
+            23.112063
+          ],
+          [
+            72.56403,
+            22.800221
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "id": 8,
+        "name": "Ahmedabad_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.548743,
+            23.094042
+          ],
+          [
+            72.803352,
+            23.101244
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "id": 9,
+        "name": "Ahmedabad_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.55735,
+            23.028668
+          ],
+          [
+            72.634555,
+            22.801969
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "id": 10,
+        "name": "Ahmedabad_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.664865,
+            23.003961
+          ],
+          [
+            72.480863,
+            22.790639
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "id": 11,
+        "name": "Ahmedabad_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.592109,
+            23.054112
+          ],
+          [
+            72.358727,
+            22.826167
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "id": 12,
+        "name": "Surat_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.779595,
+            21.104166
+          ],
+          [
+            72.853031,
+            21.08794
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "id": 13,
+        "name": "Surat_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.829559,
+            21.155669
+          ],
+          [
+            72.68417,
+            21.312105
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "id": 14,
+        "name": "Surat_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.810975,
+            21.098191
+          ],
+          [
+            72.669105,
+            21.125627
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "id": 15,
+        "name": "Surat_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.82531,
+            21.118049
+          ],
+          [
+            72.943368,
+            20.970026
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "id": 16,
+        "name": "Surat_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.861657,
+            21.215178
+          ],
+          [
+            72.818917,
+            21.315104
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "id": 17,
+        "name": "Vadodara_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.224977,
+            22.267582
+          ],
+          [
+            73.088075,
+            22.414075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "id": 18,
+        "name": "Vadodara_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.247636,
+            22.293295
+          ],
+          [
+            73.236084,
+            22.44549
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "id": 19,
+        "name": "Vadodara_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.171278,
+            22.354176
+          ],
+          [
+            73.156782,
+            22.357424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "id": 20,
+        "name": "Vadodara_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.18695,
+            22.319152
+          ],
+          [
+            73.24283,
+            22.356293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "id": 21,
+        "name": "Rajkot_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.740216,
+            22.293755
+          ],
+          [
+            70.798136,
+            22.412773
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "id": 22,
+        "name": "Rajkot_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.833224,
+            22.289351
+          ],
+          [
+            70.632658,
+            22.313064
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "id": 23,
+        "name": "Rajkot_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.734327,
+            22.277999
+          ],
+          [
+            70.707745,
+            22.359
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "id": 24,
+        "name": "Rajkot_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.821452,
+            22.308928
+          ],
+          [
+            70.744074,
+            22.468905
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "id": 25,
+        "name": "Rajkot_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.793704,
+            22.249878
+          ],
+          [
+            70.850677,
+            22.425138
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "id": 26,
+        "name": "Rajkot_Road_6",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.801955,
+            22.255575
+          ],
+          [
+            70.915575,
+            22.39243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "id": 27,
+        "name": "Gandhinagar_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.622432,
+            23.222736
+          ],
+          [
+            72.660362,
+            23.129757
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "id": 28,
+        "name": "Gandhinagar_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.670178,
+            23.215272
+          ],
+          [
+            72.596511,
+            23.269517
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "id": 29,
+        "name": "Gandhinagar_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.602995,
+            23.236423
+          ],
+          [
+            72.668324,
+            23.155018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "id": 30,
+        "name": "Gandhinagar_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.641641,
+            23.167716
+          ],
+          [
+            72.633877,
+            23.333238
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "id": 31,
+        "name": "Gandhinagar_Road_5",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.629549,
+            23.166576
+          ],
+          [
+            72.565728,
+            23.166731
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "id": 32,
+        "name": "Gandhinagar_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.629575,
+            23.237984
+          ],
+          [
+            72.647798,
+            23.201681
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "id": 33,
+        "name": "Gandhinagar_Road_7",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.599223,
+            23.212927
+          ],
+          [
+            72.60372,
+            23.199574
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "id": 34,
+        "name": "Gandhinagar_Road_8",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.632465,
+            23.262551
+          ],
+          [
+            72.636955,
+            23.276345
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "id": 35,
+        "name": "Bhavnagar_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.147702,
+            21.722176
+          ],
+          [
+            72.165189,
+            21.716404
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "id": 36,
+        "name": "Bhavnagar_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.145845,
+            21.756966
+          ],
+          [
+            72.178467,
+            21.695301
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "id": 37,
+        "name": "Bhavnagar_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.175891,
+            21.741912
+          ],
+          [
+            72.189625,
+            21.746819
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "id": 38,
+        "name": "Bhavnagar_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.157201,
+            21.734035
+          ],
+          [
+            72.143682,
+            21.787424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "id": 39,
+        "name": "Jamnagar_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.051392,
+            22.452174
+          ],
+          [
+            70.002379,
+            22.364391
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "id": 40,
+        "name": "Jamnagar_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.017355,
+            22.489089
+          ],
+          [
+            70.099296,
+            22.526473
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "id": 41,
+        "name": "Jamnagar_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.045945,
+            22.479332
+          ],
+          [
+            69.952146,
+            22.469491
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "id": 42,
+        "name": "Jamnagar_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.025172,
+            22.457988
+          ],
+          [
+            70.027076,
+            22.427272
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "id": 43,
+        "name": "Jamnagar_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.097377,
+            22.489874
+          ],
+          [
+            70.006357,
+            22.574003
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "id": 44,
+        "name": "Jamnagar_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.043241,
+            22.487045
+          ],
+          [
+            70.003334,
+            22.551213
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "id": 45,
+        "name": "Jamnagar_Road_7",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.020633,
+            22.437512
+          ],
+          [
+            70.014864,
+            22.486975
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "id": 46,
+        "name": "Junagadh_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.433462,
+            21.547003
+          ],
+          [
+            70.477265,
+            21.496497
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "id": 47,
+        "name": "Junagadh_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.491094,
+            21.525071
+          ],
+          [
+            70.507192,
+            21.563649
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "id": 48,
+        "name": "Junagadh_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.440355,
+            21.517929
+          ],
+          [
+            70.409597,
+            21.515088
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "id": 49,
+        "name": "Junagadh_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.456184,
+            21.517055
+          ],
+          [
+            70.390097,
+            21.48324
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "id": 50,
+        "name": "Junagadh_Road_5",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.450363,
+            21.556926
+          ],
+          [
+            70.441584,
+            21.507266
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "id": 51,
+        "name": "Junagadh_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.44196,
+            21.535617
+          ],
+          [
+            70.504567,
+            21.459705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "id": 52,
+        "name": "Junagadh_Road_7",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.479581,
+            21.498346
+          ],
+          [
+            70.464892,
+            21.581019
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "id": 53,
+        "name": "Junagadh_Road_8",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.427134,
+            21.525174
+          ],
+          [
+            70.49433,
+            21.544688
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "id": 54,
+        "name": "Anand_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.945968,
+            22.555432
+          ],
+          [
+            72.856571,
+            22.569081
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "id": 55,
+        "name": "Anand_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.916889,
+            22.552454
+          ],
+          [
+            72.987816,
+            22.556396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "id": 56,
+        "name": "Anand_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.953295,
+            22.544423
+          ],
+          [
+            72.990406,
+            22.576019
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "id": 57,
+        "name": "Anand_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.951551,
+            22.547421
+          ],
+          [
+            72.973128,
+            22.591716
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "id": 58,
+        "name": "Navsari_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.934428,
+            20.938037
+          ],
+          [
+            72.9306,
+            20.998471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "id": 59,
+        "name": "Navsari_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.938848,
+            20.927993
+          ],
+          [
+            72.938961,
+            20.917056
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "id": 60,
+        "name": "Navsari_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.981624,
+            20.945897
+          ],
+          [
+            72.994573,
+            21.001694
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "id": 61,
+        "name": "Navsari_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.924657,
+            20.936399
+          ],
+          [
+            72.981859,
+            20.974175
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "id": 62,
+        "name": "Morbi_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.855707,
+            22.812646
+          ],
+          [
+            70.8349,
+            22.741185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "properties": {
+        "id": 63,
+        "name": "Morbi_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.83908,
+            22.806054
+          ],
+          [
+            70.866237,
+            22.884568
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "properties": {
+        "id": 64,
+        "name": "Morbi_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.821652,
+            22.810423
+          ],
+          [
+            70.84478,
+            22.886507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "properties": {
+        "id": 65,
+        "name": "Morbi_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.809786,
+            22.816902
+          ],
+          [
+            70.824858,
+            22.767388
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "properties": {
+        "id": 66,
+        "name": "Morbi_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.846992,
+            22.829001
+          ],
+          [
+            70.908947,
+            22.832072
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "properties": {
+        "id": 67,
+        "name": "Morbi_Road_6",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.841921,
+            22.845552
+          ],
+          [
+            70.848095,
+            22.853636
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "properties": {
+        "id": 68,
+        "name": "Mehsana_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.35867,
+            23.562172
+          ],
+          [
+            72.405116,
+            23.557444
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "properties": {
+        "id": 69,
+        "name": "Mehsana_Road_2",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.360268,
+            23.609651
+          ],
+          [
+            72.366675,
+            23.53258
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "properties": {
+        "id": 70,
+        "name": "Mehsana_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.38498,
+            23.600859
+          ],
+          [
+            72.417821,
+            23.541137
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "properties": {
+        "id": 71,
+        "name": "Mehsana_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.387407,
+            23.592559
+          ],
+          [
+            72.376018,
+            23.51768
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "properties": {
+        "id": 72,
+        "name": "Mehsana_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.389027,
+            23.570475
+          ],
+          [
+            72.362727,
+            23.616633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "properties": {
+        "id": 73,
+        "name": "Mehsana_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.35805,
+            23.586796
+          ],
+          [
+            72.392584,
+            23.54558
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "properties": {
+        "id": 74,
+        "name": "Bharuch_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.019045,
+            21.695571
+          ],
+          [
+            73.026453,
+            21.739891
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "properties": {
+        "id": 75,
+        "name": "Bharuch_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.974544,
+            21.691488
+          ],
+          [
+            73.010341,
+            21.751452
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "properties": {
+        "id": 76,
+        "name": "Bharuch_Road_3",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.994949,
+            21.696091
+          ],
+          [
+            72.98033,
+            21.649922
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "properties": {
+        "id": 77,
+        "name": "Bharuch_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.001376,
+            21.684351
+          ],
+          [
+            73.038017,
+            21.691343
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "properties": {
+        "id": 78,
+        "name": "Bharuch_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.97357,
+            21.695355
+          ],
+          [
+            73.035317,
+            21.759417
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "properties": {
+        "id": 79,
+        "name": "Bharuch_Road_6",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.986754,
+            21.729048
+          ],
+          [
+            73.033434,
+            21.695705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "properties": {
+        "id": 80,
+        "name": "Bharuch_Road_7",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 80
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            73.02214,
+            21.705683
+          ],
+          [
+            73.046541,
+            21.708992
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "properties": {
+        "id": 81,
+        "name": "Vapi_Road_1",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.91206,
+            20.408429
+          ],
+          [
+            72.872621,
+            20.395141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "properties": {
+        "id": 82,
+        "name": "Vapi_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.920333,
+            20.380407
+          ],
+          [
+            72.873066,
+            20.350011
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "properties": {
+        "id": 83,
+        "name": "Vapi_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.924494,
+            20.394309
+          ],
+          [
+            72.917203,
+            20.397853
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "properties": {
+        "id": 84,
+        "name": "Vapi_Road_4",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.915457,
+            20.386645
+          ],
+          [
+            72.888639,
+            20.401926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "properties": {
+        "id": 85,
+        "name": "Vapi_Road_5",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.910537,
+            20.374296
+          ],
+          [
+            72.961871,
+            20.401045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "properties": {
+        "id": 86,
+        "name": "Vapi_Road_6",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.911817,
+            20.366374
+          ],
+          [
+            72.948391,
+            20.405633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "properties": {
+        "id": 87,
+        "name": "Gandhidham_Road_1",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 2,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.121926,
+            23.082388
+          ],
+          [
+            70.138119,
+            23.092096
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "properties": {
+        "id": 88,
+        "name": "Gandhidham_Road_2",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.129916,
+            23.052279
+          ],
+          [
+            70.148084,
+            23.016502
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "properties": {
+        "id": 89,
+        "name": "Gandhidham_Road_3",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.104155,
+            23.070546
+          ],
+          [
+            70.117955,
+            23.095904
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "properties": {
+        "id": 90,
+        "name": "Gandhidham_Road_4",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 2,
+        "speed_limit_kmh": 40
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.143748,
+            23.04895
+          ],
+          [
+            70.137905,
+            23.113877
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "properties": {
+        "id": 91,
+        "name": "Gandhidham_Road_5",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.107571,
+            23.08116
+          ],
+          [
+            70.131121,
+            23.042617
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "properties": {
+        "id": 92,
+        "name": "Gandhidham_Road_6",
+        "type": "arterial",
+        "category": "state_highway",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.15072,
+            23.080302
+          ],
+          [
+            70.145143,
+            23.044158
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "properties": {
+        "id": 93,
+        "name": "Gandhidham_Road_7",
+        "type": "arterial",
+        "category": "arterial_road",
+        "lanes": 4,
+        "speed_limit_kmh": 60
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            70.137859,
+            23.059185
+          ],
+          [
+            70.092758,
+            23.073578
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "properties": {
+        "id": 94,
+        "name": "Ahmedabad_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 12010
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.539971,
+          22.82882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "properties": {
+        "id": 95,
+        "name": "Ahmedabad_Bus_Stand_2",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 31596
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.650056,
+          23.236807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "properties": {
+        "id": 96,
+        "name": "Ahmedabad_Bus_Stand_3",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 10683
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.630171,
+          22.830408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "properties": {
+        "id": 97,
+        "name": "Ahmedabad_Railway_Station_4",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 30808
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.406761,
+          22.853244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "properties": {
+        "id": 98,
+        "name": "Ahmedabad_BRTS_Stop_5",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 34649
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.60549,
+          22.865306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "properties": {
+        "id": 99,
+        "name": "Ahmedabad_Railway_Station_6",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 36884
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.506457,
+          23.225213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "properties": {
+        "id": 100,
+        "name": "Ahmedabad_Railway_Station_7",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 23673
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.460198,
+          22.996993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "properties": {
+        "id": 101,
+        "name": "Ahmedabad_BRTS_Stop_8",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 22726
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.65976,
+          23.061539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "properties": {
+        "id": 102,
+        "name": "Ahmedabad_Metro_Station_9",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 37919
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.768234,
+          23.002169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "properties": {
+        "id": 103,
+        "name": "Ahmedabad_BRTS_Stop_10",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 49752
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.486179,
+          22.955803
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "properties": {
+        "id": 104,
+        "name": "Ahmedabad_BRTS_Stop_11",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 18292
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.488492,
+          23.238694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "properties": {
+        "id": 105,
+        "name": "Ahmedabad_Metro_Station_12",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 24852
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.420331,
+          23.113296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "properties": {
+        "id": 106,
+        "name": "Ahmedabad_Metro_Station_13",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 34912
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.338682,
+          23.095045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "properties": {
+        "id": 107,
+        "name": "Ahmedabad_BRTS_Stop_14",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 13744
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.544362,
+          23.101768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "properties": {
+        "id": 108,
+        "name": "Ahmedabad_BRTS_Stop_15",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 32131
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.713864,
+          22.936246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "properties": {
+        "id": 109,
+        "name": "Ahmedabad_Railway_Station_16",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 32184
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.652548,
+          22.967319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "properties": {
+        "id": 110,
+        "name": "Ahmedabad_Railway_Station_17",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 9890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.551482,
+          22.842695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "properties": {
+        "id": 111,
+        "name": "Surat_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 13947
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.915922,
+          20.996056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "properties": {
+        "id": 112,
+        "name": "Surat_BRTS_Stop_2",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 769
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.809534,
+          21.036373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "properties": {
+        "id": 113,
+        "name": "Surat_BRTS_Stop_3",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 22342
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.815411,
+          21.209124
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "properties": {
+        "id": 114,
+        "name": "Surat_Railway_Station_4",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 1973
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.789067,
+          21.179077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "properties": {
+        "id": 115,
+        "name": "Surat_Metro_Station_5",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 21529
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.732368,
+          21.117877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "properties": {
+        "id": 116,
+        "name": "Surat_Railway_Station_6",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 29408
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.863829,
+          21.272139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "properties": {
+        "id": 117,
+        "name": "Surat_Metro_Station_7",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 18433
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.781437,
+          21.078332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "properties": {
+        "id": 118,
+        "name": "Surat_BRTS_Stop_8",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 14038
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.978399,
+          21.299177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "properties": {
+        "id": 119,
+        "name": "Vadodara_Railway_Station_1",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 38123
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.106833,
+          22.283364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "properties": {
+        "id": 120,
+        "name": "Vadodara_Railway_Station_2",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 35927
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.182502,
+          22.347216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "properties": {
+        "id": 121,
+        "name": "Vadodara_Bus_Stand_3",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 44769
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.130457,
+          22.325957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "properties": {
+        "id": 122,
+        "name": "Vadodara_BRTS_Stop_4",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 28448
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.269474,
+          22.336162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "properties": {
+        "id": 123,
+        "name": "Vadodara_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 40890
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.083219,
+          22.386289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "properties": {
+        "id": 124,
+        "name": "Vadodara_Metro_Station_6",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 47220
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.127933,
+          22.375318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "properties": {
+        "id": 125,
+        "name": "Vadodara_BRTS_Stop_7",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 31019
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.188321,
+          22.172446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "properties": {
+        "id": 126,
+        "name": "Vadodara_Bus_Stand_8",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 6874
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.139562,
+          22.288309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "properties": {
+        "id": 127,
+        "name": "Vadodara_Bus_Stand_9",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 31337
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.061901,
+          22.341385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "properties": {
+        "id": 128,
+        "name": "Vadodara_Railway_Station_10",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 24319
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.189344,
+          22.377692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "properties": {
+        "id": 129,
+        "name": "Vadodara_Railway_Station_11",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 21783
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.083493,
+          22.385906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "properties": {
+        "id": 130,
+        "name": "Vadodara_Bus_Stand_12",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 7898
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.156221,
+          22.31475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "properties": {
+        "id": 131,
+        "name": "Vadodara_Metro_Station_13",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 18998
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.120577,
+          22.389071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "properties": {
+        "id": 132,
+        "name": "Vadodara_Metro_Station_14",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 33788
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.194319,
+          22.191322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133,
+      "properties": {
+        "id": 133,
+        "name": "Vadodara_BRTS_Stop_15",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 21856
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.289438,
+          22.388928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 134,
+      "properties": {
+        "id": 134,
+        "name": "Vadodara_Railway_Station_16",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 35414
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.143713,
+          22.293397
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "properties": {
+        "id": 135,
+        "name": "Rajkot_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 36410
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.723881,
+          22.36019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "properties": {
+        "id": 136,
+        "name": "Rajkot_BRTS_Stop_2",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 22829
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.858563,
+          22.391517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "properties": {
+        "id": 137,
+        "name": "Rajkot_Bus_Stand_3",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 29031
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.834616,
+          22.424588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "properties": {
+        "id": 138,
+        "name": "Rajkot_Metro_Station_4",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 11843
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.722162,
+          22.267936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "properties": {
+        "id": 139,
+        "name": "Rajkot_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 7992
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.780351,
+          22.268189
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "properties": {
+        "id": 140,
+        "name": "Rajkot_BRTS_Stop_6",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 29677
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.716782,
+          22.24805
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "properties": {
+        "id": 141,
+        "name": "Rajkot_BRTS_Stop_7",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 39707
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.867814,
+          22.435057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "properties": {
+        "id": 142,
+        "name": "Rajkot_Bus_Stand_8",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 21957
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.907157,
+          22.389343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "properties": {
+        "id": 143,
+        "name": "Rajkot_BRTS_Stop_9",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 14761
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.680403,
+          22.308268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 144,
+      "properties": {
+        "id": 144,
+        "name": "Rajkot_BRTS_Stop_10",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 10115
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.859966,
+          22.174956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 145,
+      "properties": {
+        "id": 145,
+        "name": "Rajkot_Railway_Station_11",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 26057
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.748578,
+          22.218363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "properties": {
+        "id": 146,
+        "name": "Rajkot_Metro_Station_12",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 45163
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.727199,
+          22.237297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "properties": {
+        "id": 147,
+        "name": "Rajkot_Railway_Station_13",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 28990
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.861147,
+          22.246723
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "properties": {
+        "id": 148,
+        "name": "Rajkot_BRTS_Stop_14",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 38689
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.773359,
+          22.163336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "properties": {
+        "id": 149,
+        "name": "Rajkot_Bus_Stand_15",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 8859
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.950984,
+          22.311497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 150,
+      "properties": {
+        "id": 150,
+        "name": "Rajkot_BRTS_Stop_16",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 555
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.824701,
+          22.273934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 151,
+      "properties": {
+        "id": 151,
+        "name": "Rajkot_Railway_Station_17",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 7689
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.76294,
+          22.173802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 152,
+      "properties": {
+        "id": 152,
+        "name": "Rajkot_Metro_Station_18",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 28792
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.892001,
+          22.197066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 153,
+      "properties": {
+        "id": 153,
+        "name": "Rajkot_Railway_Station_19",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 47146
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.774348,
+          22.213926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 154,
+      "properties": {
+        "id": 154,
+        "name": "Gandhinagar_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 43916
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.582099,
+          23.252325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 155,
+      "properties": {
+        "id": 155,
+        "name": "Gandhinagar_Bus_Stand_2",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 24111
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.654161,
+          23.248657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 156,
+      "properties": {
+        "id": 156,
+        "name": "Gandhinagar_Metro_Station_3",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 9300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.657938,
+          23.182433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157,
+      "properties": {
+        "id": 157,
+        "name": "Gandhinagar_Metro_Station_4",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 47773
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.717209,
+          23.221465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 158,
+      "properties": {
+        "id": 158,
+        "name": "Gandhinagar_Metro_Station_5",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 6048
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.697706,
+          23.161917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 159,
+      "properties": {
+        "id": 159,
+        "name": "Gandhinagar_Bus_Stand_6",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 46073
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.695324,
+          23.283762
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 160,
+      "properties": {
+        "id": 160,
+        "name": "Gandhinagar_Metro_Station_7",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 30279
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.585203,
+          23.175795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 161,
+      "properties": {
+        "id": 161,
+        "name": "Gandhinagar_Bus_Stand_8",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 25712
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.56273,
+          23.211207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 162,
+      "properties": {
+        "id": 162,
+        "name": "Gandhinagar_BRTS_Stop_9",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 38375
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.610416,
+          23.249607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 163,
+      "properties": {
+        "id": 163,
+        "name": "Gandhinagar_Railway_Station_10",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 27424
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.551412,
+          23.21659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 164,
+      "properties": {
+        "id": 164,
+        "name": "Gandhinagar_BRTS_Stop_11",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 2981
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.704879,
+          23.181801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 165,
+      "properties": {
+        "id": 165,
+        "name": "Gandhinagar_BRTS_Stop_12",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 38528
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.560523,
+          23.180738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 166,
+      "properties": {
+        "id": 166,
+        "name": "Gandhinagar_Metro_Station_13",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 48353
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.554363,
+          23.22522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 167,
+      "properties": {
+        "id": 167,
+        "name": "Gandhinagar_Railway_Station_14",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 30970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.62527,
+          23.117109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 168,
+      "properties": {
+        "id": 168,
+        "name": "Gandhinagar_BRTS_Stop_15",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 16571
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.564966,
+          23.20791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 169,
+      "properties": {
+        "id": 169,
+        "name": "Gandhinagar_BRTS_Stop_16",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 45331
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.552066,
+          23.230433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 170,
+      "properties": {
+        "id": 170,
+        "name": "Gandhinagar_Railway_Station_17",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 40676
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.57727,
+          23.149077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 171,
+      "properties": {
+        "id": 171,
+        "name": "Bhavnagar_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 31227
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.21203,
+          21.72285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 172,
+      "properties": {
+        "id": 172,
+        "name": "Bhavnagar_Railway_Station_2",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 28091
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.060655,
+          21.79161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173,
+      "properties": {
+        "id": 173,
+        "name": "Bhavnagar_Railway_Station_3",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 19453
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.092324,
+          21.843419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 174,
+      "properties": {
+        "id": 174,
+        "name": "Bhavnagar_Railway_Station_4",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 48142
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.193203,
+          21.83692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 175,
+      "properties": {
+        "id": 175,
+        "name": "Bhavnagar_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 38389
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.163039,
+          21.714697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 176,
+      "properties": {
+        "id": 176,
+        "name": "Bhavnagar_Railway_Station_6",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 48824
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.16296,
+          21.784346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 177,
+      "properties": {
+        "id": 177,
+        "name": "Jamnagar_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 18709
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.051115,
+          22.498659
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 178,
+      "properties": {
+        "id": 178,
+        "name": "Jamnagar_Railway_Station_2",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 17339
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.056689,
+          22.549166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 179,
+      "properties": {
+        "id": 179,
+        "name": "Jamnagar_Metro_Station_3",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 39282
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.090966,
+          22.473677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 180,
+      "properties": {
+        "id": 180,
+        "name": "Jamnagar_Railway_Station_4",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 11994
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.052076,
+          22.389707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 181,
+      "properties": {
+        "id": 181,
+        "name": "Jamnagar_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 12349
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.051786,
+          22.554203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 182,
+      "properties": {
+        "id": 182,
+        "name": "Junagadh_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 39529
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.445097,
+          21.541598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 183,
+      "properties": {
+        "id": 183,
+        "name": "Junagadh_Bus_Stand_2",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 49832
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.486643,
+          21.509534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 184,
+      "properties": {
+        "id": 184,
+        "name": "Junagadh_Metro_Station_3",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 43797
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.528059,
+          21.519371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 185,
+      "properties": {
+        "id": 185,
+        "name": "Junagadh_Metro_Station_4",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 38363
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.39848,
+          21.545646
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 186,
+      "properties": {
+        "id": 186,
+        "name": "Junagadh_Railway_Station_5",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 8101
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.45329,
+          21.475432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 187,
+      "properties": {
+        "id": 187,
+        "name": "Junagadh_Bus_Stand_6",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 20250
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.509454,
+          21.539859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 188,
+      "properties": {
+        "id": 188,
+        "name": "Anand_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 25390
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.927432,
+          22.503798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 189,
+      "properties": {
+        "id": 189,
+        "name": "Anand_Railway_Station_2",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 10012
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.911162,
+          22.524541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 190,
+      "properties": {
+        "id": 190,
+        "name": "Anand_Railway_Station_3",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 29913
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.883588,
+          22.555726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 191,
+      "properties": {
+        "id": 191,
+        "name": "Anand_BRTS_Stop_4",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 6880
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.899893,
+          22.59106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 192,
+      "properties": {
+        "id": 192,
+        "name": "Anand_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 40508
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.977482,
+          22.536875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 193,
+      "properties": {
+        "id": 193,
+        "name": "Anand_Railway_Station_6",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 18216
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.985343,
+          22.53256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 194,
+      "properties": {
+        "id": 194,
+        "name": "Anand_Bus_Stand_7",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 30719
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.926548,
+          22.586318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 195,
+      "properties": {
+        "id": 195,
+        "name": "Anand_Metro_Station_8",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 34575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.937682,
+          22.504555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 196,
+      "properties": {
+        "id": 196,
+        "name": "Anand_Metro_Station_9",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 21030
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.898542,
+          22.614106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 197,
+      "properties": {
+        "id": 197,
+        "name": "Anand_BRTS_Stop_10",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 1283
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.874033,
+          22.547578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 198,
+      "properties": {
+        "id": 198,
+        "name": "Anand_Bus_Stand_11",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 23536
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.885853,
+          22.591347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 199,
+      "properties": {
+        "id": 199,
+        "name": "Anand_Metro_Station_12",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 2730
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.936016,
+          22.601072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 200,
+      "properties": {
+        "id": 200,
+        "name": "Anand_Metro_Station_13",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 39781
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.94989,
+          22.567649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 201,
+      "properties": {
+        "id": 201,
+        "name": "Anand_BRTS_Stop_14",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 6161
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.89081,
+          22.51957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 202,
+      "properties": {
+        "id": 202,
+        "name": "Anand_Metro_Station_15",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 7764
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.944543,
+          22.544705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 203,
+      "properties": {
+        "id": 203,
+        "name": "Anand_Bus_Stand_16",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 43785
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.917102,
+          22.531301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 204,
+      "properties": {
+        "id": 204,
+        "name": "Anand_Railway_Station_17",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 28482
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.980409,
+          22.542663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 205,
+      "properties": {
+        "id": 205,
+        "name": "Anand_Railway_Station_18",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 17364
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.90859,
+          22.511034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 206,
+      "properties": {
+        "id": 206,
+        "name": "Anand_BRTS_Stop_19",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 25587
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.938904,
+          22.580702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 207,
+      "properties": {
+        "id": 207,
+        "name": "Anand_Railway_Station_20",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 17845
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.87547,
+          22.609504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 208,
+      "properties": {
+        "id": 208,
+        "name": "Navsari_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 40496
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.912825,
+          20.962047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 209,
+      "properties": {
+        "id": 209,
+        "name": "Navsari_BRTS_Stop_2",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 9928
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.914354,
+          20.976808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 210,
+      "properties": {
+        "id": 210,
+        "name": "Navsari_BRTS_Stop_3",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 29439
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.913875,
+          20.93675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 211,
+      "properties": {
+        "id": 211,
+        "name": "Navsari_BRTS_Stop_4",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 5114
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.947841,
+          20.927871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 212,
+      "properties": {
+        "id": 212,
+        "name": "Navsari_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 1729
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.924932,
+          20.933682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 213,
+      "properties": {
+        "id": 213,
+        "name": "Navsari_BRTS_Stop_6",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 2979
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.970425,
+          20.932686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 214,
+      "properties": {
+        "id": 214,
+        "name": "Navsari_Railway_Station_7",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 26146
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.936169,
+          20.920082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 215,
+      "properties": {
+        "id": 215,
+        "name": "Navsari_Bus_Stand_8",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 31835
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.913577,
+          20.927232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 216,
+      "properties": {
+        "id": 216,
+        "name": "Navsari_BRTS_Stop_9",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 35897
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.901266,
+          20.968255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 217,
+      "properties": {
+        "id": 217,
+        "name": "Navsari_Bus_Stand_10",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 8443
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.957624,
+          20.983474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 218,
+      "properties": {
+        "id": 218,
+        "name": "Morbi_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 41936
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.817717,
+          22.850647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 219,
+      "properties": {
+        "id": 219,
+        "name": "Morbi_Railway_Station_2",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 35537
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.893299,
+          22.816244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 220,
+      "properties": {
+        "id": 220,
+        "name": "Morbi_Bus_Stand_3",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 19502
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.861682,
+          22.784787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 221,
+      "properties": {
+        "id": 221,
+        "name": "Morbi_BRTS_Stop_4",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 25676
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.81938,
+          22.793742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 222,
+      "properties": {
+        "id": 222,
+        "name": "Morbi_Bus_Stand_5",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 7497
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.816644,
+          22.784895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 223,
+      "properties": {
+        "id": 223,
+        "name": "Morbi_BRTS_Stop_6",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 41970
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.808397,
+          22.786604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 224,
+      "properties": {
+        "id": 224,
+        "name": "Morbi_BRTS_Stop_7",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 13154
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.808815,
+          22.828874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 225,
+      "properties": {
+        "id": 225,
+        "name": "Morbi_Metro_Station_8",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 32562
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.905988,
+          22.828389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 226,
+      "properties": {
+        "id": 226,
+        "name": "Morbi_Railway_Station_9",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 33247
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.789287,
+          22.857398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 227,
+      "properties": {
+        "id": 227,
+        "name": "Morbi_Bus_Stand_10",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 1575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.774512,
+          22.803769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 228,
+      "properties": {
+        "id": 228,
+        "name": "Morbi_BRTS_Stop_11",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 27075
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.853126,
+          22.821123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 229,
+      "properties": {
+        "id": 229,
+        "name": "Morbi_Bus_Stand_12",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 44938
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.88333,
+          22.859824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 230,
+      "properties": {
+        "id": 230,
+        "name": "Morbi_Metro_Station_13",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 5220
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.872147,
+          22.779966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 231,
+      "properties": {
+        "id": 231,
+        "name": "Morbi_BRTS_Stop_14",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 31381
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.862636,
+          22.823349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 232,
+      "properties": {
+        "id": 232,
+        "name": "Morbi_Metro_Station_15",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 46460
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.882946,
+          22.786986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 233,
+      "properties": {
+        "id": 233,
+        "name": "Morbi_BRTS_Stop_16",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 20641
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.832017,
+          22.81055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 234,
+      "properties": {
+        "id": 234,
+        "name": "Mehsana_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 7468
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.345445,
+          23.594738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 235,
+      "properties": {
+        "id": 235,
+        "name": "Mehsana_Metro_Station_2",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 4635
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.404173,
+          23.618427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 236,
+      "properties": {
+        "id": 236,
+        "name": "Mehsana_Bus_Stand_3",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 21749
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.382442,
+          23.551099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 237,
+      "properties": {
+        "id": 237,
+        "name": "Mehsana_Metro_Station_4",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 21575
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.405304,
+          23.622153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 238,
+      "properties": {
+        "id": 238,
+        "name": "Mehsana_BRTS_Stop_5",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 39368
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.396911,
+          23.542253
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 239,
+      "properties": {
+        "id": 239,
+        "name": "Mehsana_Railway_Station_6",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 9756
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.37628,
+          23.601375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 240,
+      "properties": {
+        "id": 240,
+        "name": "Mehsana_Railway_Station_7",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 36768
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.370466,
+          23.563431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 241,
+      "properties": {
+        "id": 241,
+        "name": "Mehsana_BRTS_Stop_8",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 9240
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.384375,
+          23.613493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 242,
+      "properties": {
+        "id": 242,
+        "name": "Bharuch_Bus_Stand_1",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 10838
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.008069,
+          21.658972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 243,
+      "properties": {
+        "id": 243,
+        "name": "Bharuch_BRTS_Stop_2",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 973
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.037568,
+          21.709205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 244,
+      "properties": {
+        "id": 244,
+        "name": "Bharuch_Railway_Station_3",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 27777
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.003587,
+          21.721281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 245,
+      "properties": {
+        "id": 245,
+        "name": "Bharuch_Bus_Stand_4",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 45874
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.977338,
+          21.655025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 246,
+      "properties": {
+        "id": 246,
+        "name": "Bharuch_Railway_Station_5",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 34781
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.011757,
+          21.721338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 247,
+      "properties": {
+        "id": 247,
+        "name": "Bharuch_Metro_Station_6",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 40512
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.967964,
+          21.714096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 248,
+      "properties": {
+        "id": 248,
+        "name": "Bharuch_Bus_Stand_7",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 40611
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.979298,
+          21.661845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 249,
+      "properties": {
+        "id": 249,
+        "name": "Bharuch_Railway_Station_8",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 23296
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.041119,
+          21.690501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 250,
+      "properties": {
+        "id": 250,
+        "name": "Vapi_BRTS_Stop_1",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 35247
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.934861,
+          20.389997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 251,
+      "properties": {
+        "id": 251,
+        "name": "Vapi_Metro_Station_2",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 30922
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.949518,
+          20.383584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 252,
+      "properties": {
+        "id": 252,
+        "name": "Vapi_Railway_Station_3",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 3977
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.915772,
+          20.349031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 253,
+      "properties": {
+        "id": 253,
+        "name": "Vapi_Bus_Stand_4",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 33105
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.926054,
+          20.431165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 254,
+      "properties": {
+        "id": 254,
+        "name": "Vapi_BRTS_Stop_5",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 4040
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.928878,
+          20.425923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 255,
+      "properties": {
+        "id": 255,
+        "name": "Vapi_Bus_Stand_6",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 16974
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.89422,
+          20.368221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 256,
+      "properties": {
+        "id": 256,
+        "name": "Vapi_Bus_Stand_7",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 3338
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.887933,
+          20.428018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 257,
+      "properties": {
+        "id": 257,
+        "name": "Vapi_Metro_Station_8",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 10857
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.919674,
+          20.396286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 258,
+      "properties": {
+        "id": 258,
+        "name": "Vapi_BRTS_Stop_9",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 5143
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.918301,
+          20.355339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 259,
+      "properties": {
+        "id": 259,
+        "name": "Vapi_Railway_Station_10",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 27963
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.944169,
+          20.363288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 260,
+      "properties": {
+        "id": 260,
+        "name": "Vapi_Railway_Station_11",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 15577
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.923618,
+          20.428321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 261,
+      "properties": {
+        "id": 261,
+        "name": "Vapi_BRTS_Stop_12",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 16039
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.91577,
+          20.361218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 262,
+      "properties": {
+        "id": 262,
+        "name": "Vapi_Bus_Stand_13",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 14961
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.907014,
+          20.342804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 263,
+      "properties": {
+        "id": 263,
+        "name": "Vapi_BRTS_Stop_14",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 29064
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.944836,
+          20.406348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 264,
+      "properties": {
+        "id": 264,
+        "name": "Vapi_Bus_Stand_15",
+        "type": "transit_stop",
+        "category": "Bus_Stand",
+        "daily_ridership": 12169
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.940134,
+          20.427346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 265,
+      "properties": {
+        "id": 265,
+        "name": "Vapi_Metro_Station_16",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 41920
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.896571,
+          20.401308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 266,
+      "properties": {
+        "id": 266,
+        "name": "Vapi_Railway_Station_17",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 8836
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.894226,
+          20.409453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 267,
+      "properties": {
+        "id": 267,
+        "name": "Vapi_Railway_Station_18",
+        "type": "transit_stop",
+        "category": "Railway_Station",
+        "daily_ridership": 9445
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.947541,
+          20.396852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 268,
+      "properties": {
+        "id": 268,
+        "name": "Gandhidham_Metro_Station_1",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 23016
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.157922,
+          23.042678
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 269,
+      "properties": {
+        "id": 269,
+        "name": "Gandhidham_Metro_Station_2",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 42311
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.139838,
+          23.107314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 270,
+      "properties": {
+        "id": 270,
+        "name": "Gandhidham_Metro_Station_3",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 6167
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.1883,
+          23.0586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 271,
+      "properties": {
+        "id": 271,
+        "name": "Gandhidham_Metro_Station_4",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 39269
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.096861,
+          23.098132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 272,
+      "properties": {
+        "id": 272,
+        "name": "Gandhidham_BRTS_Stop_5",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 48342
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.093449,
+          23.082067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 273,
+      "properties": {
+        "id": 273,
+        "name": "Gandhidham_Metro_Station_6",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 21949
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.083273,
+          23.099764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 274,
+      "properties": {
+        "id": 274,
+        "name": "Gandhidham_Metro_Station_7",
+        "type": "transit_stop",
+        "category": "Metro_Station",
+        "daily_ridership": 38098
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.107785,
+          23.08666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 275,
+      "properties": {
+        "id": 275,
+        "name": "Gandhidham_BRTS_Stop_8",
+        "type": "transit_stop",
+        "category": "BRTS_Stop",
+        "daily_ridership": 3125
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.164822,
+          23.052162
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,9211 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "id": 0,
+        "name": "Ahmedabad_Zone_1",
+        "city": "Ahmedabad",
+        "zone_type": "mixed_use",
+        "area_sqkm": 2.96,
+        "building_coverage_ratio": 0.74,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.716665,
+              23.061204
+            ],
+            [
+              72.680252,
+              23.08964
+            ],
+            [
+              72.644518,
+              23.080453
+            ],
+            [
+              72.642983,
+              23.04084
+            ],
+            [
+              72.681018,
+              23.030408
+            ],
+            [
+              72.716665,
+              23.061204
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "id": 1,
+        "name": "Ahmedabad_Zone_2",
+        "city": "Ahmedabad",
+        "zone_type": "industrial",
+        "area_sqkm": 5.11,
+        "building_coverage_ratio": 0.66,
+        "floor_area_ratio": 1.0,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.489424,
+              23.182635
+            ],
+            [
+              72.476094,
+              23.21151
+            ],
+            [
+              72.449639,
+              23.195039
+            ],
+            [
+              72.440976,
+              23.163937
+            ],
+            [
+              72.478674,
+              23.145818
+            ],
+            [
+              72.489424,
+              23.182635
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "id": 2,
+        "name": "Ahmedabad_Zone_3",
+        "city": "Ahmedabad",
+        "zone_type": "industrial",
+        "area_sqkm": 7.69,
+        "building_coverage_ratio": 0.56,
+        "floor_area_ratio": 2.0,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.639182,
+              22.781748
+            ],
+            [
+              72.610591,
+              22.819804
+            ],
+            [
+              72.570086,
+              22.813849
+            ],
+            [
+              72.559258,
+              22.781748
+            ],
+            [
+              72.570355,
+              22.750113
+            ],
+            [
+              72.606575,
+              22.750648
+            ],
+            [
+              72.639182,
+              22.781748
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "id": 3,
+        "name": "Ahmedabad_Zone_4",
+        "city": "Ahmedabad",
+        "zone_type": "industrial",
+        "area_sqkm": 7.39,
+        "building_coverage_ratio": 0.73,
+        "floor_area_ratio": 1.4,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.724937,
+              23.121982
+            ],
+            [
+              72.717849,
+              23.139033
+            ],
+            [
+              72.697936,
+              23.139421
+            ],
+            [
+              72.689894,
+              23.121982
+            ],
+            [
+              72.699292,
+              23.106891
+            ],
+            [
+              72.715476,
+              23.109042
+            ],
+            [
+              72.724937,
+              23.121982
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "id": 4,
+        "name": "Ahmedabad_Zone_5",
+        "city": "Ahmedabad",
+        "zone_type": "agricultural",
+        "area_sqkm": 0.66,
+        "building_coverage_ratio": 0.42,
+        "floor_area_ratio": 1.1,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.83172,
+              23.001286
+            ],
+            [
+              72.828961,
+              23.015133
+            ],
+            [
+              72.815114,
+              23.023889
+            ],
+            [
+              72.798673,
+              23.017728
+            ],
+            [
+              72.797147,
+              23.001286
+            ],
+            [
+              72.797456,
+              22.983628
+            ],
+            [
+              72.815114,
+              22.976285
+            ],
+            [
+              72.828891,
+              22.98751
+            ],
+            [
+              72.83172,
+              23.001286
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "id": 5,
+        "name": "Ahmedabad_Zone_6",
+        "city": "Ahmedabad",
+        "zone_type": "residential",
+        "area_sqkm": 7.48,
+        "building_coverage_ratio": 0.38,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.485564,
+              22.847138
+            ],
+            [
+              72.470668,
+              22.887581
+            ],
+            [
+              72.431806,
+              22.865826
+            ],
+            [
+              72.425293,
+              22.823718
+            ],
+            [
+              72.469008,
+              22.811805
+            ],
+            [
+              72.485564,
+              22.847138
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "id": 6,
+        "name": "Ahmedabad_Zone_7",
+        "city": "Ahmedabad",
+        "zone_type": "institutional",
+        "area_sqkm": 9.57,
+        "building_coverage_ratio": 0.49,
+        "floor_area_ratio": 2.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.65625,
+              22.949934
+            ],
+            [
+              72.650318,
+              22.970086
+            ],
+            [
+              72.63428,
+              22.95683
+            ],
+            [
+              72.627139,
+              22.937851
+            ],
+            [
+              72.648297,
+              22.936004
+            ],
+            [
+              72.65625,
+              22.949934
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "id": 7,
+        "name": "Ahmedabad_Zone_8",
+        "city": "Ahmedabad",
+        "zone_type": "commercial",
+        "area_sqkm": 6.83,
+        "building_coverage_ratio": 0.77,
+        "floor_area_ratio": 3.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.483556,
+              23.110977
+            ],
+            [
+              72.484037,
+              23.122073
+            ],
+            [
+              72.472941,
+              23.128191
+            ],
+            [
+              72.460412,
+              23.123506
+            ],
+            [
+              72.45662,
+              23.110977
+            ],
+            [
+              72.462389,
+              23.100425
+            ],
+            [
+              72.472941,
+              23.095689
+            ],
+            [
+              72.482158,
+              23.101761
+            ],
+            [
+              72.483556,
+              23.110977
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "id": 8,
+        "name": "Ahmedabad_Zone_9",
+        "city": "Ahmedabad",
+        "zone_type": "industrial",
+        "area_sqkm": 6.71,
+        "building_coverage_ratio": 0.67,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.542443,
+              22.812495
+            ],
+            [
+              72.53179,
+              22.824679
+            ],
+            [
+              72.515611,
+              22.821374
+            ],
+            [
+              72.513568,
+              22.802132
+            ],
+            [
+              72.532028,
+              22.799579
+            ],
+            [
+              72.542443,
+              22.812495
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "id": 9,
+        "name": "Surat_Zone_1",
+        "city": "Surat",
+        "zone_type": "commercial",
+        "area_sqkm": 9.56,
+        "building_coverage_ratio": 0.55,
+        "floor_area_ratio": 1.0,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.800527,
+              21.138656
+            ],
+            [
+              72.784895,
+              21.169553
+            ],
+            [
+              72.754704,
+              21.16005
+            ],
+            [
+              72.741597,
+              21.138656
+            ],
+            [
+              72.751715,
+              21.112084
+            ],
+            [
+              72.783371,
+              21.110396
+            ],
+            [
+              72.800527,
+              21.138656
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "id": 10,
+        "name": "Surat_Zone_2",
+        "city": "Surat",
+        "zone_type": "industrial",
+        "area_sqkm": 1.51,
+        "building_coverage_ratio": 0.21,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.716074,
+              21.150998
+            ],
+            [
+              72.696743,
+              21.170576
+            ],
+            [
+              72.677165,
+              21.18155
+            ],
+            [
+              72.648653,
+              21.17951
+            ],
+            [
+              72.634692,
+              21.150998
+            ],
+            [
+              72.647451,
+              21.121284
+            ],
+            [
+              72.677165,
+              21.125693
+            ],
+            [
+              72.699316,
+              21.128846
+            ],
+            [
+              72.716074,
+              21.150998
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "id": 11,
+        "name": "Surat_Zone_3",
+        "city": "Surat",
+        "zone_type": "agricultural",
+        "area_sqkm": 9.97,
+        "building_coverage_ratio": 0.62,
+        "floor_area_ratio": 2.4,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.683427,
+              21.16772
+            ],
+            [
+              72.685997,
+              21.188563
+            ],
+            [
+              72.665155,
+              21.187393
+            ],
+            [
+              72.645297,
+              21.187578
+            ],
+            [
+              72.635114,
+              21.16772
+            ],
+            [
+              72.643002,
+              21.145568
+            ],
+            [
+              72.665155,
+              21.146969
+            ],
+            [
+              72.685212,
+              21.147663
+            ],
+            [
+              72.683427,
+              21.16772
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "id": 12,
+        "name": "Surat_Zone_4",
+        "city": "Surat",
+        "zone_type": "industrial",
+        "area_sqkm": 7.41,
+        "building_coverage_ratio": 0.38,
+        "floor_area_ratio": 3.4,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.023003,
+              21.088402
+            ],
+            [
+              73.01824,
+              21.119495
+            ],
+            [
+              72.987147,
+              21.139822
+            ],
+            [
+              72.954708,
+              21.120841
+            ],
+            [
+              72.950012,
+              21.088402
+            ],
+            [
+              72.958583,
+              21.059838
+            ],
+            [
+              72.987147,
+              21.053842
+            ],
+            [
+              73.018552,
+              21.056997
+            ],
+            [
+              73.023003,
+              21.088402
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "id": 13,
+        "name": "Surat_Zone_5",
+        "city": "Surat",
+        "zone_type": "industrial",
+        "area_sqkm": 1.42,
+        "building_coverage_ratio": 0.39,
+        "floor_area_ratio": 3.4,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.928279,
+              21.344363
+            ],
+            [
+              72.911353,
+              21.366514
+            ],
+            [
+              72.887508,
+              21.371442
+            ],
+            [
+              72.857949,
+              21.361574
+            ],
+            [
+              72.865718,
+              21.330893
+            ],
+            [
+              72.887474,
+              21.317133
+            ],
+            [
+              72.912076,
+              21.321306
+            ],
+            [
+              72.928279,
+              21.344363
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "id": 14,
+        "name": "Surat_Zone_6",
+        "city": "Surat",
+        "zone_type": "residential",
+        "area_sqkm": 3.94,
+        "building_coverage_ratio": 0.71,
+        "floor_area_ratio": 1.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.852947,
+              20.998707
+            ],
+            [
+              72.841418,
+              21.010769
+            ],
+            [
+              72.829357,
+              21.014335
+            ],
+            [
+              72.815603,
+              21.012462
+            ],
+            [
+              72.808394,
+              20.998707
+            ],
+            [
+              72.810277,
+              20.979627
+            ],
+            [
+              72.829357,
+              20.9823
+            ],
+            [
+              72.844556,
+              20.983509
+            ],
+            [
+              72.852947,
+              20.998707
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "id": 15,
+        "name": "Surat_Zone_7",
+        "city": "Surat",
+        "zone_type": "industrial",
+        "area_sqkm": 6.46,
+        "building_coverage_ratio": 0.44,
+        "floor_area_ratio": 1.1,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.782407,
+              21.28209
+            ],
+            [
+              72.770404,
+              21.297379
+            ],
+            [
+              72.750939,
+              21.300516
+            ],
+            [
+              72.739115,
+              21.28209
+            ],
+            [
+              72.751129,
+              21.263994
+            ],
+            [
+              72.772707,
+              21.262812
+            ],
+            [
+              72.782407,
+              21.28209
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "id": 16,
+        "name": "Vadodara_Zone_1",
+        "city": "Vadodara",
+        "zone_type": "agricultural",
+        "area_sqkm": 0.61,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.183533,
+              22.426912
+            ],
+            [
+              73.177763,
+              22.454088
+            ],
+            [
+              73.146386,
+              22.454083
+            ],
+            [
+              73.136091,
+              22.426912
+            ],
+            [
+              73.144828,
+              22.397043
+            ],
+            [
+              73.179759,
+              22.396278
+            ],
+            [
+              73.183533,
+              22.426912
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "id": 17,
+        "name": "Vadodara_Zone_2",
+        "city": "Vadodara",
+        "zone_type": "industrial",
+        "area_sqkm": 3.33,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 2.0,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.239545,
+              22.401946
+            ],
+            [
+              73.230709,
+              22.419548
+            ],
+            [
+              73.210273,
+              22.412638
+            ],
+            [
+              73.212185,
+              22.392643
+            ],
+            [
+              73.228537,
+              22.391029
+            ],
+            [
+              73.239545,
+              22.401946
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "id": 18,
+        "name": "Vadodara_Zone_3",
+        "city": "Vadodara",
+        "zone_type": "residential",
+        "area_sqkm": 7.66,
+        "building_coverage_ratio": 0.32,
+        "floor_area_ratio": 3.0,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.249372,
+              22.213176
+            ],
+            [
+              73.245995,
+              22.226107
+            ],
+            [
+              73.231678,
+              22.225042
+            ],
+            [
+              73.227373,
+              22.213176
+            ],
+            [
+              73.230472,
+              22.199221
+            ],
+            [
+              73.246945,
+              22.198599
+            ],
+            [
+              73.249372,
+              22.213176
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "id": 19,
+        "name": "Vadodara_Zone_4",
+        "city": "Vadodara",
+        "zone_type": "residential",
+        "area_sqkm": 1.3,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 1.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.258787,
+              22.347044
+            ],
+            [
+              73.249333,
+              22.357528
+            ],
+            [
+              73.230394,
+              22.35833
+            ],
+            [
+              73.230696,
+              22.335979
+            ],
+            [
+              73.250027,
+              22.334423
+            ],
+            [
+              73.258787,
+              22.347044
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "id": 20,
+        "name": "Vadodara_Zone_5",
+        "city": "Vadodara",
+        "zone_type": "institutional",
+        "area_sqkm": 7.1,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 4.0,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.15775,
+              22.295272
+            ],
+            [
+              73.141855,
+              22.322063
+            ],
+            [
+              73.116144,
+              22.313014
+            ],
+            [
+              73.106036,
+              22.295272
+            ],
+            [
+              73.115324,
+              22.276111
+            ],
+            [
+              73.143491,
+              22.265648
+            ],
+            [
+              73.15775,
+              22.295272
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "id": 21,
+        "name": "Vadodara_Zone_6",
+        "city": "Vadodara",
+        "zone_type": "mixed_use",
+        "area_sqkm": 6.12,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 3.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.20359,
+              22.360844
+            ],
+            [
+              73.201427,
+              22.371266
+            ],
+            [
+              73.190944,
+              22.37036
+            ],
+            [
+              73.182386,
+              22.366011
+            ],
+            [
+              73.179155,
+              22.354121
+            ],
+            [
+              73.190106,
+              22.347657
+            ],
+            [
+              73.202755,
+              22.348756
+            ],
+            [
+              73.20359,
+              22.360844
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "id": 22,
+        "name": "Vadodara_Zone_7",
+        "city": "Vadodara",
+        "zone_type": "commercial",
+        "area_sqkm": 9.96,
+        "building_coverage_ratio": 0.62,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.2489,
+              22.36024
+            ],
+            [
+              73.233945,
+              22.378699
+            ],
+            [
+              73.205858,
+              22.39043
+            ],
+            [
+              73.19745,
+              22.36024
+            ],
+            [
+              73.21366,
+              22.343565
+            ],
+            [
+              73.237579,
+              22.335488
+            ],
+            [
+              73.2489,
+              22.36024
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "id": 23,
+        "name": "Vadodara_Zone_8",
+        "city": "Vadodara",
+        "zone_type": "residential",
+        "area_sqkm": 7.0,
+        "building_coverage_ratio": 0.44,
+        "floor_area_ratio": 2.0,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.252363,
+              22.331985
+            ],
+            [
+              73.238252,
+              22.344849
+            ],
+            [
+              73.222515,
+              22.355988
+            ],
+            [
+              73.211733,
+              22.339816
+            ],
+            [
+              73.213717,
+              22.32511
+            ],
+            [
+              73.22201,
+              22.305767
+            ],
+            [
+              73.238845,
+              22.318378
+            ],
+            [
+              73.252363,
+              22.331985
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "id": 24,
+        "name": "Vadodara_Zone_9",
+        "city": "Vadodara",
+        "zone_type": "residential",
+        "area_sqkm": 2.17,
+        "building_coverage_ratio": 0.64,
+        "floor_area_ratio": 1.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.322278,
+              22.267607
+            ],
+            [
+              73.317645,
+              22.279872
+            ],
+            [
+              73.304913,
+              22.280539
+            ],
+            [
+              73.295525,
+              22.27355
+            ],
+            [
+              73.293514,
+              22.260697
+            ],
+            [
+              73.305567,
+              22.257542
+            ],
+            [
+              73.318036,
+              22.254853
+            ],
+            [
+              73.322278,
+              22.267607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "id": 25,
+        "name": "Vadodara_Zone_10",
+        "city": "Vadodara",
+        "zone_type": "institutional",
+        "area_sqkm": 5.03,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 1.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.138117,
+              22.36356
+            ],
+            [
+              73.129786,
+              22.391853
+            ],
+            [
+              73.099944,
+              22.386956
+            ],
+            [
+              73.074172,
+              22.36356
+            ],
+            [
+              73.096442,
+              22.334099
+            ],
+            [
+              73.127927,
+              22.338488
+            ],
+            [
+              73.138117,
+              22.36356
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "id": 26,
+        "name": "Vadodara_Zone_11",
+        "city": "Vadodara",
+        "zone_type": "industrial",
+        "area_sqkm": 7.21,
+        "building_coverage_ratio": 0.31,
+        "floor_area_ratio": 4.0,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.221295,
+              22.185512
+            ],
+            [
+              73.21734,
+              22.200392
+            ],
+            [
+              73.20246,
+              22.208848
+            ],
+            [
+              73.191446,
+              22.196527
+            ],
+            [
+              73.182341,
+              22.185512
+            ],
+            [
+              73.192565,
+              22.175617
+            ],
+            [
+              73.20246,
+              22.169077
+            ],
+            [
+              73.217751,
+              22.170221
+            ],
+            [
+              73.221295,
+              22.185512
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "id": 27,
+        "name": "Vadodara_Zone_12",
+        "city": "Vadodara",
+        "zone_type": "residential",
+        "area_sqkm": 7.43,
+        "building_coverage_ratio": 0.77,
+        "floor_area_ratio": 1.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.261466,
+              22.208468
+            ],
+            [
+              73.256305,
+              22.218228
+            ],
+            [
+              73.245105,
+              22.223436
+            ],
+            [
+              73.234093,
+              22.215416
+            ],
+            [
+              73.237741,
+              22.203276
+            ],
+            [
+              73.245717,
+              22.196181
+            ],
+            [
+              73.257421,
+              22.197308
+            ],
+            [
+              73.261466,
+              22.208468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "id": 28,
+        "name": "Rajkot_Zone_1",
+        "city": "Rajkot",
+        "zone_type": "residential",
+        "area_sqkm": 4.35,
+        "building_coverage_ratio": 0.57,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.689515,
+              22.305612
+            ],
+            [
+              70.686362,
+              22.31392
+            ],
+            [
+              70.678054,
+              22.314263
+            ],
+            [
+              70.669792,
+              22.313874
+            ],
+            [
+              70.665071,
+              22.305612
+            ],
+            [
+              70.669426,
+              22.296984
+            ],
+            [
+              70.678054,
+              22.293062
+            ],
+            [
+              70.685401,
+              22.298265
+            ],
+            [
+              70.689515,
+              22.305612
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "id": 29,
+        "name": "Rajkot_Zone_2",
+        "city": "Rajkot",
+        "zone_type": "industrial",
+        "area_sqkm": 6.91,
+        "building_coverage_ratio": 0.73,
+        "floor_area_ratio": 2.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.732934,
+              22.229842
+            ],
+            [
+              70.725108,
+              22.252978
+            ],
+            [
+              70.701731,
+              22.247194
+            ],
+            [
+              70.692262,
+              22.229842
+            ],
+            [
+              70.702043,
+              22.213029
+            ],
+            [
+              70.719817,
+              22.215868
+            ],
+            [
+              70.732934,
+              22.229842
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "id": 30,
+        "name": "Rajkot_Zone_3",
+        "city": "Rajkot",
+        "zone_type": "residential",
+        "area_sqkm": 3.26,
+        "building_coverage_ratio": 0.49,
+        "floor_area_ratio": 1.8,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.893187,
+              22.265353
+            ],
+            [
+              70.886561,
+              22.285419
+            ],
+            [
+              70.866495,
+              22.305846
+            ],
+            [
+              70.841819,
+              22.29003
+            ],
+            [
+              70.828073,
+              22.265353
+            ],
+            [
+              70.850103,
+              22.248961
+            ],
+            [
+              70.866495,
+              22.233925
+            ],
+            [
+              70.890828,
+              22.241021
+            ],
+            [
+              70.893187,
+              22.265353
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "id": 31,
+        "name": "Rajkot_Zone_4",
+        "city": "Rajkot",
+        "zone_type": "institutional",
+        "area_sqkm": 3.62,
+        "building_coverage_ratio": 0.41,
+        "floor_area_ratio": 1.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.723969,
+              22.31049
+            ],
+            [
+              70.72229,
+              22.322169
+            ],
+            [
+              70.710138,
+              22.322927
+            ],
+            [
+              70.69869,
+              22.31737
+            ],
+            [
+              70.695578,
+              22.302111
+            ],
+            [
+              70.709694,
+              22.29611
+            ],
+            [
+              70.725102,
+              22.295285
+            ],
+            [
+              70.723969,
+              22.31049
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "id": 32,
+        "name": "Rajkot_Zone_5",
+        "city": "Rajkot",
+        "zone_type": "agricultural",
+        "area_sqkm": 2.65,
+        "building_coverage_ratio": 0.44,
+        "floor_area_ratio": 1.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.961787,
+              22.309611
+            ],
+            [
+              70.955731,
+              22.337296
+            ],
+            [
+              70.923806,
+              22.352754
+            ],
+            [
+              70.907249,
+              22.322327
+            ],
+            [
+              70.903435,
+              22.295059
+            ],
+            [
+              70.925796,
+              22.275188
+            ],
+            [
+              70.95464,
+              22.283294
+            ],
+            [
+              70.961787,
+              22.309611
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "id": 33,
+        "name": "Rajkot_Zone_6",
+        "city": "Rajkot",
+        "zone_type": "mixed_use",
+        "area_sqkm": 3.21,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.888824,
+              22.255335
+            ],
+            [
+              70.871597,
+              22.296032
+            ],
+            [
+              70.82448,
+              22.296249
+            ],
+            [
+              70.800342,
+              22.255335
+            ],
+            [
+              70.833821,
+              22.230601
+            ],
+            [
+              70.866495,
+              22.223477
+            ],
+            [
+              70.888824,
+              22.255335
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "id": 34,
+        "name": "Rajkot_Zone_7",
+        "city": "Rajkot",
+        "zone_type": "industrial",
+        "area_sqkm": 3.59,
+        "building_coverage_ratio": 0.66,
+        "floor_area_ratio": 3.6,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.705884,
+              22.307349
+            ],
+            [
+              70.710205,
+              22.339157
+            ],
+            [
+              70.678397,
+              22.348839
+            ],
+            [
+              70.65904,
+              22.326706
+            ],
+            [
+              70.646406,
+              22.307349
+            ],
+            [
+              70.660724,
+              22.289676
+            ],
+            [
+              70.678397,
+              22.268151
+            ],
+            [
+              70.696645,
+              22.289101
+            ],
+            [
+              70.705884,
+              22.307349
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "id": 35,
+        "name": "Rajkot_Zone_8",
+        "city": "Rajkot",
+        "zone_type": "residential",
+        "area_sqkm": 4.63,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 2.5,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.869309,
+              22.21769
+            ],
+            [
+              70.856557,
+              22.22995
+            ],
+            [
+              70.841907,
+              22.230804
+            ],
+            [
+              70.836073,
+              22.21769
+            ],
+            [
+              70.841999,
+              22.204735
+            ],
+            [
+              70.859246,
+              22.200773
+            ],
+            [
+              70.869309,
+              22.21769
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "id": 36,
+        "name": "Rajkot_Zone_9",
+        "city": "Rajkot",
+        "zone_type": "industrial",
+        "area_sqkm": 7.21,
+        "building_coverage_ratio": 0.69,
+        "floor_area_ratio": 3.1,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.766005,
+              22.218904
+            ],
+            [
+              70.75899,
+              22.229474
+            ],
+            [
+              70.747226,
+              22.228709
+            ],
+            [
+              70.73262,
+              22.218904
+            ],
+            [
+              70.743042,
+              22.20185
+            ],
+            [
+              70.760371,
+              22.205941
+            ],
+            [
+              70.766005,
+              22.218904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "id": 37,
+        "name": "Rajkot_Zone_10",
+        "city": "Rajkot",
+        "zone_type": "residential",
+        "area_sqkm": 4.11,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 3.1,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.784993,
+              22.273675
+            ],
+            [
+              70.780393,
+              22.28552
+            ],
+            [
+              70.768547,
+              22.291766
+            ],
+            [
+              70.758154,
+              22.284068
+            ],
+            [
+              70.7542,
+              22.273675
+            ],
+            [
+              70.758322,
+              22.26345
+            ],
+            [
+              70.768547,
+              22.25851
+            ],
+            [
+              70.779744,
+              22.262478
+            ],
+            [
+              70.784993,
+              22.273675
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "id": 38,
+        "name": "Rajkot_Zone_11",
+        "city": "Rajkot",
+        "zone_type": "commercial",
+        "area_sqkm": 0.51,
+        "building_coverage_ratio": 0.6,
+        "floor_area_ratio": 2.0,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.811462,
+              22.333512
+            ],
+            [
+              70.794658,
+              22.353075
+            ],
+            [
+              70.768857,
+              22.34764
+            ],
+            [
+              70.770698,
+              22.320722
+            ],
+            [
+              70.794028,
+              22.315889
+            ],
+            [
+              70.811462,
+              22.333512
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "id": 39,
+        "name": "Rajkot_Zone_12",
+        "city": "Rajkot",
+        "zone_type": "industrial",
+        "area_sqkm": 3.65,
+        "building_coverage_ratio": 0.64,
+        "floor_area_ratio": 2.1,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.772442,
+              22.195668
+            ],
+            [
+              70.753386,
+              22.215799
+            ],
+            [
+              70.728672,
+              22.218344
+            ],
+            [
+              70.707085,
+              22.195668
+            ],
+            [
+              70.730813,
+              22.1767
+            ],
+            [
+              70.757882,
+              22.16775
+            ],
+            [
+              70.772442,
+              22.195668
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "id": 40,
+        "name": "Rajkot_Zone_13",
+        "city": "Rajkot",
+        "zone_type": "industrial",
+        "area_sqkm": 2.33,
+        "building_coverage_ratio": 0.47,
+        "floor_area_ratio": 1.3,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.912016,
+              22.382728
+            ],
+            [
+              70.897549,
+              22.394508
+            ],
+            [
+              70.885769,
+              22.405702
+            ],
+            [
+              70.875351,
+              22.393146
+            ],
+            [
+              70.869235,
+              22.382728
+            ],
+            [
+              70.87099,
+              22.367948
+            ],
+            [
+              70.885769,
+              22.365453
+            ],
+            [
+              70.90336,
+              22.365137
+            ],
+            [
+              70.912016,
+              22.382728
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "id": 41,
+        "name": "Gandhinagar_Zone_1",
+        "city": "Gandhinagar",
+        "zone_type": "industrial",
+        "area_sqkm": 6.48,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.760705,
+              23.200875
+            ],
+            [
+              72.740482,
+              23.232069
+            ],
+            [
+              72.691043,
+              23.229431
+            ],
+            [
+              72.703527,
+              23.181389
+            ],
+            [
+              72.745277,
+              23.154924
+            ],
+            [
+              72.760705,
+              23.200875
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "id": 42,
+        "name": "Gandhinagar_Zone_2",
+        "city": "Gandhinagar",
+        "zone_type": "industrial",
+        "area_sqkm": 7.54,
+        "building_coverage_ratio": 0.44,
+        "floor_area_ratio": 3.1,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.743934,
+              23.252359
+            ],
+            [
+              72.738292,
+              23.262244
+            ],
+            [
+              72.728407,
+              23.268287
+            ],
+            [
+              72.719686,
+              23.26108
+            ],
+            [
+              72.717899,
+              23.252359
+            ],
+            [
+              72.717368,
+              23.24132
+            ],
+            [
+              72.728407,
+              23.236566
+            ],
+            [
+              72.735871,
+              23.244895
+            ],
+            [
+              72.743934,
+              23.252359
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "id": 43,
+        "name": "Gandhinagar_Zone_3",
+        "city": "Gandhinagar",
+        "zone_type": "agricultural",
+        "area_sqkm": 3.38,
+        "building_coverage_ratio": 0.33,
+        "floor_area_ratio": 3.1,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.711302,
+              23.184552
+            ],
+            [
+              72.70715,
+              23.194461
+            ],
+            [
+              72.696519,
+              23.193056
+            ],
+            [
+              72.690721,
+              23.184552
+            ],
+            [
+              72.693081,
+              23.170092
+            ],
+            [
+              72.709955,
+              23.169784
+            ],
+            [
+              72.711302,
+              23.184552
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "id": 44,
+        "name": "Gandhinagar_Zone_4",
+        "city": "Gandhinagar",
+        "zone_type": "industrial",
+        "area_sqkm": 9.9,
+        "building_coverage_ratio": 0.33,
+        "floor_area_ratio": 1.3,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.650706,
+              23.303785
+            ],
+            [
+              72.647771,
+              23.331693
+            ],
+            [
+              72.617806,
+              23.337558
+            ],
+            [
+              72.60374,
+              23.314271
+            ],
+            [
+              72.605725,
+              23.294255
+            ],
+            [
+              72.617752,
+              23.269776
+            ],
+            [
+              72.640909,
+              23.284482
+            ],
+            [
+              72.650706,
+              23.303785
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "id": 45,
+        "name": "Gandhinagar_Zone_5",
+        "city": "Gandhinagar",
+        "zone_type": "residential",
+        "area_sqkm": 8.33,
+        "building_coverage_ratio": 0.33,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.733755,
+              23.208284
+            ],
+            [
+              72.722711,
+              23.229928
+            ],
+            [
+              72.698988,
+              23.22041
+            ],
+            [
+              72.698968,
+              23.196143
+            ],
+            [
+              72.719852,
+              23.19544
+            ],
+            [
+              72.733755,
+              23.208284
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "id": 46,
+        "name": "Gandhinagar_Zone_6",
+        "city": "Gandhinagar",
+        "zone_type": "agricultural",
+        "area_sqkm": 8.77,
+        "building_coverage_ratio": 0.58,
+        "floor_area_ratio": 2.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.648924,
+              23.153817
+            ],
+            [
+              72.646426,
+              23.167823
+            ],
+            [
+              72.630765,
+              23.173502
+            ],
+            [
+              72.621223,
+              23.160576
+            ],
+            [
+              72.620769,
+              23.14684
+            ],
+            [
+              72.631049,
+              23.135381
+            ],
+            [
+              72.645208,
+              23.141339
+            ],
+            [
+              72.648924,
+              23.153817
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "id": 47,
+        "name": "Gandhinagar_Zone_7",
+        "city": "Gandhinagar",
+        "zone_type": "industrial",
+        "area_sqkm": 2.22,
+        "building_coverage_ratio": 0.31,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.719856,
+              23.271163
+            ],
+            [
+              72.691812,
+              23.294801
+            ],
+            [
+              72.662887,
+              23.297624
+            ],
+            [
+              72.64727,
+              23.271163
+            ],
+            [
+              72.66023,
+              23.2401
+            ],
+            [
+              72.698554,
+              23.235848
+            ],
+            [
+              72.719856,
+              23.271163
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "id": 48,
+        "name": "Gandhinagar_Zone_8",
+        "city": "Gandhinagar",
+        "zone_type": "commercial",
+        "area_sqkm": 4.82,
+        "building_coverage_ratio": 0.59,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.688629,
+              23.226945
+            ],
+            [
+              72.668616,
+              23.249688
+            ],
+            [
+              72.646354,
+              23.237751
+            ],
+            [
+              72.636261,
+              23.208807
+            ],
+            [
+              72.67046,
+              23.198526
+            ],
+            [
+              72.688629,
+              23.226945
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "id": 49,
+        "name": "Gandhinagar_Zone_9",
+        "city": "Gandhinagar",
+        "zone_type": "commercial",
+        "area_sqkm": 7.82,
+        "building_coverage_ratio": 0.36,
+        "floor_area_ratio": 3.8,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.63729,
+              23.199116
+            ],
+            [
+              72.626484,
+              23.206675
+            ],
+            [
+              72.614418,
+              23.206099
+            ],
+            [
+              72.616426,
+              23.193594
+            ],
+            [
+              72.627643,
+              23.187989
+            ],
+            [
+              72.63729,
+              23.199116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "id": 50,
+        "name": "Gandhinagar_Zone_10",
+        "city": "Gandhinagar",
+        "zone_type": "industrial",
+        "area_sqkm": 8.25,
+        "building_coverage_ratio": 0.38,
+        "floor_area_ratio": 2.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.679279,
+              23.281826
+            ],
+            [
+              72.664263,
+              23.303086
+            ],
+            [
+              72.631802,
+              23.300391
+            ],
+            [
+              72.638403,
+              23.268056
+            ],
+            [
+              72.669065,
+              23.245786
+            ],
+            [
+              72.679279,
+              23.281826
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "id": 51,
+        "name": "Gandhinagar_Zone_11",
+        "city": "Gandhinagar",
+        "zone_type": "commercial",
+        "area_sqkm": 0.73,
+        "building_coverage_ratio": 0.46,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.654593,
+              23.217366
+            ],
+            [
+              72.648754,
+              23.232218
+            ],
+            [
+              72.633902,
+              23.240454
+            ],
+            [
+              72.620811,
+              23.230457
+            ],
+            [
+              72.609818,
+              23.217366
+            ],
+            [
+              72.622921,
+              23.206384
+            ],
+            [
+              72.633902,
+              23.193665
+            ],
+            [
+              72.645336,
+              23.205932
+            ],
+            [
+              72.654593,
+              23.217366
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "id": 52,
+        "name": "Gandhinagar_Zone_12",
+        "city": "Gandhinagar",
+        "zone_type": "commercial",
+        "area_sqkm": 9.27,
+        "building_coverage_ratio": 0.75,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.702957,
+              23.242243
+            ],
+            [
+              72.699049,
+              23.253133
+            ],
+            [
+              72.688158,
+              23.258341
+            ],
+            [
+              72.680038,
+              23.250363
+            ],
+            [
+              72.672167,
+              23.242243
+            ],
+            [
+              72.679105,
+              23.23319
+            ],
+            [
+              72.688158,
+              23.224941
+            ],
+            [
+              72.6975,
+              23.232901
+            ],
+            [
+              72.702957,
+              23.242243
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "id": 53,
+        "name": "Gandhinagar_Zone_13",
+        "city": "Gandhinagar",
+        "zone_type": "agricultural",
+        "area_sqkm": 9.36,
+        "building_coverage_ratio": 0.69,
+        "floor_area_ratio": 3.1,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.752206,
+              23.273754
+            ],
+            [
+              72.726193,
+              23.296727
+            ],
+            [
+              72.699654,
+              23.296748
+            ],
+            [
+              72.68034,
+              23.273754
+            ],
+            [
+              72.693098,
+              23.239406
+            ],
+            [
+              72.734573,
+              23.236266
+            ],
+            [
+              72.752206,
+              23.273754
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "id": 54,
+        "name": "Gandhinagar_Zone_14",
+        "city": "Gandhinagar",
+        "zone_type": "institutional",
+        "area_sqkm": 9.62,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 1.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.664281,
+              23.184698
+            ],
+            [
+              72.661083,
+              23.195589
+            ],
+            [
+              72.650192,
+              23.19998
+            ],
+            [
+              72.636162,
+              23.198727
+            ],
+            [
+              72.633792,
+              23.184698
+            ],
+            [
+              72.638367,
+              23.172873
+            ],
+            [
+              72.650192,
+              23.172596
+            ],
+            [
+              72.664033,
+              23.170857
+            ],
+            [
+              72.664281,
+              23.184698
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "id": 55,
+        "name": "Bhavnagar_Zone_1",
+        "city": "Bhavnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 5.56,
+        "building_coverage_ratio": 0.69,
+        "floor_area_ratio": 2.2,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.125819,
+              21.814145
+            ],
+            [
+              72.10772,
+              21.832945
+            ],
+            [
+              72.087811,
+              21.829829
+            ],
+            [
+              72.06341,
+              21.814145
+            ],
+            [
+              72.0877,
+              21.79827
+            ],
+            [
+              72.110222,
+              21.791012
+            ],
+            [
+              72.125819,
+              21.814145
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "id": 56,
+        "name": "Bhavnagar_Zone_2",
+        "city": "Bhavnagar",
+        "zone_type": "residential",
+        "area_sqkm": 9.16,
+        "building_coverage_ratio": 0.42,
+        "floor_area_ratio": 3.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.267112,
+              21.739245
+            ],
+            [
+              72.254192,
+              21.756066
+            ],
+            [
+              72.232622,
+              21.759785
+            ],
+            [
+              72.226532,
+              21.739245
+            ],
+            [
+              72.236695,
+              21.72576
+            ],
+            [
+              72.252345,
+              21.725625
+            ],
+            [
+              72.267112,
+              21.739245
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "id": 57,
+        "name": "Bhavnagar_Zone_3",
+        "city": "Bhavnagar",
+        "zone_type": "mixed_use",
+        "area_sqkm": 4.09,
+        "building_coverage_ratio": 0.22,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.164011,
+              21.730266
+            ],
+            [
+              72.153927,
+              21.738493
+            ],
+            [
+              72.139947,
+              21.738481
+            ],
+            [
+              72.139761,
+              21.721916
+            ],
+            [
+              72.153833,
+              21.722329
+            ],
+            [
+              72.164011,
+              21.730266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "id": 58,
+        "name": "Bhavnagar_Zone_4",
+        "city": "Bhavnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 0.62,
+        "building_coverage_ratio": 0.7,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.160961,
+              21.785554
+            ],
+            [
+              72.146763,
+              21.808905
+            ],
+            [
+              72.122684,
+              21.803909
+            ],
+            [
+              72.110467,
+              21.785554
+            ],
+            [
+              72.12241,
+              21.766725
+            ],
+            [
+              72.147361,
+              21.761166
+            ],
+            [
+              72.160961,
+              21.785554
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "id": 59,
+        "name": "Bhavnagar_Zone_5",
+        "city": "Bhavnagar",
+        "zone_type": "mixed_use",
+        "area_sqkm": 1.07,
+        "building_coverage_ratio": 0.59,
+        "floor_area_ratio": 2.8,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.157377,
+              21.714087
+            ],
+            [
+              72.141239,
+              21.736863
+            ],
+            [
+              72.108072,
+              21.732807
+            ],
+            [
+              72.11409,
+              21.699739
+            ],
+            [
+              72.142578,
+              21.687189
+            ],
+            [
+              72.157377,
+              21.714087
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "id": 60,
+        "name": "Bhavnagar_Zone_6",
+        "city": "Bhavnagar",
+        "zone_type": "agricultural",
+        "area_sqkm": 7.24,
+        "building_coverage_ratio": 0.45,
+        "floor_area_ratio": 1.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.17746,
+              21.840038
+            ],
+            [
+              72.16013,
+              21.86092
+            ],
+            [
+              72.138667,
+              21.856331
+            ],
+            [
+              72.124086,
+              21.840038
+            ],
+            [
+              72.13277,
+              21.813531
+            ],
+            [
+              72.164559,
+              21.811486
+            ],
+            [
+              72.17746,
+              21.840038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "id": 61,
+        "name": "Bhavnagar_Zone_7",
+        "city": "Bhavnagar",
+        "zone_type": "mixed_use",
+        "area_sqkm": 4.95,
+        "building_coverage_ratio": 0.39,
+        "floor_area_ratio": 2.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.146213,
+              21.747458
+            ],
+            [
+              72.137564,
+              21.757002
+            ],
+            [
+              72.127409,
+              21.758605
+            ],
+            [
+              72.119899,
+              21.7523
+            ],
+            [
+              72.115655,
+              21.740572
+            ],
+            [
+              72.125936,
+              21.729858
+            ],
+            [
+              72.136633,
+              21.739082
+            ],
+            [
+              72.146213,
+              21.747458
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "id": 62,
+        "name": "Bhavnagar_Zone_8",
+        "city": "Bhavnagar",
+        "zone_type": "residential",
+        "area_sqkm": 2.51,
+        "building_coverage_ratio": 0.21,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.159524,
+              21.83659
+            ],
+            [
+              72.143271,
+              21.855554
+            ],
+            [
+              72.114726,
+              21.852852
+            ],
+            [
+              72.121495,
+              21.825245
+            ],
+            [
+              72.147709,
+              21.803968
+            ],
+            [
+              72.159524,
+              21.83659
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 63,
+      "properties": {
+        "id": 63,
+        "name": "Bhavnagar_Zone_9",
+        "city": "Bhavnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 9.46,
+        "building_coverage_ratio": 0.21,
+        "floor_area_ratio": 2.1,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.164541,
+              21.766726
+            ],
+            [
+              72.148203,
+              21.798093
+            ],
+            [
+              72.112389,
+              21.797392
+            ],
+            [
+              72.099948,
+              21.766726
+            ],
+            [
+              72.108681,
+              21.729639
+            ],
+            [
+              72.147513,
+              21.736555
+            ],
+            [
+              72.164541,
+              21.766726
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 64,
+      "properties": {
+        "id": 64,
+        "name": "Jamnagar_Zone_1",
+        "city": "Jamnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 0.73,
+        "building_coverage_ratio": 0.68,
+        "floor_area_ratio": 2.4,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.150815,
+              22.523976
+            ],
+            [
+              70.137053,
+              22.53608
+            ],
+            [
+              70.120006,
+              22.541398
+            ],
+            [
+              70.106279,
+              22.523976
+            ],
+            [
+              70.122219,
+              22.510387
+            ],
+            [
+              70.137821,
+              22.510542
+            ],
+            [
+              70.150815,
+              22.523976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 65,
+      "properties": {
+        "id": 65,
+        "name": "Jamnagar_Zone_2",
+        "city": "Jamnagar",
+        "zone_type": "mixed_use",
+        "area_sqkm": 9.94,
+        "building_coverage_ratio": 0.5,
+        "floor_area_ratio": 4.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.070643,
+              22.436595
+            ],
+            [
+              70.056375,
+              22.454581
+            ],
+            [
+              70.036283,
+              22.461782
+            ],
+            [
+              70.013444,
+              22.450362
+            ],
+            [
+              70.008387,
+              22.420392
+            ],
+            [
+              70.037273,
+              22.415743
+            ],
+            [
+              70.062802,
+              22.41055
+            ],
+            [
+              70.070643,
+              22.436595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 66,
+      "properties": {
+        "id": 66,
+        "name": "Jamnagar_Zone_3",
+        "city": "Jamnagar",
+        "zone_type": "residential",
+        "area_sqkm": 9.6,
+        "building_coverage_ratio": 0.54,
+        "floor_area_ratio": 4.0,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.077279,
+              22.426086
+            ],
+            [
+              70.052802,
+              22.452275
+            ],
+            [
+              70.016847,
+              22.462174
+            ],
+            [
+              69.997448,
+              22.426086
+            ],
+            [
+              70.016564,
+              22.389509
+            ],
+            [
+              70.054742,
+              22.396538
+            ],
+            [
+              70.077279,
+              22.426086
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 67,
+      "properties": {
+        "id": 67,
+        "name": "Jamnagar_Zone_4",
+        "city": "Jamnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 2.03,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 2.1,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.028525,
+              22.482241
+            ],
+            [
+              70.026595,
+              22.490684
+            ],
+            [
+              70.018153,
+              22.492599
+            ],
+            [
+              70.007634,
+              22.49276
+            ],
+            [
+              70.004925,
+              22.482241
+            ],
+            [
+              70.011424,
+              22.475512
+            ],
+            [
+              70.018153,
+              22.472845
+            ],
+            [
+              70.027087,
+              22.473307
+            ],
+            [
+              70.028525,
+              22.482241
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 68,
+      "properties": {
+        "id": 68,
+        "name": "Jamnagar_Zone_5",
+        "city": "Jamnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 4.39,
+        "building_coverage_ratio": 0.57,
+        "floor_area_ratio": 3.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.180196,
+              22.493519
+            ],
+            [
+              70.171976,
+              22.524174
+            ],
+            [
+              70.139636,
+              22.528101
+            ],
+            [
+              70.120216,
+              22.506673
+            ],
+            [
+              70.108509,
+              22.474728
+            ],
+            [
+              70.138803,
+              22.455286
+            ],
+            [
+              70.171161,
+              22.463886
+            ],
+            [
+              70.180196,
+              22.493519
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 69,
+      "properties": {
+        "id": 69,
+        "name": "Jamnagar_Zone_6",
+        "city": "Jamnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 7.15,
+        "building_coverage_ratio": 0.54,
+        "floor_area_ratio": 1.5,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.022332,
+              22.403058
+            ],
+            [
+              70.01315,
+              22.411752
+            ],
+            [
+              70.004456,
+              22.421114
+            ],
+            [
+              69.99297,
+              22.414543
+            ],
+            [
+              69.991046,
+              22.403058
+            ],
+            [
+              69.994226,
+              22.392828
+            ],
+            [
+              70.004456,
+              22.388001
+            ],
+            [
+              70.016874,
+              22.390639
+            ],
+            [
+              70.022332,
+              22.403058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 70,
+      "properties": {
+        "id": 70,
+        "name": "Jamnagar_Zone_7",
+        "city": "Jamnagar",
+        "zone_type": "residential",
+        "area_sqkm": 9.22,
+        "building_coverage_ratio": 0.75,
+        "floor_area_ratio": 3.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.110193,
+              22.497583
+            ],
+            [
+              70.099406,
+              22.524794
+            ],
+            [
+              70.072876,
+              22.510434
+            ],
+            [
+              70.070564,
+              22.483052
+            ],
+            [
+              70.097279,
+              22.476915
+            ],
+            [
+              70.110193,
+              22.497583
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 71,
+      "properties": {
+        "id": 71,
+        "name": "Jamnagar_Zone_8",
+        "city": "Jamnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 9.51,
+        "building_coverage_ratio": 0.29,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.062298,
+              22.489956
+            ],
+            [
+              70.063398,
+              22.499123
+            ],
+            [
+              70.05423,
+              22.502796
+            ],
+            [
+              70.044273,
+              22.499912
+            ],
+            [
+              70.045171,
+              22.489956
+            ],
+            [
+              70.047834,
+              22.483559
+            ],
+            [
+              70.05423,
+              22.482147
+            ],
+            [
+              70.063166,
+              22.48102
+            ],
+            [
+              70.062298,
+              22.489956
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 72,
+      "properties": {
+        "id": 72,
+        "name": "Jamnagar_Zone_9",
+        "city": "Jamnagar",
+        "zone_type": "mixed_use",
+        "area_sqkm": 1.29,
+        "building_coverage_ratio": 0.24,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.057548,
+              22.494076
+            ],
+            [
+              70.039254,
+              22.520063
+            ],
+            [
+              70.013267,
+              22.533975
+            ],
+            [
+              69.991356,
+              22.515987
+            ],
+            [
+              69.969872,
+              22.494076
+            ],
+            [
+              69.993922,
+              22.474731
+            ],
+            [
+              70.013267,
+              22.449136
+            ],
+            [
+              70.036447,
+              22.470897
+            ],
+            [
+              70.057548,
+              22.494076
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 73,
+      "properties": {
+        "id": 73,
+        "name": "Jamnagar_Zone_10",
+        "city": "Jamnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 9.45,
+        "building_coverage_ratio": 0.49,
+        "floor_area_ratio": 2.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.09408,
+              22.430145
+            ],
+            [
+              70.089253,
+              22.460889
+            ],
+            [
+              70.058509,
+              22.466521
+            ],
+            [
+              70.039057,
+              22.449598
+            ],
+            [
+              70.012923,
+              22.430145
+            ],
+            [
+              70.029349,
+              22.400985
+            ],
+            [
+              70.058509,
+              22.401049
+            ],
+            [
+              70.088841,
+              22.399814
+            ],
+            [
+              70.09408,
+              22.430145
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 74,
+      "properties": {
+        "id": 74,
+        "name": "Jamnagar_Zone_11",
+        "city": "Jamnagar",
+        "zone_type": "commercial",
+        "area_sqkm": 0.63,
+        "building_coverage_ratio": 0.74,
+        "floor_area_ratio": 3.8,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.057604,
+              22.432669
+            ],
+            [
+              70.027641,
+              22.470406
+            ],
+            [
+              69.99045,
+              22.450782
+            ],
+            [
+              69.982436,
+              22.408734
+            ],
+            [
+              70.029735,
+              22.388489
+            ],
+            [
+              70.057604,
+              22.432669
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 75,
+      "properties": {
+        "id": 75,
+        "name": "Jamnagar_Zone_12",
+        "city": "Jamnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 6.57,
+        "building_coverage_ratio": 0.55,
+        "floor_area_ratio": 1.1,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.168454,
+              22.438421
+            ],
+            [
+              70.153857,
+              22.454663
+            ],
+            [
+              70.135145,
+              22.454589
+            ],
+            [
+              70.126063,
+              22.438421
+            ],
+            [
+              70.131959,
+              22.416734
+            ],
+            [
+              70.158869,
+              22.413499
+            ],
+            [
+              70.168454,
+              22.438421
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 76,
+      "properties": {
+        "id": 76,
+        "name": "Jamnagar_Zone_13",
+        "city": "Jamnagar",
+        "zone_type": "agricultural",
+        "area_sqkm": 9.02,
+        "building_coverage_ratio": 0.5,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.040027,
+              22.514601
+            ],
+            [
+              70.032429,
+              22.53069
+            ],
+            [
+              70.016341,
+              22.544493
+            ],
+            [
+              69.999467,
+              22.531475
+            ],
+            [
+              69.984263,
+              22.514601
+            ],
+            [
+              70.000421,
+              22.498682
+            ],
+            [
+              70.016341,
+              22.483239
+            ],
+            [
+              70.033563,
+              22.497378
+            ],
+            [
+              70.040027,
+              22.514601
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 77,
+      "properties": {
+        "id": 77,
+        "name": "Jamnagar_Zone_14",
+        "city": "Jamnagar",
+        "zone_type": "industrial",
+        "area_sqkm": 5.66,
+        "building_coverage_ratio": 0.43,
+        "floor_area_ratio": 3.5,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.043402,
+              22.523888
+            ],
+            [
+              70.016368,
+              22.556558
+            ],
+            [
+              69.987854,
+              22.536893
+            ],
+            [
+              69.980164,
+              22.505297
+            ],
+            [
+              70.015347,
+              22.49436
+            ],
+            [
+              70.043402,
+              22.523888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 78,
+      "properties": {
+        "id": 78,
+        "name": "Junagadh_Zone_1",
+        "city": "Junagadh",
+        "zone_type": "residential",
+        "area_sqkm": 6.52,
+        "building_coverage_ratio": 0.5,
+        "floor_area_ratio": 3.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.528458,
+              21.564205
+            ],
+            [
+              70.52841,
+              21.579622
+            ],
+            [
+              70.512993,
+              21.583481
+            ],
+            [
+              70.50283,
+              21.574368
+            ],
+            [
+              70.490298,
+              21.564205
+            ],
+            [
+              70.496198,
+              21.54741
+            ],
+            [
+              70.512993,
+              21.547183
+            ],
+            [
+              70.528544,
+              21.548654
+            ],
+            [
+              70.528458,
+              21.564205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 79,
+      "properties": {
+        "id": 79,
+        "name": "Junagadh_Zone_2",
+        "city": "Junagadh",
+        "zone_type": "industrial",
+        "area_sqkm": 0.57,
+        "building_coverage_ratio": 0.42,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.403416,
+              21.539321
+            ],
+            [
+              70.392526,
+              21.54823
+            ],
+            [
+              70.383617,
+              21.561658
+            ],
+            [
+              70.374491,
+              21.548447
+            ],
+            [
+              70.37078,
+              21.539321
+            ],
+            [
+              70.368724,
+              21.524429
+            ],
+            [
+              70.383617,
+              21.517719
+            ],
+            [
+              70.396443,
+              21.526495
+            ],
+            [
+              70.403416,
+              21.539321
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 80,
+      "properties": {
+        "id": 80,
+        "name": "Junagadh_Zone_3",
+        "city": "Junagadh",
+        "zone_type": "mixed_use",
+        "area_sqkm": 9.61,
+        "building_coverage_ratio": 0.8,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.474312,
+              21.477193
+            ],
+            [
+              70.468597,
+              21.490368
+            ],
+            [
+              70.455422,
+              21.493709
+            ],
+            [
+              70.446748,
+              21.485866
+            ],
+            [
+              70.438352,
+              21.477193
+            ],
+            [
+              70.441068,
+              21.462839
+            ],
+            [
+              70.455422,
+              21.464502
+            ],
+            [
+              70.469286,
+              21.463329
+            ],
+            [
+              70.474312,
+              21.477193
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 81,
+      "properties": {
+        "id": 81,
+        "name": "Junagadh_Zone_4",
+        "city": "Junagadh",
+        "zone_type": "residential",
+        "area_sqkm": 7.25,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.445617,
+              21.516468
+            ],
+            [
+              70.421931,
+              21.537319
+            ],
+            [
+              70.398637,
+              21.545672
+            ],
+            [
+              70.382466,
+              21.527465
+            ],
+            [
+              70.383692,
+              21.506061
+            ],
+            [
+              70.400028,
+              21.49336
+            ],
+            [
+              70.429594,
+              21.486007
+            ],
+            [
+              70.445617,
+              21.516468
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 82,
+      "properties": {
+        "id": 82,
+        "name": "Junagadh_Zone_5",
+        "city": "Junagadh",
+        "zone_type": "residential",
+        "area_sqkm": 5.93,
+        "building_coverage_ratio": 0.22,
+        "floor_area_ratio": 3.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.517461,
+              21.573782
+            ],
+            [
+              70.513647,
+              21.598559
+            ],
+            [
+              70.488506,
+              21.597363
+            ],
+            [
+              70.472534,
+              21.584065
+            ],
+            [
+              70.462385,
+              21.558612
+            ],
+            [
+              70.48655,
+              21.541633
+            ],
+            [
+              70.515325,
+              21.5469
+            ],
+            [
+              70.517461,
+              21.573782
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 83,
+      "properties": {
+        "id": 83,
+        "name": "Junagadh_Zone_6",
+        "city": "Junagadh",
+        "zone_type": "residential",
+        "area_sqkm": 3.11,
+        "building_coverage_ratio": 0.76,
+        "floor_area_ratio": 2.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.458784,
+              21.550502
+            ],
+            [
+              70.443823,
+              21.59775
+            ],
+            [
+              70.403722,
+              21.568483
+            ],
+            [
+              70.403354,
+              21.532254
+            ],
+            [
+              70.438946,
+              21.518264
+            ],
+            [
+              70.458784,
+              21.550502
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 84,
+      "properties": {
+        "id": 84,
+        "name": "Junagadh_Zone_7",
+        "city": "Junagadh",
+        "zone_type": "commercial",
+        "area_sqkm": 9.17,
+        "building_coverage_ratio": 0.32,
+        "floor_area_ratio": 1.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.495883,
+              21.542373
+            ],
+            [
+              70.479115,
+              21.554192
+            ],
+            [
+              70.467296,
+              21.567305
+            ],
+            [
+              70.452634,
+              21.557035
+            ],
+            [
+              70.44739,
+              21.542373
+            ],
+            [
+              70.447565,
+              21.522643
+            ],
+            [
+              70.467296,
+              21.515812
+            ],
+            [
+              70.480099,
+              21.52957
+            ],
+            [
+              70.495883,
+              21.542373
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 85,
+      "properties": {
+        "id": 85,
+        "name": "Junagadh_Zone_8",
+        "city": "Junagadh",
+        "zone_type": "residential",
+        "area_sqkm": 1.61,
+        "building_coverage_ratio": 0.41,
+        "floor_area_ratio": 2.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.513908,
+              21.524353
+            ],
+            [
+              70.501555,
+              21.554844
+            ],
+            [
+              70.463197,
+              21.545023
+            ],
+            [
+              70.47317,
+              21.510928
+            ],
+            [
+              70.497858,
+              21.50524
+            ],
+            [
+              70.513908,
+              21.524353
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 86,
+      "properties": {
+        "id": 86,
+        "name": "Junagadh_Zone_9",
+        "city": "Junagadh",
+        "zone_type": "industrial",
+        "area_sqkm": 2.55,
+        "building_coverage_ratio": 0.42,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.52881,
+              21.530455
+            ],
+            [
+              70.522735,
+              21.544666
+            ],
+            [
+              70.503978,
+              21.548733
+            ],
+            [
+              70.499445,
+              21.530455
+            ],
+            [
+              70.505978,
+              21.515641
+            ],
+            [
+              70.521803,
+              21.517859
+            ],
+            [
+              70.52881,
+              21.530455
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 87,
+      "properties": {
+        "id": 87,
+        "name": "Junagadh_Zone_10",
+        "city": "Junagadh",
+        "zone_type": "industrial",
+        "area_sqkm": 9.26,
+        "building_coverage_ratio": 0.35,
+        "floor_area_ratio": 1.6,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.47024,
+              21.465895
+            ],
+            [
+              70.471526,
+              21.481221
+            ],
+            [
+              70.456199,
+              21.485296
+            ],
+            [
+              70.44578,
+              21.476314
+            ],
+            [
+              70.44102,
+              21.465895
+            ],
+            [
+              70.441429,
+              21.451125
+            ],
+            [
+              70.456199,
+              21.448198
+            ],
+            [
+              70.468812,
+              21.453282
+            ],
+            [
+              70.47024,
+              21.465895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 88,
+      "properties": {
+        "id": 88,
+        "name": "Junagadh_Zone_11",
+        "city": "Junagadh",
+        "zone_type": "commercial",
+        "area_sqkm": 6.42,
+        "building_coverage_ratio": 0.56,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.443572,
+              21.498475
+            ],
+            [
+              70.431458,
+              21.52263
+            ],
+            [
+              70.402376,
+              21.513902
+            ],
+            [
+              70.409422,
+              21.488167
+            ],
+            [
+              70.429627,
+              21.479955
+            ],
+            [
+              70.443572,
+              21.498475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 89,
+      "properties": {
+        "id": 89,
+        "name": "Junagadh_Zone_12",
+        "city": "Junagadh",
+        "zone_type": "agricultural",
+        "area_sqkm": 4.28,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 3.4,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.426946,
+              21.476692
+            ],
+            [
+              70.415808,
+              21.498555
+            ],
+            [
+              70.391446,
+              21.507042
+            ],
+            [
+              70.374458,
+              21.488209
+            ],
+            [
+              70.371369,
+              21.463688
+            ],
+            [
+              70.393076,
+              21.453485
+            ],
+            [
+              70.421777,
+              21.447344
+            ],
+            [
+              70.426946,
+              21.476692
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 90,
+      "properties": {
+        "id": 90,
+        "name": "Anand_Zone_1",
+        "city": "Anand",
+        "zone_type": "agricultural",
+        "area_sqkm": 9.04,
+        "building_coverage_ratio": 0.54,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.953266,
+              22.615871
+            ],
+            [
+              72.947893,
+              22.628157
+            ],
+            [
+              72.932087,
+              22.630961
+            ],
+            [
+              72.92067,
+              22.615871
+            ],
+            [
+              72.93085,
+              22.598638
+            ],
+            [
+              72.946895,
+              22.605314
+            ],
+            [
+              72.953266,
+              22.615871
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 91,
+      "properties": {
+        "id": 91,
+        "name": "Anand_Zone_2",
+        "city": "Anand",
+        "zone_type": "industrial",
+        "area_sqkm": 3.52,
+        "building_coverage_ratio": 0.39,
+        "floor_area_ratio": 1.6,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.975272,
+              22.536113
+            ],
+            [
+              72.969914,
+              22.543018
+            ],
+            [
+              72.96237,
+              22.545037
+            ],
+            [
+              72.9552,
+              22.540547
+            ],
+            [
+              72.954855,
+              22.531513
+            ],
+            [
+              72.961753,
+              22.524486
+            ],
+            [
+              72.9706,
+              22.528347
+            ],
+            [
+              72.975272,
+              22.536113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 92,
+      "properties": {
+        "id": 92,
+        "name": "Anand_Zone_3",
+        "city": "Anand",
+        "zone_type": "residential",
+        "area_sqkm": 9.16,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 3.5,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.898802,
+              22.513658
+            ],
+            [
+              72.891213,
+              22.521157
+            ],
+            [
+              72.87995,
+              22.52007
+            ],
+            [
+              72.878009,
+              22.505835
+            ],
+            [
+              72.892034,
+              22.503629
+            ],
+            [
+              72.898802,
+              22.513658
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 93,
+      "properties": {
+        "id": 93,
+        "name": "Anand_Zone_4",
+        "city": "Anand",
+        "zone_type": "commercial",
+        "area_sqkm": 4.3,
+        "building_coverage_ratio": 0.53,
+        "floor_area_ratio": 1.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.92924,
+              22.601917
+            ],
+            [
+              72.923404,
+              22.610596
+            ],
+            [
+              72.913412,
+              22.615371
+            ],
+            [
+              72.903318,
+              22.608256
+            ],
+            [
+              72.908536,
+              22.59809
+            ],
+            [
+              72.914135,
+              22.591633
+            ],
+            [
+              72.924102,
+              22.592363
+            ],
+            [
+              72.92924,
+              22.601917
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 94,
+      "properties": {
+        "id": 94,
+        "name": "Anand_Zone_5",
+        "city": "Anand",
+        "zone_type": "commercial",
+        "area_sqkm": 1.82,
+        "building_coverage_ratio": 0.8,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.961319,
+              22.567301
+            ],
+            [
+              72.957038,
+              22.589968
+            ],
+            [
+              72.930255,
+              22.591025
+            ],
+            [
+              72.916505,
+              22.567301
+            ],
+            [
+              72.932156,
+              22.546872
+            ],
+            [
+              72.95206,
+              22.553257
+            ],
+            [
+              72.961319,
+              22.567301
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 95,
+      "properties": {
+        "id": 95,
+        "name": "Anand_Zone_6",
+        "city": "Anand",
+        "zone_type": "commercial",
+        "area_sqkm": 1.55,
+        "building_coverage_ratio": 0.77,
+        "floor_area_ratio": 1.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.94924,
+              22.549655
+            ],
+            [
+              72.940211,
+              22.567034
+            ],
+            [
+              72.922832,
+              22.573634
+            ],
+            [
+              72.901679,
+              22.570808
+            ],
+            [
+              72.899064,
+              22.549655
+            ],
+            [
+              72.896464,
+              22.523287
+            ],
+            [
+              72.922832,
+              22.514366
+            ],
+            [
+              72.949537,
+              22.52295
+            ],
+            [
+              72.94924,
+              22.549655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 96,
+      "properties": {
+        "id": 96,
+        "name": "Anand_Zone_7",
+        "city": "Anand",
+        "zone_type": "industrial",
+        "area_sqkm": 6.85,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.018587,
+              22.554914
+            ],
+            [
+              72.997112,
+              22.585314
+            ],
+            [
+              72.966267,
+              22.583838
+            ],
+            [
+              72.931815,
+              22.574684
+            ],
+            [
+              72.93298,
+              22.535704
+            ],
+            [
+              72.964897,
+              22.519987
+            ],
+            [
+              73.002298,
+              22.518011
+            ],
+            [
+              73.018587,
+              22.554914
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 97,
+      "properties": {
+        "id": 97,
+        "name": "Anand_Zone_8",
+        "city": "Anand",
+        "zone_type": "industrial",
+        "area_sqkm": 7.1,
+        "building_coverage_ratio": 0.25,
+        "floor_area_ratio": 2.5,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.944994,
+              22.620747
+            ],
+            [
+              72.940487,
+              22.629637
+            ],
+            [
+              72.931596,
+              22.634349
+            ],
+            [
+              72.919307,
+              22.633036
+            ],
+            [
+              72.914839,
+              22.620747
+            ],
+            [
+              72.917433,
+              22.606584
+            ],
+            [
+              72.931596,
+              22.601686
+            ],
+            [
+              72.941936,
+              22.610407
+            ],
+            [
+              72.944994,
+              22.620747
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 98,
+      "properties": {
+        "id": 98,
+        "name": "Anand_Zone_9",
+        "city": "Anand",
+        "zone_type": "residential",
+        "area_sqkm": 9.18,
+        "building_coverage_ratio": 0.33,
+        "floor_area_ratio": 2.1,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.944659,
+              22.572326
+            ],
+            [
+              72.917213,
+              22.597691
+            ],
+            [
+              72.886952,
+              22.599374
+            ],
+            [
+              72.873793,
+              22.572326
+            ],
+            [
+              72.886635,
+              22.544729
+            ],
+            [
+              72.924584,
+              22.534193
+            ],
+            [
+              72.944659,
+              22.572326
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 99,
+      "properties": {
+        "id": 99,
+        "name": "Anand_Zone_10",
+        "city": "Anand",
+        "zone_type": "residential",
+        "area_sqkm": 7.58,
+        "building_coverage_ratio": 0.34,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.932641,
+              22.542927
+            ],
+            [
+              72.925257,
+              22.555296
+            ],
+            [
+              72.912889,
+              22.558398
+            ],
+            [
+              72.896899,
+              22.558918
+            ],
+            [
+              72.899379,
+              22.542927
+            ],
+            [
+              72.900683,
+              22.530721
+            ],
+            [
+              72.912889,
+              22.528699
+            ],
+            [
+              72.925636,
+              22.530181
+            ],
+            [
+              72.932641,
+              22.542927
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 100,
+      "properties": {
+        "id": 100,
+        "name": "Anand_Zone_11",
+        "city": "Anand",
+        "zone_type": "commercial",
+        "area_sqkm": 4.01,
+        "building_coverage_ratio": 0.23,
+        "floor_area_ratio": 2.1,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.927675,
+              22.563697
+            ],
+            [
+              72.921136,
+              22.578168
+            ],
+            [
+              72.904732,
+              22.577638
+            ],
+            [
+              72.897024,
+              22.563697
+            ],
+            [
+              72.905187,
+              22.550544
+            ],
+            [
+              72.92155,
+              22.548509
+            ],
+            [
+              72.927675,
+              22.563697
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 101,
+      "properties": {
+        "id": 101,
+        "name": "Navsari_Zone_1",
+        "city": "Navsari",
+        "zone_type": "residential",
+        "area_sqkm": 9.0,
+        "building_coverage_ratio": 0.55,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.995209,
+              20.939532
+            ],
+            [
+              72.986482,
+              20.952168
+            ],
+            [
+              72.973044,
+              20.950171
+            ],
+            [
+              72.966993,
+              20.939532
+            ],
+            [
+              72.973766,
+              20.930144
+            ],
+            [
+              72.986969,
+              20.926053
+            ],
+            [
+              72.995209,
+              20.939532
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 102,
+      "properties": {
+        "id": 102,
+        "name": "Navsari_Zone_2",
+        "city": "Navsari",
+        "zone_type": "industrial",
+        "area_sqkm": 7.96,
+        "building_coverage_ratio": 0.41,
+        "floor_area_ratio": 1.9,
+        "is_gidc": true,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.946986,
+              20.907282
+            ],
+            [
+              72.942527,
+              20.917074
+            ],
+            [
+              72.931897,
+              20.915901
+            ],
+            [
+              72.927959,
+              20.907282
+            ],
+            [
+              72.930596,
+              20.896408
+            ],
+            [
+              72.941129,
+              20.899911
+            ],
+            [
+              72.946986,
+              20.907282
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 103,
+      "properties": {
+        "id": 103,
+        "name": "Navsari_Zone_3",
+        "city": "Navsari",
+        "zone_type": "commercial",
+        "area_sqkm": 3.66,
+        "building_coverage_ratio": 0.47,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.962979,
+              20.961208
+            ],
+            [
+              72.965123,
+              20.985551
+            ],
+            [
+              72.939083,
+              20.990243
+            ],
+            [
+              72.928186,
+              20.969646
+            ],
+            [
+              72.920462,
+              20.949049
+            ],
+            [
+              72.941903,
+              20.944528
+            ],
+            [
+              72.959481,
+              20.943939
+            ],
+            [
+              72.962979,
+              20.961208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 104,
+      "properties": {
+        "id": 104,
+        "name": "Navsari_Zone_4",
+        "city": "Navsari",
+        "zone_type": "commercial",
+        "area_sqkm": 4.99,
+        "building_coverage_ratio": 0.23,
+        "floor_area_ratio": 1.1,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.990437,
+              20.947012
+            ],
+            [
+              72.966015,
+              20.974538
+            ],
+            [
+              72.934476,
+              20.974111
+            ],
+            [
+              72.920086,
+              20.947012
+            ],
+            [
+              72.932594,
+              20.916652
+            ],
+            [
+              72.972792,
+              20.907746
+            ],
+            [
+              72.990437,
+              20.947012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 105,
+      "properties": {
+        "id": 105,
+        "name": "Navsari_Zone_5",
+        "city": "Navsari",
+        "zone_type": "agricultural",
+        "area_sqkm": 6.8,
+        "building_coverage_ratio": 0.35,
+        "floor_area_ratio": 2.4,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.926333,
+              20.961787
+            ],
+            [
+              72.916652,
+              20.97912
+            ],
+            [
+              72.897687,
+              20.984319
+            ],
+            [
+              72.881543,
+              20.972039
+            ],
+            [
+              72.884696,
+              20.953054
+            ],
+            [
+              72.899578,
+              20.947542
+            ],
+            [
+              72.91602,
+              20.945247
+            ],
+            [
+              72.926333,
+              20.961787
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 106,
+      "properties": {
+        "id": 106,
+        "name": "Navsari_Zone_6",
+        "city": "Navsari",
+        "zone_type": "commercial",
+        "area_sqkm": 8.63,
+        "building_coverage_ratio": 0.6,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.960827,
+              20.938143
+            ],
+            [
+              72.959681,
+              20.947002
+            ],
+            [
+              72.950821,
+              20.947062
+            ],
+            [
+              72.940986,
+              20.947978
+            ],
+            [
+              72.938985,
+              20.938143
+            ],
+            [
+              72.940937,
+              20.928258
+            ],
+            [
+              72.950821,
+              20.924743
+            ],
+            [
+              72.959377,
+              20.929587
+            ],
+            [
+              72.960827,
+              20.938143
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 107,
+      "properties": {
+        "id": 107,
+        "name": "Navsari_Zone_7",
+        "city": "Navsari",
+        "zone_type": "industrial",
+        "area_sqkm": 3.02,
+        "building_coverage_ratio": 0.61,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.018389,
+              20.922902
+            ],
+            [
+              73.001751,
+              20.944635
+            ],
+            [
+              72.975782,
+              20.960749
+            ],
+            [
+              72.95311,
+              20.93798
+            ],
+            [
+              72.94753,
+              20.905137
+            ],
+            [
+              72.976225,
+              20.886999
+            ],
+            [
+              73.00769,
+              20.893722
+            ],
+            [
+              73.018389,
+              20.922902
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 108,
+      "properties": {
+        "id": 108,
+        "name": "Navsari_Zone_8",
+        "city": "Navsari",
+        "zone_type": "agricultural",
+        "area_sqkm": 1.55,
+        "building_coverage_ratio": 0.21,
+        "floor_area_ratio": 3.8,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.028666,
+              20.936084
+            ],
+            [
+              73.014824,
+              20.954239
+            ],
+            [
+              72.991929,
+              20.957584
+            ],
+            [
+              72.985209,
+              20.936084
+            ],
+            [
+              72.992442,
+              20.915473
+            ],
+            [
+              73.013204,
+              20.920736
+            ],
+            [
+              73.028666,
+              20.936084
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 109,
+      "properties": {
+        "id": 109,
+        "name": "Navsari_Zone_9",
+        "city": "Navsari",
+        "zone_type": "industrial",
+        "area_sqkm": 3.19,
+        "building_coverage_ratio": 0.56,
+        "floor_area_ratio": 1.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.955803,
+              20.985536
+            ],
+            [
+              72.945764,
+              21.000845
+            ],
+            [
+              72.920369,
+              21.000372
+            ],
+            [
+              72.921302,
+              20.971377
+            ],
+            [
+              72.947153,
+              20.965951
+            ],
+            [
+              72.955803,
+              20.985536
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 110,
+      "properties": {
+        "id": 110,
+        "name": "Morbi_Zone_1",
+        "city": "Morbi",
+        "zone_type": "commercial",
+        "area_sqkm": 1.86,
+        "building_coverage_ratio": 0.64,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.866957,
+              22.834281
+            ],
+            [
+              70.853816,
+              22.850536
+            ],
+            [
+              70.830554,
+              22.847345
+            ],
+            [
+              70.832141,
+              22.822371
+            ],
+            [
+              70.854052,
+              22.817301
+            ],
+            [
+              70.866957,
+              22.834281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 111,
+      "properties": {
+        "id": 111,
+        "name": "Morbi_Zone_2",
+        "city": "Morbi",
+        "zone_type": "commercial",
+        "area_sqkm": 9.24,
+        "building_coverage_ratio": 0.56,
+        "floor_area_ratio": 1.5,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.89437,
+              22.812773
+            ],
+            [
+              70.873291,
+              22.831375
+            ],
+            [
+              70.850614,
+              22.847134
+            ],
+            [
+              70.8352,
+              22.823973
+            ],
+            [
+              70.83247,
+              22.800259
+            ],
+            [
+              70.852917,
+              22.788504
+            ],
+            [
+              70.875175,
+              22.791809
+            ],
+            [
+              70.89437,
+              22.812773
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 112,
+      "properties": {
+        "id": 112,
+        "name": "Morbi_Zone_3",
+        "city": "Morbi",
+        "zone_type": "industrial",
+        "area_sqkm": 5.69,
+        "building_coverage_ratio": 0.43,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.843105,
+              22.881742
+            ],
+            [
+              70.83512,
+              22.904152
+            ],
+            [
+              70.811999,
+              22.904743
+            ],
+            [
+              70.796039,
+              22.891956
+            ],
+            [
+              70.794473,
+              22.870774
+            ],
+            [
+              70.809919,
+              22.849628
+            ],
+            [
+              70.832959,
+              22.862041
+            ],
+            [
+              70.843105,
+              22.881742
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 113,
+      "properties": {
+        "id": 113,
+        "name": "Morbi_Zone_4",
+        "city": "Morbi",
+        "zone_type": "commercial",
+        "area_sqkm": 1.34,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 3.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.867984,
+              22.811358
+            ],
+            [
+              70.864237,
+              22.833344
+            ],
+            [
+              70.840365,
+              22.839132
+            ],
+            [
+              70.825071,
+              22.821776
+            ],
+            [
+              70.818225,
+              22.797644
+            ],
+            [
+              70.840997,
+              22.786357
+            ],
+            [
+              70.862798,
+              22.791177
+            ],
+            [
+              70.867984,
+              22.811358
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 114,
+      "properties": {
+        "id": 114,
+        "name": "Morbi_Zone_5",
+        "city": "Morbi",
+        "zone_type": "industrial",
+        "area_sqkm": 8.47,
+        "building_coverage_ratio": 0.25,
+        "floor_area_ratio": 1.8,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.923727,
+              22.819652
+            ],
+            [
+              70.906282,
+              22.839425
+            ],
+            [
+              70.881823,
+              22.832755
+            ],
+            [
+              70.880136,
+              22.805324
+            ],
+            [
+              70.904636,
+              22.804948
+            ],
+            [
+              70.923727,
+              22.819652
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 115,
+      "properties": {
+        "id": 115,
+        "name": "Morbi_Zone_6",
+        "city": "Morbi",
+        "zone_type": "residential",
+        "area_sqkm": 7.16,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 2.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.806284,
+              22.791936
+            ],
+            [
+              70.800122,
+              22.802755
+            ],
+            [
+              70.784762,
+              22.807722
+            ],
+            [
+              70.783957,
+              22.791936
+            ],
+            [
+              70.786893,
+              22.779842
+            ],
+            [
+              70.801716,
+              22.778357
+            ],
+            [
+              70.806284,
+              22.791936
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 116,
+      "properties": {
+        "id": 116,
+        "name": "Morbi_Zone_7",
+        "city": "Morbi",
+        "zone_type": "mixed_use",
+        "area_sqkm": 8.86,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.859939,
+              22.817576
+            ],
+            [
+              70.858811,
+              22.839073
+            ],
+            [
+              70.837314,
+              22.838882
+            ],
+            [
+              70.820361,
+              22.834529
+            ],
+            [
+              70.817692,
+              22.817576
+            ],
+            [
+              70.822917,
+              22.803178
+            ],
+            [
+              70.837314,
+              22.788312
+            ],
+            [
+              70.851972,
+              22.802918
+            ],
+            [
+              70.859939,
+              22.817576
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 117,
+      "properties": {
+        "id": 117,
+        "name": "Morbi_Zone_8",
+        "city": "Morbi",
+        "zone_type": "residential",
+        "area_sqkm": 4.61,
+        "building_coverage_ratio": 0.58,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.831706,
+              22.787117
+            ],
+            [
+              70.818419,
+              22.815942
+            ],
+            [
+              70.789587,
+              22.80823
+            ],
+            [
+              70.772401,
+              22.787117
+            ],
+            [
+              70.788792,
+              22.764627
+            ],
+            [
+              70.813072,
+              22.767553
+            ],
+            [
+              70.831706,
+              22.787117
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 118,
+      "properties": {
+        "id": 118,
+        "name": "Morbi_Zone_9",
+        "city": "Morbi",
+        "zone_type": "agricultural",
+        "area_sqkm": 4.22,
+        "building_coverage_ratio": 0.62,
+        "floor_area_ratio": 1.3,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.825664,
+              22.794846
+            ],
+            [
+              70.817763,
+              22.823874
+            ],
+            [
+              70.783138,
+              22.825789
+            ],
+            [
+              70.776692,
+              22.794846
+            ],
+            [
+              70.785836,
+              22.768577
+            ],
+            [
+              70.819703,
+              22.762456
+            ],
+            [
+              70.825664,
+              22.794846
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 119,
+      "properties": {
+        "id": 119,
+        "name": "Morbi_Zone_10",
+        "city": "Morbi",
+        "zone_type": "residential",
+        "area_sqkm": 9.13,
+        "building_coverage_ratio": 0.41,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.910783,
+              22.783036
+            ],
+            [
+              70.88688,
+              22.803697
+            ],
+            [
+              70.85685,
+              22.799977
+            ],
+            [
+              70.860916,
+              22.769049
+            ],
+            [
+              70.886841,
+              22.762497
+            ],
+            [
+              70.910783,
+              22.783036
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 120,
+      "properties": {
+        "id": 120,
+        "name": "Morbi_Zone_11",
+        "city": "Morbi",
+        "zone_type": "residential",
+        "area_sqkm": 2.16,
+        "building_coverage_ratio": 0.29,
+        "floor_area_ratio": 3.0,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.842613,
+              22.775195
+            ],
+            [
+              70.836797,
+              22.795423
+            ],
+            [
+              70.816221,
+              22.790603
+            ],
+            [
+              70.806223,
+              22.775195
+            ],
+            [
+              70.812509,
+              22.753356
+            ],
+            [
+              70.836086,
+              22.756197
+            ],
+            [
+              70.842613,
+              22.775195
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 121,
+      "properties": {
+        "id": 121,
+        "name": "Morbi_Zone_12",
+        "city": "Morbi",
+        "zone_type": "industrial",
+        "area_sqkm": 5.97,
+        "building_coverage_ratio": 0.76,
+        "floor_area_ratio": 3.3,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.835181,
+              22.85097
+            ],
+            [
+              70.825783,
+              22.879941
+            ],
+            [
+              70.797582,
+              22.873303
+            ],
+            [
+              70.782677,
+              22.860603
+            ],
+            [
+              70.770915,
+              22.835673
+            ],
+            [
+              70.796904,
+              22.825667
+            ],
+            [
+              70.823878,
+              22.824388
+            ],
+            [
+              70.835181,
+              22.85097
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 122,
+      "properties": {
+        "id": 122,
+        "name": "Morbi_Zone_13",
+        "city": "Morbi",
+        "zone_type": "agricultural",
+        "area_sqkm": 7.72,
+        "building_coverage_ratio": 0.79,
+        "floor_area_ratio": 3.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.821298,
+              22.817505
+            ],
+            [
+              70.787724,
+              22.843415
+            ],
+            [
+              70.745454,
+              22.8421
+            ],
+            [
+              70.7477,
+              22.794542
+            ],
+            [
+              70.789269,
+              22.78684
+            ],
+            [
+              70.821298,
+              22.817505
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 123,
+      "properties": {
+        "id": 123,
+        "name": "Morbi_Zone_14",
+        "city": "Morbi",
+        "zone_type": "residential",
+        "area_sqkm": 0.86,
+        "building_coverage_ratio": 0.65,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.922701,
+              22.838847
+            ],
+            [
+              70.895117,
+              22.862786
+            ],
+            [
+              70.861808,
+              22.857397
+            ],
+            [
+              70.866203,
+              22.823491
+            ],
+            [
+              70.898608,
+              22.804166
+            ],
+            [
+              70.922701,
+              22.838847
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 124,
+      "properties": {
+        "id": 124,
+        "name": "Mehsana_Zone_1",
+        "city": "Mehsana",
+        "zone_type": "institutional",
+        "area_sqkm": 4.66,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.361713,
+              23.578779
+            ],
+            [
+              72.352634,
+              23.593025
+            ],
+            [
+              72.329722,
+              23.604217
+            ],
+            [
+              72.326965,
+              23.578779
+            ],
+            [
+              72.336122,
+              23.564425
+            ],
+            [
+              72.353438,
+              23.563141
+            ],
+            [
+              72.361713,
+              23.578779
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 125,
+      "properties": {
+        "id": 125,
+        "name": "Mehsana_Zone_2",
+        "city": "Mehsana",
+        "zone_type": "residential",
+        "area_sqkm": 3.74,
+        "building_coverage_ratio": 0.61,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.445897,
+              23.589737
+            ],
+            [
+              72.439134,
+              23.606799
+            ],
+            [
+              72.422071,
+              23.624756
+            ],
+            [
+              72.401366,
+              23.610442
+            ],
+            [
+              72.395324,
+              23.589737
+            ],
+            [
+              72.396412,
+              23.564078
+            ],
+            [
+              72.422071,
+              23.554264
+            ],
+            [
+              72.446511,
+              23.565297
+            ],
+            [
+              72.445897,
+              23.589737
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 126,
+      "properties": {
+        "id": 126,
+        "name": "Mehsana_Zone_3",
+        "city": "Mehsana",
+        "zone_type": "residential",
+        "area_sqkm": 5.91,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 2.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.335199,
+              23.605779
+            ],
+            [
+              72.332238,
+              23.617788
+            ],
+            [
+              72.320475,
+              23.614144
+            ],
+            [
+              72.309157,
+              23.605779
+            ],
+            [
+              72.319389,
+              23.595533
+            ],
+            [
+              72.333406,
+              23.591746
+            ],
+            [
+              72.335199,
+              23.605779
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 127,
+      "properties": {
+        "id": 127,
+        "name": "Mehsana_Zone_4",
+        "city": "Mehsana",
+        "zone_type": "mixed_use",
+        "area_sqkm": 9.7,
+        "building_coverage_ratio": 0.24,
+        "floor_area_ratio": 2.7,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.37724,
+              23.610806
+            ],
+            [
+              72.35895,
+              23.632586
+            ],
+            [
+              72.332135,
+              23.652194
+            ],
+            [
+              72.315369,
+              23.623429
+            ],
+            [
+              72.307981,
+              23.594625
+            ],
+            [
+              72.33102,
+              23.564537
+            ],
+            [
+              72.361881,
+              23.585351
+            ],
+            [
+              72.37724,
+              23.610806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 128,
+      "properties": {
+        "id": 128,
+        "name": "Mehsana_Zone_5",
+        "city": "Mehsana",
+        "zone_type": "commercial",
+        "area_sqkm": 2.4,
+        "building_coverage_ratio": 0.73,
+        "floor_area_ratio": 1.2,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.436703,
+              23.594532
+            ],
+            [
+              72.42165,
+              23.617206
+            ],
+            [
+              72.396357,
+              23.626127
+            ],
+            [
+              72.383546,
+              23.604174
+            ],
+            [
+              72.385869,
+              23.586009
+            ],
+            [
+              72.396111,
+              23.56186
+            ],
+            [
+              72.424031,
+              23.568872
+            ],
+            [
+              72.436703,
+              23.594532
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 129,
+      "properties": {
+        "id": 129,
+        "name": "Mehsana_Zone_6",
+        "city": "Mehsana",
+        "zone_type": "residential",
+        "area_sqkm": 3.79,
+        "building_coverage_ratio": 0.24,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.38902,
+              23.537766
+            ],
+            [
+              72.362706,
+              23.564406
+            ],
+            [
+              72.336199,
+              23.550735
+            ],
+            [
+              72.32802,
+              23.518854
+            ],
+            [
+              72.360735,
+              23.517192
+            ],
+            [
+              72.38902,
+              23.537766
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 130,
+      "properties": {
+        "id": 130,
+        "name": "Mehsana_Zone_7",
+        "city": "Mehsana",
+        "zone_type": "commercial",
+        "area_sqkm": 4.6,
+        "building_coverage_ratio": 0.38,
+        "floor_area_ratio": 3.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.348449,
+              23.588609
+            ],
+            [
+              72.344676,
+              23.600443
+            ],
+            [
+              72.33379,
+              23.593724
+            ],
+            [
+              72.331661,
+              23.581947
+            ],
+            [
+              72.343881,
+              23.579219
+            ],
+            [
+              72.348449,
+              23.588609
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 131,
+      "properties": {
+        "id": 131,
+        "name": "Mehsana_Zone_8",
+        "city": "Mehsana",
+        "zone_type": "commercial",
+        "area_sqkm": 1.0,
+        "building_coverage_ratio": 0.66,
+        "floor_area_ratio": 3.1,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.38991,
+              23.580621
+            ],
+            [
+              72.377992,
+              23.601342
+            ],
+            [
+              72.349432,
+              23.609368
+            ],
+            [
+              72.327473,
+              23.580621
+            ],
+            [
+              72.351889,
+              23.55613
+            ],
+            [
+              72.380089,
+              23.55627
+            ],
+            [
+              72.38991,
+              23.580621
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 132,
+      "properties": {
+        "id": 132,
+        "name": "Mehsana_Zone_9",
+        "city": "Mehsana",
+        "zone_type": "residential",
+        "area_sqkm": 6.09,
+        "building_coverage_ratio": 0.34,
+        "floor_area_ratio": 3.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.427884,
+              23.573583
+            ],
+            [
+              72.401889,
+              23.595442
+            ],
+            [
+              72.378726,
+              23.585252
+            ],
+            [
+              72.378729,
+              23.561917
+            ],
+            [
+              72.402835,
+              23.548813
+            ],
+            [
+              72.427884,
+              23.573583
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 133,
+      "properties": {
+        "id": 133,
+        "name": "Mehsana_Zone_10",
+        "city": "Mehsana",
+        "zone_type": "mixed_use",
+        "area_sqkm": 9.98,
+        "building_coverage_ratio": 0.28,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.372657,
+              23.620925
+            ],
+            [
+              72.367797,
+              23.637347
+            ],
+            [
+              72.353352,
+              23.627543
+            ],
+            [
+              72.350038,
+              23.6119
+            ],
+            [
+              72.36748,
+              23.605478
+            ],
+            [
+              72.372657,
+              23.620925
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 134,
+      "properties": {
+        "id": 134,
+        "name": "Mehsana_Zone_11",
+        "city": "Mehsana",
+        "zone_type": "industrial",
+        "area_sqkm": 7.27,
+        "building_coverage_ratio": 0.76,
+        "floor_area_ratio": 3.3,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.429236,
+              23.554655
+            ],
+            [
+              72.424864,
+              23.568538
+            ],
+            [
+              72.410853,
+              23.567537
+            ],
+            [
+              72.399619,
+              23.561481
+            ],
+            [
+              72.399018,
+              23.547539
+            ],
+            [
+              72.408895,
+              23.533197
+            ],
+            [
+              72.424506,
+              23.541221
+            ],
+            [
+              72.429236,
+              23.554655
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 135,
+      "properties": {
+        "id": 135,
+        "name": "Mehsana_Zone_12",
+        "city": "Mehsana",
+        "zone_type": "industrial",
+        "area_sqkm": 3.4,
+        "building_coverage_ratio": 0.53,
+        "floor_area_ratio": 1.4,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.432174,
+              23.615113
+            ],
+            [
+              72.425816,
+              23.625568
+            ],
+            [
+              72.414396,
+              23.624439
+            ],
+            [
+              72.411268,
+              23.615113
+            ],
+            [
+              72.414246,
+              23.605527
+            ],
+            [
+              72.423769,
+              23.608205
+            ],
+            [
+              72.432174,
+              23.615113
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 136,
+      "properties": {
+        "id": 136,
+        "name": "Mehsana_Zone_13",
+        "city": "Mehsana",
+        "zone_type": "residential",
+        "area_sqkm": 1.07,
+        "building_coverage_ratio": 0.71,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.397476,
+              23.624616
+            ],
+            [
+              72.383977,
+              23.645795
+            ],
+            [
+              72.362799,
+              23.657902
+            ],
+            [
+              72.334991,
+              23.652424
+            ],
+            [
+              72.326216,
+              23.624616
+            ],
+            [
+              72.334983,
+              23.596801
+            ],
+            [
+              72.362799,
+              23.598824
+            ],
+            [
+              72.392176,
+              23.595239
+            ],
+            [
+              72.397476,
+              23.624616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 137,
+      "properties": {
+        "id": 137,
+        "name": "Mehsana_Zone_14",
+        "city": "Mehsana",
+        "zone_type": "agricultural",
+        "area_sqkm": 9.27,
+        "building_coverage_ratio": 0.74,
+        "floor_area_ratio": 3.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.437065,
+              23.566004
+            ],
+            [
+              72.428248,
+              23.584792
+            ],
+            [
+              72.409325,
+              23.575317
+            ],
+            [
+              72.409377,
+              23.556729
+            ],
+            [
+              72.427942,
+              23.548158
+            ],
+            [
+              72.437065,
+              23.566004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 138,
+      "properties": {
+        "id": 138,
+        "name": "Mehsana_Zone_15",
+        "city": "Mehsana",
+        "zone_type": "commercial",
+        "area_sqkm": 5.76,
+        "building_coverage_ratio": 0.77,
+        "floor_area_ratio": 3.8,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.402109,
+              23.57372
+            ],
+            [
+              72.396596,
+              23.602329
+            ],
+            [
+              72.367988,
+              23.615247
+            ],
+            [
+              72.346344,
+              23.595364
+            ],
+            [
+              72.322357,
+              23.57372
+            ],
+            [
+              72.3432,
+              23.548933
+            ],
+            [
+              72.367988,
+              23.527397
+            ],
+            [
+              72.3893,
+              23.552409
+            ],
+            [
+              72.402109,
+              23.57372
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 139,
+      "properties": {
+        "id": 139,
+        "name": "Bharuch_Zone_1",
+        "city": "Bharuch",
+        "zone_type": "agricultural",
+        "area_sqkm": 1.31,
+        "building_coverage_ratio": 0.35,
+        "floor_area_ratio": 2.6,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.015411,
+              21.753752
+            ],
+            [
+              72.994086,
+              21.777416
+            ],
+            [
+              72.962349,
+              21.771224
+            ],
+            [
+              72.960727,
+              21.735102
+            ],
+            [
+              72.996342,
+              21.723144
+            ],
+            [
+              73.015411,
+              21.753752
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 140,
+      "properties": {
+        "id": 140,
+        "name": "Bharuch_Zone_2",
+        "city": "Bharuch",
+        "zone_type": "commercial",
+        "area_sqkm": 8.44,
+        "building_coverage_ratio": 0.71,
+        "floor_area_ratio": 2.3,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.996185,
+              21.691822
+            ],
+            [
+              72.994445,
+              21.706834
+            ],
+            [
+              72.979432,
+              21.716936
+            ],
+            [
+              72.962472,
+              21.708782
+            ],
+            [
+              72.957507,
+              21.691822
+            ],
+            [
+              72.962246,
+              21.674636
+            ],
+            [
+              72.979432,
+              21.674476
+            ],
+            [
+              72.999743,
+              21.671511
+            ],
+            [
+              72.996185,
+              21.691822
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 141,
+      "properties": {
+        "id": 141,
+        "name": "Bharuch_Zone_3",
+        "city": "Bharuch",
+        "zone_type": "industrial",
+        "area_sqkm": 2.21,
+        "building_coverage_ratio": 0.66,
+        "floor_area_ratio": 1.8,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.953611,
+              21.686491
+            ],
+            [
+              72.949359,
+              21.702091
+            ],
+            [
+              72.934214,
+              21.697123
+            ],
+            [
+              72.927421,
+              21.686491
+            ],
+            [
+              72.93427,
+              21.675956
+            ],
+            [
+              72.949694,
+              21.67031
+            ],
+            [
+              72.953611,
+              21.686491
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 142,
+      "properties": {
+        "id": 142,
+        "name": "Bharuch_Zone_4",
+        "city": "Bharuch",
+        "zone_type": "residential",
+        "area_sqkm": 5.76,
+        "building_coverage_ratio": 0.34,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.06861,
+              21.67
+            ],
+            [
+              73.039884,
+              21.715345
+            ],
+            [
+              72.996184,
+              21.691044
+            ],
+            [
+              72.989229,
+              21.643901
+            ],
+            [
+              73.038014,
+              21.630409
+            ],
+            [
+              73.06861,
+              21.67
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 143,
+      "properties": {
+        "id": 143,
+        "name": "Bharuch_Zone_5",
+        "city": "Bharuch",
+        "zone_type": "commercial",
+        "area_sqkm": 1.58,
+        "building_coverage_ratio": 0.25,
+        "floor_area_ratio": 1.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.00181,
+              21.718628
+            ],
+            [
+              73.000396,
+              21.732917
+            ],
+            [
+              72.986106,
+              21.737017
+            ],
+            [
+              72.975421,
+              21.729314
+            ],
+            [
+              72.963609,
+              21.718628
+            ],
+            [
+              72.972411,
+              21.704932
+            ],
+            [
+              72.986106,
+              21.691461
+            ],
+            [
+              73.004619,
+              21.700115
+            ],
+            [
+              73.00181,
+              21.718628
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 144,
+      "properties": {
+        "id": 144,
+        "name": "Bharuch_Zone_6",
+        "city": "Bharuch",
+        "zone_type": "agricultural",
+        "area_sqkm": 6.41,
+        "building_coverage_ratio": 0.3,
+        "floor_area_ratio": 1.1,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.983316,
+              21.746362
+            ],
+            [
+              72.964331,
+              21.775739
+            ],
+            [
+              72.927953,
+              21.765857
+            ],
+            [
+              72.920651,
+              21.721562
+            ],
+            [
+              72.968006,
+              21.705674
+            ],
+            [
+              72.983316,
+              21.746362
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 145,
+      "properties": {
+        "id": 145,
+        "name": "Vapi_Zone_1",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 8.39,
+        "building_coverage_ratio": 0.22,
+        "floor_area_ratio": 3.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.915137,
+              20.34214
+            ],
+            [
+              72.904329,
+              20.357359
+            ],
+            [
+              72.888998,
+              20.349686
+            ],
+            [
+              72.886405,
+              20.33271
+            ],
+            [
+              72.9035,
+              20.329473
+            ],
+            [
+              72.915137,
+              20.34214
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 146,
+      "properties": {
+        "id": 146,
+        "name": "Vapi_Zone_2",
+        "city": "Vapi",
+        "zone_type": "residential",
+        "area_sqkm": 8.55,
+        "building_coverage_ratio": 0.52,
+        "floor_area_ratio": 1.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.93341,
+              20.352779
+            ],
+            [
+              72.924107,
+              20.369981
+            ],
+            [
+              72.906905,
+              20.383899
+            ],
+            [
+              72.880657,
+              20.379027
+            ],
+            [
+              72.88019,
+              20.352779
+            ],
+            [
+              72.882073,
+              20.327947
+            ],
+            [
+              72.906905,
+              20.314473
+            ],
+            [
+              72.92456,
+              20.335124
+            ],
+            [
+              72.93341,
+              20.352779
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 147,
+      "properties": {
+        "id": 147,
+        "name": "Vapi_Zone_3",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 4.73,
+        "building_coverage_ratio": 0.77,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.918556,
+              20.434573
+            ],
+            [
+              72.907754,
+              20.455493
+            ],
+            [
+              72.885642,
+              20.458359
+            ],
+            [
+              72.869498,
+              20.444961
+            ],
+            [
+              72.867451,
+              20.423198
+            ],
+            [
+              72.884372,
+              20.405223
+            ],
+            [
+              72.903235,
+              20.419319
+            ],
+            [
+              72.918556,
+              20.434573
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 148,
+      "properties": {
+        "id": 148,
+        "name": "Vapi_Zone_4",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 6.9,
+        "building_coverage_ratio": 0.6,
+        "floor_area_ratio": 2.8,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.886116,
+              20.378984
+            ],
+            [
+              72.873784,
+              20.397504
+            ],
+            [
+              72.855373,
+              20.387988
+            ],
+            [
+              72.852114,
+              20.367611
+            ],
+            [
+              72.875139,
+              20.356293
+            ],
+            [
+              72.886116,
+              20.378984
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 149,
+      "properties": {
+        "id": 149,
+        "name": "Vapi_Zone_5",
+        "city": "Vapi",
+        "zone_type": "institutional",
+        "area_sqkm": 0.65,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 1.8,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.953302,
+              20.409391
+            ],
+            [
+              72.934587,
+              20.426585
+            ],
+            [
+              72.917393,
+              20.431971
+            ],
+            [
+              72.896144,
+              20.430641
+            ],
+            [
+              72.882478,
+              20.409391
+            ],
+            [
+              72.888717,
+              20.380714
+            ],
+            [
+              72.917393,
+              20.384962
+            ],
+            [
+              72.944434,
+              20.382351
+            ],
+            [
+              72.953302,
+              20.409391
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 150,
+      "properties": {
+        "id": 150,
+        "name": "Vapi_Zone_6",
+        "city": "Vapi",
+        "zone_type": "agricultural",
+        "area_sqkm": 1.71,
+        "building_coverage_ratio": 0.62,
+        "floor_area_ratio": 1.7,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.966381,
+              20.366035
+            ],
+            [
+              72.961119,
+              20.377387
+            ],
+            [
+              72.94815,
+              20.383188
+            ],
+            [
+              72.943175,
+              20.370316
+            ],
+            [
+              72.938087,
+              20.359303
+            ],
+            [
+              72.949308,
+              20.353956
+            ],
+            [
+              72.960267,
+              20.35575
+            ],
+            [
+              72.966381,
+              20.366035
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 151,
+      "properties": {
+        "id": 151,
+        "name": "Vapi_Zone_7",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 3.25,
+        "building_coverage_ratio": 0.49,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.912084,
+              20.407467
+            ],
+            [
+              72.89058,
+              20.432592
+            ],
+            [
+              72.850392,
+              20.430733
+            ],
+            [
+              72.848921,
+              20.383131
+            ],
+            [
+              72.893678,
+              20.372806
+            ],
+            [
+              72.912084,
+              20.407467
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 152,
+      "properties": {
+        "id": 152,
+        "name": "Vapi_Zone_8",
+        "city": "Vapi",
+        "zone_type": "commercial",
+        "area_sqkm": 9.48,
+        "building_coverage_ratio": 0.26,
+        "floor_area_ratio": 1.9,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.911572,
+              20.408294
+            ],
+            [
+              72.909131,
+              20.415826
+            ],
+            [
+              72.901598,
+              20.42151
+            ],
+            [
+              72.8913,
+              20.418592
+            ],
+            [
+              72.893296,
+              20.408294
+            ],
+            [
+              72.891341,
+              20.398037
+            ],
+            [
+              72.901598,
+              20.394219
+            ],
+            [
+              72.910816,
+              20.399077
+            ],
+            [
+              72.911572,
+              20.408294
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 153,
+      "properties": {
+        "id": 153,
+        "name": "Vapi_Zone_9",
+        "city": "Vapi",
+        "zone_type": "commercial",
+        "area_sqkm": 1.44,
+        "building_coverage_ratio": 0.37,
+        "floor_area_ratio": 1.4,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.916984,
+              20.400449
+            ],
+            [
+              72.897436,
+              20.419049
+            ],
+            [
+              72.871315,
+              20.427092
+            ],
+            [
+              72.854884,
+              20.400449
+            ],
+            [
+              72.872527,
+              20.375906
+            ],
+            [
+              72.90213,
+              20.37372
+            ],
+            [
+              72.916984,
+              20.400449
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 154,
+      "properties": {
+        "id": 154,
+        "name": "Vapi_Zone_10",
+        "city": "Vapi",
+        "zone_type": "mixed_use",
+        "area_sqkm": 5.75,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 1.5,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.92729,
+              20.373054
+            ],
+            [
+              72.923425,
+              20.411569
+            ],
+            [
+              72.887925,
+              20.396027
+            ],
+            [
+              72.870716,
+              20.373054
+            ],
+            [
+              72.877736,
+              20.332433
+            ],
+            [
+              72.920518,
+              20.339574
+            ],
+            [
+              72.92729,
+              20.373054
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 155,
+      "properties": {
+        "id": 155,
+        "name": "Vapi_Zone_11",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 3.3,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 3.1,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.938001,
+              20.353442
+            ],
+            [
+              72.938145,
+              20.385039
+            ],
+            [
+              72.906548,
+              20.400956
+            ],
+            [
+              72.877017,
+              20.382972
+            ],
+            [
+              72.878319,
+              20.353442
+            ],
+            [
+              72.882896,
+              20.32979
+            ],
+            [
+              72.906548,
+              20.326036
+            ],
+            [
+              72.937038,
+              20.322952
+            ],
+            [
+              72.938001,
+              20.353442
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 156,
+      "properties": {
+        "id": 156,
+        "name": "Vapi_Zone_12",
+        "city": "Vapi",
+        "zone_type": "commercial",
+        "area_sqkm": 3.12,
+        "building_coverage_ratio": 0.58,
+        "floor_area_ratio": 2.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.945095,
+              20.360992
+            ],
+            [
+              72.920613,
+              20.378631
+            ],
+            [
+              72.901267,
+              20.38412
+            ],
+            [
+              72.874972,
+              20.376197
+            ],
+            [
+              72.878073,
+              20.34728
+            ],
+            [
+              72.900892,
+              20.336221
+            ],
+            [
+              72.926681,
+              20.335744
+            ],
+            [
+              72.945095,
+              20.360992
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 157,
+      "properties": {
+        "id": 157,
+        "name": "Vapi_Zone_13",
+        "city": "Vapi",
+        "zone_type": "residential",
+        "area_sqkm": 2.84,
+        "building_coverage_ratio": 0.55,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.960959,
+              20.355585
+            ],
+            [
+              72.949955,
+              20.378977
+            ],
+            [
+              72.925841,
+              20.379501
+            ],
+            [
+              72.904144,
+              20.368663
+            ],
+            [
+              72.910102,
+              20.345376
+            ],
+            [
+              72.924036,
+              20.323761
+            ],
+            [
+              72.945483,
+              20.3378
+            ],
+            [
+              72.960959,
+              20.355585
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 158,
+      "properties": {
+        "id": 158,
+        "name": "Vapi_Zone_14",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 0.53,
+        "building_coverage_ratio": 0.24,
+        "floor_area_ratio": 2.7,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.880224,
+              20.384951
+            ],
+            [
+              72.875808,
+              20.394366
+            ],
+            [
+              72.866211,
+              20.394103
+            ],
+            [
+              72.859154,
+              20.389355
+            ],
+            [
+              72.858057,
+              20.380018
+            ],
+            [
+              72.865138,
+              20.371099
+            ],
+            [
+              72.876839,
+              20.374243
+            ],
+            [
+              72.880224,
+              20.384951
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 159,
+      "properties": {
+        "id": 159,
+        "name": "Vapi_Zone_15",
+        "city": "Vapi",
+        "zone_type": "industrial",
+        "area_sqkm": 5.16,
+        "building_coverage_ratio": 0.58,
+        "floor_area_ratio": 2.8,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.952311,
+              20.349919
+            ],
+            [
+              72.940767,
+              20.365104
+            ],
+            [
+              72.923748,
+              20.358699
+            ],
+            [
+              72.925903,
+              20.342704
+            ],
+            [
+              72.939692,
+              20.338043
+            ],
+            [
+              72.952311,
+              20.349919
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 160,
+      "properties": {
+        "id": 160,
+        "name": "Gandhidham_Zone_1",
+        "city": "Gandhidham",
+        "zone_type": "institutional",
+        "area_sqkm": 9.58,
+        "building_coverage_ratio": 0.6,
+        "floor_area_ratio": 2.0,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.160522,
+              23.057895
+            ],
+            [
+              70.149854,
+              23.084728
+            ],
+            [
+              70.123022,
+              23.090928
+            ],
+            [
+              70.098526,
+              23.082392
+            ],
+            [
+              70.10068,
+              23.057895
+            ],
+            [
+              70.104066,
+              23.038939
+            ],
+            [
+              70.123022,
+              23.032074
+            ],
+            [
+              70.149682,
+              23.031235
+            ],
+            [
+              70.160522,
+              23.057895
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 161,
+      "properties": {
+        "id": 161,
+        "name": "Gandhidham_Zone_2",
+        "city": "Gandhidham",
+        "zone_type": "agricultural",
+        "area_sqkm": 2.99,
+        "building_coverage_ratio": 0.39,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.124251,
+              23.099644
+            ],
+            [
+              70.108081,
+              23.114962
+            ],
+            [
+              70.090108,
+              23.124867
+            ],
+            [
+              70.077333,
+              23.108568
+            ],
+            [
+              70.071444,
+              23.087883
+            ],
+            [
+              70.091383,
+              23.080007
+            ],
+            [
+              70.109285,
+              23.082815
+            ],
+            [
+              70.124251,
+              23.099644
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 162,
+      "properties": {
+        "id": 162,
+        "name": "Gandhidham_Zone_3",
+        "city": "Gandhidham",
+        "zone_type": "mixed_use",
+        "area_sqkm": 7.91,
+        "building_coverage_ratio": 0.27,
+        "floor_area_ratio": 3.9,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.136976,
+              23.064527
+            ],
+            [
+              70.116092,
+              23.078009
+            ],
+            [
+              70.096787,
+              23.075371
+            ],
+            [
+              70.092913,
+              23.050869
+            ],
+            [
+              70.117244,
+              23.047502
+            ],
+            [
+              70.136976,
+              23.064527
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 163,
+      "properties": {
+        "id": 163,
+        "name": "Gandhidham_Zone_4",
+        "city": "Gandhidham",
+        "zone_type": "residential",
+        "area_sqkm": 6.72,
+        "building_coverage_ratio": 0.51,
+        "floor_area_ratio": 2.1,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.150211,
+              23.117254
+            ],
+            [
+              70.125545,
+              23.140683
+            ],
+            [
+              70.102117,
+              23.163961
+            ],
+            [
+              70.067255,
+              23.152117
+            ],
+            [
+              70.06656,
+              23.117254
+            ],
+            [
+              70.078919,
+              23.094056
+            ],
+            [
+              70.102117,
+              23.07216
+            ],
+            [
+              70.137472,
+              23.081899
+            ],
+            [
+              70.150211,
+              23.117254
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 164,
+      "properties": {
+        "id": 164,
+        "name": "Gandhidham_Zone_5",
+        "city": "Gandhidham",
+        "zone_type": "mixed_use",
+        "area_sqkm": 1.47,
+        "building_coverage_ratio": 0.44,
+        "floor_area_ratio": 2.5,
+        "is_gidc": false,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.157471,
+              23.077208
+            ],
+            [
+              70.148623,
+              23.09767
+            ],
+            [
+              70.129281,
+              23.08643
+            ],
+            [
+              70.129056,
+              23.067823
+            ],
+            [
+              70.146398,
+              23.063592
+            ],
+            [
+              70.157471,
+              23.077208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 165,
+      "properties": {
+        "id": 165,
+        "name": "Gandhidham_Zone_6",
+        "city": "Gandhidham",
+        "zone_type": "industrial",
+        "area_sqkm": 8.27,
+        "building_coverage_ratio": 0.73,
+        "floor_area_ratio": 3.6,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.16656,
+              23.027838
+            ],
+            [
+              70.169662,
+              23.053487
+            ],
+            [
+              70.144013,
+              23.060294
+            ],
+            [
+              70.115995,
+              23.055856
+            ],
+            [
+              70.120033,
+              23.027838
+            ],
+            [
+              70.120439,
+              23.004264
+            ],
+            [
+              70.144013,
+              22.998243
+            ],
+            [
+              70.170855,
+              23.000996
+            ],
+            [
+              70.16656,
+              23.027838
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 166,
+      "properties": {
+        "id": 166,
+        "name": "Gandhidham_Zone_7",
+        "city": "Gandhidham",
+        "zone_type": "industrial",
+        "area_sqkm": 5.37,
+        "building_coverage_ratio": 0.21,
+        "floor_area_ratio": 1.8,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.203585,
+              23.034197
+            ],
+            [
+              70.193865,
+              23.060661
+            ],
+            [
+              70.167401,
+              23.066763
+            ],
+            [
+              70.141322,
+              23.060277
+            ],
+            [
+              70.133515,
+              23.034197
+            ],
+            [
+              70.143343,
+              23.010139
+            ],
+            [
+              70.167401,
+              22.990363
+            ],
+            [
+              70.195142,
+              23.006456
+            ],
+            [
+              70.203585,
+              23.034197
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 167,
+      "properties": {
+        "id": 167,
+        "name": "Gandhidham_Zone_8",
+        "city": "Gandhidham",
+        "zone_type": "industrial",
+        "area_sqkm": 9.54,
+        "building_coverage_ratio": 0.66,
+        "floor_area_ratio": 3.1,
+        "is_gidc": false,
+        "development_status": "undeveloped"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.135141,
+              23.115568
+            ],
+            [
+              70.116374,
+              23.142444
+            ],
+            [
+              70.089497,
+              23.154277
+            ],
+            [
+              70.068252,
+              23.136813
+            ],
+            [
+              70.054703,
+              23.115568
+            ],
+            [
+              70.067672,
+              23.093743
+            ],
+            [
+              70.089497,
+              23.073252
+            ],
+            [
+              70.110321,
+              23.094744
+            ],
+            [
+              70.135141,
+              23.115568
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 168,
+      "properties": {
+        "id": 168,
+        "name": "Gandhidham_Zone_9",
+        "city": "Gandhidham",
+        "zone_type": "institutional",
+        "area_sqkm": 6.14,
+        "building_coverage_ratio": 0.25,
+        "floor_area_ratio": 2.2,
+        "is_gidc": false,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.127234,
+              23.065093
+            ],
+            [
+              70.121134,
+              23.087264
+            ],
+            [
+              70.096162,
+              23.086175
+            ],
+            [
+              70.078922,
+              23.065093
+            ],
+            [
+              70.092904,
+              23.038369
+            ],
+            [
+              70.117611,
+              23.049024
+            ],
+            [
+              70.127234,
+              23.065093
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 169,
+      "properties": {
+        "id": 169,
+        "name": "Vatva GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 22.22,
+        "building_coverage_ratio": 0.48,
+        "floor_area_ratio": 2.3,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.647099,
+              22.965
+            ],
+            [
+              72.626836,
+              22.996836
+            ],
+            [
+              72.595,
+              23.020337
+            ],
+            [
+              72.562974,
+              22.997026
+            ],
+            [
+              72.537933,
+              22.965
+            ],
+            [
+              72.558831,
+              22.928831
+            ],
+            [
+              72.595,
+              22.903375
+            ],
+            [
+              72.64146,
+              22.91854
+            ],
+            [
+              72.647099,
+              22.965
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 170,
+      "properties": {
+        "id": 170,
+        "name": "Naroda GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 7.04,
+        "building_coverage_ratio": 0.33,
+        "floor_area_ratio": 2.0,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.676962,
+              23.08
+            ],
+            [
+              72.662006,
+              23.116952
+            ],
+            [
+              72.62812,
+              23.095897
+            ],
+            [
+              72.623665,
+              23.060866
+            ],
+            [
+              72.66341,
+              23.03873
+            ],
+            [
+              72.676962,
+              23.08
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 171,
+      "properties": {
+        "id": 171,
+        "name": "Sanand GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 5.98,
+        "building_coverage_ratio": 0.43,
+        "floor_area_ratio": 1.3,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.412132,
+              22.99
+            ],
+            [
+              72.401231,
+              23.011231
+            ],
+            [
+              72.38,
+              23.022872
+            ],
+            [
+              72.358805,
+              23.011195
+            ],
+            [
+              72.337146,
+              22.99
+            ],
+            [
+              72.353256,
+              22.963256
+            ],
+            [
+              72.38,
+              22.955343
+            ],
+            [
+              72.40585,
+              22.96415
+            ],
+            [
+              72.412132,
+              22.99
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 172,
+      "properties": {
+        "id": 172,
+        "name": "Halol GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 14.29,
+        "building_coverage_ratio": 0.5,
+        "floor_area_ratio": 1.2,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.524713,
+              22.51
+            ],
+            [
+              73.498688,
+              22.545974
+            ],
+            [
+              73.458233,
+              22.561554
+            ],
+            [
+              73.408518,
+              22.539608
+            ],
+            [
+              73.408785,
+              22.48052
+            ],
+            [
+              73.456376,
+              22.450307
+            ],
+            [
+              73.510851,
+              22.458774
+            ],
+            [
+              73.524713,
+              22.51
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 173,
+      "properties": {
+        "id": 173,
+        "name": "Vapi GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 8.38,
+        "building_coverage_ratio": 0.46,
+        "floor_area_ratio": 2.2,
+        "is_gidc": true,
+        "development_status": "developed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.931237,
+              20.38
+            ],
+            [
+              72.914631,
+              20.405341
+            ],
+            [
+              72.874578,
+              20.424032
+            ],
+            [
+              72.864932,
+              20.38
+            ],
+            [
+              72.883939,
+              20.352181
+            ],
+            [
+              72.922067,
+              20.34178
+            ],
+            [
+              72.931237,
+              20.38
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 174,
+      "properties": {
+        "id": 174,
+        "name": "Ankleshwar GIDC",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 18.44,
+        "building_coverage_ratio": 0.4,
+        "floor_area_ratio": 1.1,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.043542,
+              21.63
+            ],
+            [
+              73.015306,
+              21.677107
+            ],
+            [
+              72.967663,
+              21.653494
+            ],
+            [
+              72.958311,
+              21.599711
+            ],
+            [
+              73.018576,
+              21.572828
+            ],
+            [
+              73.043542,
+              21.63
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 175,
+      "properties": {
+        "id": 175,
+        "name": "Mundra SEZ",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 11.86,
+        "building_coverage_ratio": 0.55,
+        "floor_area_ratio": 2.3,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              69.771707,
+              22.84
+            ],
+            [
+              69.750068,
+              22.870068
+            ],
+            [
+              69.72,
+              22.884503
+            ],
+            [
+              69.696171,
+              22.863829
+            ],
+            [
+              69.676702,
+              22.84
+            ],
+            [
+              69.697905,
+              22.817905
+            ],
+            [
+              69.72,
+              22.80596
+            ],
+            [
+              69.743406,
+              22.816594
+            ],
+            [
+              69.771707,
+              22.84
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 176,
+      "properties": {
+        "id": 176,
+        "name": "Dahej SEZ",
+        "city": "Industrial Estate",
+        "zone_type": "industrial",
+        "area_sqkm": 19.09,
+        "building_coverage_ratio": 0.34,
+        "floor_area_ratio": 1.8,
+        "is_gidc": true,
+        "development_status": "developing"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.631078,
+              21.71
+            ],
+            [
+              72.608422,
+              21.74564
+            ],
+            [
+              72.570503,
+              21.751609
+            ],
+            [
+              72.535219,
+              21.731565
+            ],
+            [
+              72.550318,
+              21.695706
+            ],
+            [
+              72.57377,
+              21.682705
+            ],
+            [
+              72.600877,
+              21.683821
+            ],
+            [
+              72.631078,
+              21.71
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

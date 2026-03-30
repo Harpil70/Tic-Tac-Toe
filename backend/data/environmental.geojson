@@ -1,0 +1,1601 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "id": 0,
+        "name": "Sabarmati Flood Zone",
+        "risk_type": "flood",
+        "severity": 0.51,
+        "return_period_years": 25,
+        "description": "Flood-prone area near Sabarmati"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.643911,
+              23.05
+            ],
+            [
+              72.628991,
+              23.134854
+            ],
+            [
+              72.54424,
+              23.111938
+            ],
+            [
+              72.480994,
+              23.05
+            ],
+            [
+              72.550747,
+              22.999333
+            ],
+            [
+              72.620281,
+              22.980231
+            ],
+            [
+              72.643911,
+              23.05
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "id": 1,
+        "name": "Tapi Flood Zone",
+        "risk_type": "flood",
+        "severity": 0.62,
+        "return_period_years": 100,
+        "description": "Flood-prone area near Tapi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.938153,
+              21.18
+            ],
+            [
+              72.922076,
+              21.27038
+            ],
+            [
+              72.831209,
+              21.262329
+            ],
+            [
+              72.765674,
+              21.220609
+            ],
+            [
+              72.745096,
+              21.129481
+            ],
+            [
+              72.824994,
+              21.070443
+            ],
+            [
+              72.906924,
+              21.108619
+            ],
+            [
+              72.938153,
+              21.18
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "id": 2,
+        "name": "Narmada Flood Zone",
+        "risk_type": "flood",
+        "severity": 0.82,
+        "return_period_years": 50,
+        "description": "Flood-prone area near Narmada"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.147597,
+              21.7
+            ],
+            [
+              73.044696,
+              21.837559
+            ],
+            [
+              72.876394,
+              21.789805
+            ],
+            [
+              72.876969,
+              21.610612
+            ],
+            [
+              73.044504,
+              21.563029
+            ],
+            [
+              73.147597,
+              21.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 3,
+      "properties": {
+        "id": 3,
+        "name": "Mahi River Flood Zone",
+        "risk_type": "flood",
+        "severity": 0.76,
+        "return_period_years": 100,
+        "description": "Flood-prone area near Mahi River"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.269584,
+              22.35
+            ],
+            [
+              73.258079,
+              22.408079
+            ],
+            [
+              73.2,
+              22.427785
+            ],
+            [
+              73.148783,
+              22.401217
+            ],
+            [
+              73.132713,
+              22.35
+            ],
+            [
+              73.155011,
+              22.305011
+            ],
+            [
+              73.2,
+              22.299938
+            ],
+            [
+              73.245509,
+              22.304491
+            ],
+            [
+              73.269584,
+              22.35
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 4,
+      "properties": {
+        "id": 4,
+        "name": "Gulf of Khambhat Coastal",
+        "risk_type": "flood",
+        "severity": 0.63,
+        "return_period_years": 50,
+        "description": "Flood-prone area near Gulf of Khambhat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.42424,
+              21.5
+            ],
+            [
+              72.409871,
+              21.609871
+            ],
+            [
+              72.3,
+              21.694811
+            ],
+            [
+              72.16597,
+              21.63403
+            ],
+            [
+              72.160579,
+              21.5
+            ],
+            [
+              72.214362,
+              21.414362
+            ],
+            [
+              72.3,
+              21.327713
+            ],
+            [
+              72.374925,
+              21.425075
+            ],
+            [
+              72.42424,
+              21.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 5,
+      "properties": {
+        "id": 5,
+        "name": "Gulf of Kutch Coastal",
+        "risk_type": "flood",
+        "severity": 0.62,
+        "return_period_years": 25,
+        "description": "Flood-prone area near Gulf of Kutch"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              69.926206,
+              22.8
+            ],
+            [
+              69.833265,
+              22.90238
+            ],
+            [
+              69.678975,
+              22.88793
+            ],
+            [
+              69.678698,
+              22.711869
+            ],
+            [
+              69.837144,
+              22.685682
+            ],
+            [
+              69.926206,
+              22.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 6,
+      "properties": {
+        "id": 6,
+        "name": "Saurashtra Coast",
+        "risk_type": "flood",
+        "severity": 0.41,
+        "return_period_years": 50,
+        "description": "Flood-prone area near Saurashtra Coast"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.608833,
+              21.0
+            ],
+            [
+              70.533528,
+              21.10319
+            ],
+            [
+              70.424035,
+              21.055192
+            ],
+            [
+              70.395035,
+              20.923738
+            ],
+            [
+              70.534689,
+              20.893238
+            ],
+            [
+              70.608833,
+              21.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 7,
+      "properties": {
+        "id": 7,
+        "name": "Kutch Seismic Zone V",
+        "risk_type": "earthquake",
+        "severity": 0.9,
+        "seismic_zone": "V",
+        "description": "Seismic risk area - Kutch Seismic Zone V"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.122549,
+              23.3
+            ],
+            [
+              70.039922,
+              23.600853
+            ],
+            [
+              69.720293,
+              23.649218
+            ],
+            [
+              69.47081,
+              23.45853
+            ],
+            [
+              69.460368,
+              23.136442
+            ],
+            [
+              69.713328,
+              22.920264
+            ],
+            [
+              70.001888,
+              23.04684
+            ],
+            [
+              70.122549,
+              23.3
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 8,
+      "properties": {
+        "id": 8,
+        "name": "Kutch Seismic Zone IV",
+        "risk_type": "earthquake",
+        "severity": 0.7,
+        "seismic_zone": "IV",
+        "description": "Seismic risk area - Kutch Seismic Zone IV"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              70.701066,
+              23.0
+            ],
+            [
+              70.703286,
+              23.203286
+            ],
+            [
+              70.5,
+              23.272132
+            ],
+            [
+              70.318388,
+              23.181612
+            ],
+            [
+              70.309417,
+              23.0
+            ],
+            [
+              70.337061,
+              22.837061
+            ],
+            [
+              70.5,
+              22.733062
+            ],
+            [
+              70.699402,
+              22.800598
+            ],
+            [
+              70.701066,
+              23.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 9,
+      "properties": {
+        "id": 9,
+        "name": "Saurashtra Seismic Zone III",
+        "risk_type": "earthquake",
+        "severity": 0.5,
+        "seismic_zone": "III",
+        "description": "Seismic risk area - Saurashtra Seismic Zone III"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              71.24451,
+              22.0
+            ],
+            [
+              71.077899,
+              22.134925
+            ],
+            [
+              70.904826,
+              22.164847
+            ],
+            [
+              70.758504,
+              22.0
+            ],
+            [
+              70.926637,
+              21.872932
+            ],
+            [
+              71.108249,
+              21.812508
+            ],
+            [
+              71.24451,
+              22.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 10,
+      "properties": {
+        "id": 10,
+        "name": "North Gujarat Seismic Zone III",
+        "risk_type": "earthquake",
+        "severity": 0.5,
+        "seismic_zone": "III",
+        "description": "Seismic risk area - North Gujarat Seismic Zone III"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.677708,
+              23.8
+            ],
+            [
+              72.575075,
+              24.031056
+            ],
+            [
+              72.359799,
+              23.901862
+            ],
+            [
+              72.303968,
+              23.657574
+            ],
+            [
+              72.567555,
+              23.592087
+            ],
+            [
+              72.677708,
+              23.8
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 11,
+      "properties": {
+        "id": 11,
+        "name": "Central Gujarat Seismic Zone III",
+        "risk_type": "earthquake",
+        "severity": 0.4,
+        "seismic_zone": "III",
+        "description": "Seismic risk area - Central Gujarat Seismic Zone III"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.13494,
+              22.5
+            ],
+            [
+              73.051136,
+              22.65738
+            ],
+            [
+              72.849547,
+              22.60931
+            ],
+            [
+              72.849688,
+              22.390792
+            ],
+            [
+              73.037153,
+              22.385655
+            ],
+            [
+              73.13494,
+              22.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 12,
+      "properties": {
+        "id": 12,
+        "name": "Ahmedabad_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.6,
+        "aqi_value": 179.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.550317,
+          22.903312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 13,
+      "properties": {
+        "id": 13,
+        "name": "Ahmedabad_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.42,
+        "aqi_value": 125.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.430015,
+          23.10447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 14,
+      "properties": {
+        "id": 14,
+        "name": "Ahmedabad_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.41,
+        "aqi_value": 122.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.652776,
+          23.0556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 15,
+      "properties": {
+        "id": 15,
+        "name": "Ahmedabad_AQI_Station_4",
+        "risk_type": "air_quality",
+        "severity": 0.32,
+        "aqi_value": 97.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.562731,
+          23.105133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 16,
+      "properties": {
+        "id": 16,
+        "name": "Ahmedabad_AQI_Station_5",
+        "risk_type": "air_quality",
+        "severity": 0.35,
+        "aqi_value": 105.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.721355,
+          23.065564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 17,
+      "properties": {
+        "id": 17,
+        "name": "Ahmedabad_AQI_Station_6",
+        "risk_type": "air_quality",
+        "severity": 0.27,
+        "aqi_value": 82.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Ahmedabad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.450286,
+          22.8846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 18,
+      "properties": {
+        "id": 18,
+        "name": "Surat_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.51,
+        "aqi_value": 153.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Surat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.786188,
+          21.281255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 19,
+      "properties": {
+        "id": 19,
+        "name": "Surat_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.5,
+        "aqi_value": 150.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Surat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.855278,
+          21.129958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 20,
+      "properties": {
+        "id": 20,
+        "name": "Vadodara_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.42,
+        "aqi_value": 127.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vadodara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.278982,
+          22.367682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 21,
+      "properties": {
+        "id": 21,
+        "name": "Vadodara_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.45,
+        "aqi_value": 135.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vadodara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.142109,
+          22.393775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 22,
+      "properties": {
+        "id": 22,
+        "name": "Vadodara_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.59,
+        "aqi_value": 177.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vadodara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.230187,
+          22.313422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 23,
+      "properties": {
+        "id": 23,
+        "name": "Vadodara_AQI_Station_4",
+        "risk_type": "air_quality",
+        "severity": 0.41,
+        "aqi_value": 124.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vadodara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.072279,
+          22.334912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 24,
+      "properties": {
+        "id": 24,
+        "name": "Vadodara_AQI_Station_5",
+        "risk_type": "air_quality",
+        "severity": 0.27,
+        "aqi_value": 80.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Vadodara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.243584,
+          22.283957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 25,
+      "properties": {
+        "id": 25,
+        "name": "Rajkot_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.11,
+        "aqi_value": 33.0,
+        "aqi_category": "Good",
+        "description": "Air quality monitoring at Rajkot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.800521,
+          22.200818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 26,
+      "properties": {
+        "id": 26,
+        "name": "Rajkot_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.38,
+        "aqi_value": 113.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Rajkot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.774783,
+          22.372532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 27,
+      "properties": {
+        "id": 27,
+        "name": "Rajkot_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.5,
+        "aqi_value": 151.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Rajkot"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.731348,
+          22.273219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 28,
+      "properties": {
+        "id": 28,
+        "name": "Gandhinagar_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.5,
+        "aqi_value": 151.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Gandhinagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.631802,
+          23.250942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 29,
+      "properties": {
+        "id": 29,
+        "name": "Gandhinagar_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.39,
+        "aqi_value": 116.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Gandhinagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.614311,
+          23.22461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 30,
+      "properties": {
+        "id": 30,
+        "name": "Gandhinagar_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.42,
+        "aqi_value": 127.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Gandhinagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.607297,
+          23.253689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 31,
+      "properties": {
+        "id": 31,
+        "name": "Bhavnagar_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.24,
+        "aqi_value": 72.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Bhavnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.223053,
+          21.781219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 32,
+      "properties": {
+        "id": 32,
+        "name": "Bhavnagar_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.45,
+        "aqi_value": 135.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Bhavnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.107721,
+          21.803115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 33,
+      "properties": {
+        "id": 33,
+        "name": "Bhavnagar_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.6,
+        "aqi_value": 180.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Bhavnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.110691,
+          21.82359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 34,
+      "properties": {
+        "id": 34,
+        "name": "Jamnagar_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.15,
+        "aqi_value": 45.0,
+        "aqi_category": "Good",
+        "description": "Air quality monitoring at Jamnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.075379,
+          22.535239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 35,
+      "properties": {
+        "id": 35,
+        "name": "Jamnagar_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.39,
+        "aqi_value": 118.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Jamnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.064321,
+          22.447527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 36,
+      "properties": {
+        "id": 36,
+        "name": "Jamnagar_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.37,
+        "aqi_value": 110.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Jamnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.063658,
+          22.430487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 37,
+      "properties": {
+        "id": 37,
+        "name": "Jamnagar_AQI_Station_4",
+        "risk_type": "air_quality",
+        "severity": 0.41,
+        "aqi_value": 122.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Jamnagar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.106309,
+          22.513717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 38,
+      "properties": {
+        "id": 38,
+        "name": "Junagadh_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.32,
+        "aqi_value": 97.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Junagadh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.414682,
+          21.528987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 39,
+      "properties": {
+        "id": 39,
+        "name": "Junagadh_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.55,
+        "aqi_value": 166.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Junagadh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.424799,
+          21.471249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 40,
+      "properties": {
+        "id": 40,
+        "name": "Junagadh_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.22,
+        "aqi_value": 66.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Junagadh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.448808,
+          21.540797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 41,
+      "properties": {
+        "id": 41,
+        "name": "Anand_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.62,
+        "aqi_value": 187.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Anand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.900372,
+          22.579856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 42,
+      "properties": {
+        "id": 42,
+        "name": "Anand_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.5,
+        "aqi_value": 149.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Anand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.91829,
+          22.550298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 43,
+      "properties": {
+        "id": 43,
+        "name": "Anand_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.34,
+        "aqi_value": 102.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Anand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.905261,
+          22.569498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 44,
+      "properties": {
+        "id": 44,
+        "name": "Navsari_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.23,
+        "aqi_value": 69.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Navsari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.917042,
+          20.960793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 45,
+      "properties": {
+        "id": 45,
+        "name": "Navsari_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.29,
+        "aqi_value": 86.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Navsari"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.948057,
+          20.913904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 46,
+      "properties": {
+        "id": 46,
+        "name": "Morbi_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.29,
+        "aqi_value": 88.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Morbi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.836447,
+          22.851507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 47,
+      "properties": {
+        "id": 47,
+        "name": "Morbi_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.57,
+        "aqi_value": 171.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Morbi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.819893,
+          22.869756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 48,
+      "properties": {
+        "id": 48,
+        "name": "Morbi_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.53,
+        "aqi_value": 159.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Morbi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.872117,
+          22.78324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 49,
+      "properties": {
+        "id": 49,
+        "name": "Mehsana_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.31,
+        "aqi_value": 92.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Mehsana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.34704,
+          23.599185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 50,
+      "properties": {
+        "id": 50,
+        "name": "Mehsana_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.44,
+        "aqi_value": 132.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Mehsana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.33663,
+          23.570705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 51,
+      "properties": {
+        "id": 51,
+        "name": "Mehsana_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.47,
+        "aqi_value": 141.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Mehsana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.357712,
+          23.623226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 52,
+      "properties": {
+        "id": 52,
+        "name": "Mehsana_AQI_Station_4",
+        "risk_type": "air_quality",
+        "severity": 0.56,
+        "aqi_value": 169.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Mehsana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.358071,
+          23.555115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 53,
+      "properties": {
+        "id": 53,
+        "name": "Mehsana_AQI_Station_5",
+        "risk_type": "air_quality",
+        "severity": 0.35,
+        "aqi_value": 104.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Mehsana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.394306,
+          23.618053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 54,
+      "properties": {
+        "id": 54,
+        "name": "Bharuch_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.42,
+        "aqi_value": 127.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Bharuch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          73.022131,
+          21.700152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 55,
+      "properties": {
+        "id": 55,
+        "name": "Bharuch_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.16,
+        "aqi_value": 48.0,
+        "aqi_category": "Good",
+        "description": "Air quality monitoring at Bharuch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.977035,
+          21.710107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 56,
+      "properties": {
+        "id": 56,
+        "name": "Vapi_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.45,
+        "aqi_value": 136.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vapi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.900873,
+          20.374265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 57,
+      "properties": {
+        "id": 57,
+        "name": "Vapi_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.5,
+        "aqi_value": 150.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Vapi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.9254,
+          20.423262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 58,
+      "properties": {
+        "id": 58,
+        "name": "Gandhidham_AQI_Station_1",
+        "risk_type": "air_quality",
+        "severity": 0.3,
+        "aqi_value": 89.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Gandhidham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.153736,
+          23.088045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 59,
+      "properties": {
+        "id": 59,
+        "name": "Gandhidham_AQI_Station_2",
+        "risk_type": "air_quality",
+        "severity": 0.16,
+        "aqi_value": 49.0,
+        "aqi_category": "Good",
+        "description": "Air quality monitoring at Gandhidham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.11036,
+          23.098859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 60,
+      "properties": {
+        "id": 60,
+        "name": "Gandhidham_AQI_Station_3",
+        "risk_type": "air_quality",
+        "severity": 0.32,
+        "aqi_value": 96.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Gandhidham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.115237,
+          23.102574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 61,
+      "properties": {
+        "id": 61,
+        "name": "Gandhidham_AQI_Station_4",
+        "risk_type": "air_quality",
+        "severity": 0.21,
+        "aqi_value": 63.0,
+        "aqi_category": "Satisfactory",
+        "description": "Air quality monitoring at Gandhidham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.167204,
+          23.054865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 62,
+      "properties": {
+        "id": 62,
+        "name": "Gandhidham_AQI_Station_5",
+        "risk_type": "air_quality",
+        "severity": 0.4,
+        "aqi_value": 121.0,
+        "aqi_category": "Moderate",
+        "description": "Air quality monitoring at Gandhidham"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          70.153431,
+          23.040117
+        ]
+      }
+    }
+  ]
+}

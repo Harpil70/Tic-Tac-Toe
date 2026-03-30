@@ -1,0 +1,149 @@
+/* ═══════════════════════════════════════════════════════════════
+   Compare Panel — Side-by-side site comparison
+   ═══════════════════════════════════════════════════════════════ */
+
+.compare-panel {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 350px);
+  max-width: 900px;
+  max-height: 320px;
+  overflow-y: auto;
+  background: rgba(10, 14, 26, 0.92);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  z-index: 1000;
+  animation: slideInUp 0.3s ease-out;
+}
+
+.compare-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.compare-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.compare-body {
+  display: flex;
+  gap: 12px;
+  padding: 14px;
+  overflow-x: auto;
+}
+
+.compare-card {
+  min-width: 180px;
+  flex: 1;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  position: relative;
+}
+
+.compare-card-rank {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+}
+
+.compare-card-score {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  margin: 8px 0 4px;
+}
+
+.compare-card-grade {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.compare-card-coords {
+  text-align: center;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.compare-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.compare-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.compare-bar-label {
+  font-size: 9px;
+  color: var(--text-muted);
+  width: 30px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.compare-bar-track {
+  flex: 1;
+  height: 6px;
+  background: rgba(148, 163, 184, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.compare-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease-out;
+}
+
+.compare-bar-value {
+  font-size: 9px;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  width: 28px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.compare-remove {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.compare-remove:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--accent-rose);
+}

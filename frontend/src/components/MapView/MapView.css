@@ -1,0 +1,134 @@
+/* ═══════════════════════════════════════════════════════════════
+   MapView — Main interactive map
+   ═══════════════════════════════════════════════════════════════ */
+
+.map-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.map-wrapper .leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* ─── Map Overlays ───────────────────────────────────────── */
+.map-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 500;
+}
+
+.map-loading-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* ─── Legend ─────────────────────────────────────────────── */
+.map-legend {
+  position: absolute;
+  bottom: 40px;
+  right: 12px;
+  background: var(--bg-glass);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  z-index: 90;
+  min-width: 140px;
+}
+
+.map-legend-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.legend-color {
+  width: 14px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ─── Hot spot markers ───────────────────────────────────── */
+.hotspot-marker {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.hotspot-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  animation: pulse-dot 1.5s infinite;
+}
+
+.hotspot-dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Popup Custom Styles ────────────────────────────────── */
+.custom-popup {
+  font-family: var(--font-main);
+}
+
+.custom-popup h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.custom-popup p {
+  margin: 2px 0;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.custom-popup .popup-score {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 4px 0;
+}
+
+/* ─── Click instruction ─────────────────────────────────── */
+.map-instructions {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 11px;
+  color: var(--text-muted);
+  z-index: 90;
+  pointer-events: none;
+  animation: fadeIn 0.5s ease-out;
+}
