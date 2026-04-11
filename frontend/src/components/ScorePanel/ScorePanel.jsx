@@ -129,16 +129,18 @@ export default function ScorePanel({
 
         {/* ─── Sub-scores ─── */}
         <div className="subscore-list">
-          {sub_scores.map(sub => {
+        {sub_scores.map(sub => {
             const color = LAYER_COLORS[sub.layer] || '#888';
             const details = sub.details || {};
+            const isExcluded = sub.weight === 0;
             return (
-              <div key={sub.layer} className="subscore-item">
+              <div key={sub.layer} className="subscore-item" style={isExcluded ? { opacity: 0.4 } : {}}>
                 <div className="subscore-header">
-                  <span className="subscore-name" style={{ color }}>
+                  <span className="subscore-name" style={{ color: isExcluded ? '#64748b' : color }}>
                     {LAYER_LABELS[sub.layer] || sub.layer}
+                    {isExcluded && <span style={{ fontSize: 9, marginLeft: 4, color: '#94a3b8' }}>(excluded)</span>}
                   </span>
-                  <span className="subscore-value" style={{ color: getScoreColor(sub.score) }}>
+                  <span className="subscore-value" style={{ color: isExcluded ? '#64748b' : getScoreColor(sub.score) }}>
                     {sub.score.toFixed(1)}
                   </span>
                 </div>
@@ -147,7 +149,9 @@ export default function ScorePanel({
                     className="subscore-bar-fill"
                     style={{
                       width: `${sub.score}%`,
-                      background: `linear-gradient(90deg, ${color}, ${getScoreColor(sub.score)})`,
+                      background: isExcluded
+                        ? '#475569'
+                        : `linear-gradient(90deg, ${color}, ${getScoreColor(sub.score)})`,
                     }}
                   />
                 </div>

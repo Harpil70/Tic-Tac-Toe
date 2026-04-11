@@ -63,7 +63,8 @@ class IsochroneRequest(BaseModel):
 
 
 class ExportRequest(BaseModel):
-    sites: List[Coordinate]
+    sites: Optional[List[Coordinate]] = Field(None, description="Sites to score (legacy)")
+    pre_computed_results: Optional[List[Dict[str, Any]]] = Field(None, description="Pre-computed score results from frontend")
     format: str = Field("pdf", description="pdf or json")
     weights: Optional[Dict[str, float]] = None
     preset: Optional[str] = None

@@ -52,31 +52,52 @@ export const compareSites = (sites, weights = null, preset = null) =>
   api.post('/compare', { sites, weights, preset }).then(r => r.data);
 
 // ─── Export APIs ─────────────────────────────────────────────────
-export const exportReport = async (sites, format = 'pdf', weights = null, preset = null, title = 'Site Readiness Report') => {
-  const response = await api.post('/export', {
-    sites,
-    format,
-    weights,
-    preset,
-    title,
-  }, {
-    responseType: format === 'pdf' ? 'blob' : 'json',
-  });
-
+export const exportReport = async (siteResults, format = 'pdf', weights = null, preset = null, title = 'Site Readiness Report') => {
   if (format === 'pdf') {
-    const blob = new Blob([response.data], { type: 'application/pdf' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = 'site_readiness_report.pdf';
-    link.click();
-    URL.revokeObjectURL(url);
-    return { success: true };
+    try {
+      const response = await api.post('/export', {
+        pre_computed_results: siteResults,
+        format, weights, preset, title,
+      }, {
+        responseType: 'blob',
+        timeout: 60000,
+      });
+
+      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const url = window.URL.createObjectURL(blob);
+
+      // Create a hidden anchor with download attribute to force .pdf filename
+      const link = document.createElement('a');
+      link.style.display = 'none';
+      link.href = url;
+      link.download = 'site_readiness_report.pdf';
+      document.body.appendChild(link);
+
+      // Use setTimeout to ensure the link is in the DOM before clicking
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          link.click();
+          resolve();
+        }, 100);
+      });
+
+      // Clean up after a delay to allow browser to start the download
+      setTimeout(() => {
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(url);
+      }, 5000);
+
+      return { success: true };
+    } catch (err) {
+      console.error('PDF export failed:', err);
+      throw err;
+    }
   }
 
+  // JSON format
+  const response = await api.post('/export', { pre_computed_results: siteResults, format, weights, preset, title });
   return response.data;
 };
-
 // ─── Config APIs ─────────────────────────────────────────────────
 export const fetchPresets = () => api.get('/presets').then(r => r.data);
 export const fetchConfig = () => api.get('/config').then(r => r.data);

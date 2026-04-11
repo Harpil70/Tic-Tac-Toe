@@ -159,8 +159,20 @@ def generate_transportation():
     for city_name, info in CITIES.items():
         n_roads = random.randint(3, 8)
         for i in range(n_roads):
-            lat1, lng1 = random_point_near(info["lat"], info["lng"], info["radius"] * 0.5)
-            lat2, lng2 = random_point_near(info["lat"], info["lng"], info["radius"] * 1.2)
+            # Start near city center, end at city edge
+            lat1, lng1 = random_point_near(info["lat"], info["lng"], info["radius"] * 0.3)
+            lat2, lng2 = random_point_near(info["lat"], info["lng"], info["radius"] * 0.8)
+
+            # Generate intermediate waypoints for realistic road curves
+            n_segments = random.randint(4, 7)
+            road_coords = []
+            for s in range(n_segments + 1):
+                t = s / n_segments
+                # Interpolate between start and end with small random offset
+                mid_lat = lat1 + (lat2 - lat1) * t + random.uniform(-0.005, 0.005)
+                mid_lng = lng1 + (lng2 - lng1) * t + random.uniform(-0.005, 0.005)
+                road_coords.append([round(mid_lng, 6), round(mid_lat, 6)])
+
             features.append({
                 "type": "Feature",
                 "id": fid,
@@ -174,10 +186,7 @@ def generate_transportation():
                 },
                 "geometry": {
                     "type": "LineString",
-                    "coordinates": [
-                        [round(lng1, 6), round(lat1, 6)],
-                        [round(lng2, 6), round(lat2, 6)],
-                    ],
+                    "coordinates": road_coords,
                 },
             })
             fid += 1

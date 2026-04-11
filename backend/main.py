@@ -201,17 +201,24 @@ async def compare_sites(req: CompareRequest):
 @app.post("/api/export")
 async def export_report(req: ExportRequest):
     """Generate PDF or JSON report for selected sites."""
-    results = []
-    for site in req.sites:
-        result = compute_site_score(
-            lat=site.lat,
-            lng=site.lng,
-            weights=req.weights,
-            preset=req.preset,
-        )
-        results.append(result)
+    if req.pre_computed_results:
+        # Use pre-computed results directly — matches what the user sees on screen
+        results = req.pre_computed_results
+    elif req.sites:
+        # Legacy: re-score from coordinates
+        results = []
+        for site in req.sites:
+            result = compute_site_score(
+                lat=site.lat,
+                lng=site.lng,
+                weights=req.weights,
+                preset=req.preset,
+            )
+            results.append(result)
+    else:
+        raise HTTPException(400, "Provide either pre_computed_results or sites")
 
-    ranked = sorted(results, key=lambda r: r["composite_score"], reverse=True)
+    ranked = sorted(results, key=lambda r: r.get("composite_score", 0), reverse=True)
     for i, r in enumerate(ranked):
         r["rank"] = i + 1
 
@@ -260,35 +267,18 @@ def _generate_pdf_report(title, sites, weights, preset):
         ))
         elements.append(Spacer(1, 20))
 
-        # Weights used
-        w = get_weights(weights, preset)
-        weight_data = [["Layer", "Weight"]]
-        for layer, weight in w.items():
-            weight_data.append([layer.title(), f"{weight:.0%}"])
-
-        weight_table = Table(weight_data, colWidths=[3*inch, 1.5*inch])
-        weight_table.setStyle(TableStyle([
-            ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#1a237e")),
-            ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
-            ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-            ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-            ('FONTSIZE', (0, 0), (-1, -1), 10),
-            ('BOTTOMPADDING', (0, 0), (-1, 0), 8),
-            ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
-            ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor("#f5f5f5")]),
-        ]))
-        elements.append(Paragraph("Scoring Weights", styles['Heading2']))
-        elements.append(weight_table)
-        elements.append(Spacer(1, 20))
-
         # Sites summary table
         site_data = [["Rank", "Location", "Score", "Grade"]]
         for site in sites:
+            lat = site.get('lat', 0)
+            lng = site.get('lng', 0)
+            score = site.get('composite_score', 0)
+            grade = site.get('grade', '-')
             site_data.append([
                 str(site.get("rank", "-")),
-                f"({site['lat']:.4f}, {site['lng']:.4f})",
-                f"{site['composite_score']:.1f}",
-                site["grade"],
+                f"({lat:.4f}, {lng:.4f})",
+                f"{score:.1f}",
+                grade,
             ])
 
         site_table = Table(site_data, colWidths=[0.8*inch, 2.5*inch, 1*inch, 0.8*inch])
@@ -308,39 +298,89 @@ def _generate_pdf_report(title, sites, weights, preset):
 
         # Detailed breakdown for each site
         for site in sites:
+            lat = site.get('lat', 0)
+            lng = site.get('lng', 0)
+            score = site.get('composite_score', 0)
+            grade = site.get('grade', '-')
+
             elements.append(Paragraph(
-                f"Site #{site.get('rank', '?')}: ({site['lat']:.4f}, {site['lng']:.4f}) — "
-                f"Score: {site['composite_score']:.1f} ({site['grade']})",
+                f"Site #{site.get('rank', '?')}: ({lat:.4f}, {lng:.4f}) — "
+                f"Score: {score:.1f} ({grade})",
                 styles['Heading3']
             ))
 
+            # Score breakdown table with per-site weights
+            sub_scores = site.get("sub_scores", [])
             breakdown_data = [["Layer", "Score", "Weight", "Weighted"]]
-            for sub in site.get("sub_scores", []):
+            for sub in sub_scores:
+                layer_name = sub.get("layer", "unknown").title()
+                layer_score = sub.get("score", 0)
+                layer_weight = sub.get("weight", 0)
+                weighted = sub.get("weighted_score", 0)
                 breakdown_data.append([
-                    sub["layer"].title(),
-                    f"{sub['score']:.1f}",
-                    f"{sub['weight']:.0%}",
-                    f"{sub['weighted_score']:.1f}",
+                    layer_name,
+                    f"{layer_score:.1f}",
+                    f"{layer_weight:.0%}",
+                    f"{weighted:.1f}",
                 ])
 
-            bd_table = Table(breakdown_data, colWidths=[2*inch, 1*inch, 1*inch, 1*inch])
-            bd_table.setStyle(TableStyle([
-                ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#455a64")),
-                ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
-                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-                ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
-                ('FONTSIZE', (0, 0), (-1, -1), 9),
-                ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
-                ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor("#eceff1")]),
-            ]))
-            elements.append(bd_table)
+            if len(breakdown_data) > 1:
+                bd_table = Table(breakdown_data, colWidths=[2*inch, 1*inch, 1*inch, 1*inch])
+                bd_table.setStyle(TableStyle([
+                    ('BACKGROUND', (0, 0), (-1, 0), colors.HexColor("#455a64")),
+                    ('TEXTCOLOR', (0, 0), (-1, 0), colors.white),
+                    ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                    ('FONTNAME', (0, 0), (-1, 0), 'Helvetica-Bold'),
+                    ('FONTSIZE', (0, 0), (-1, -1), 9),
+                    ('GRID', (0, 0), (-1, -1), 0.5, colors.grey),
+                    ('ROWBACKGROUNDS', (0, 1), (-1, -1), [colors.white, colors.HexColor("#eceff1")]),
+                ]))
+                elements.append(bd_table)
+
+            # Key details from each layer
+            details_text = []
+            for sub in sub_scores:
+                details = sub.get("details", {})
+                layer = sub.get("layer", "")
+                if layer == "demographics":
+                    pop = details.get("population_nearby", details.get("total_population", "N/A"))
+                    income = details.get("avg_income", details.get("median_income", "N/A"))
+                    details_text.append(f"Population: {pop:,}" if isinstance(pop, (int, float)) else f"Population: {pop}")
+                    details_text.append(f"Avg Income: ₹{income:,.0f}" if isinstance(income, (int, float)) else f"Avg Income: {income}")
+                elif layer == "transportation":
+                    roads = details.get("roads_nearby", details.get("roads", "N/A"))
+                    transit = details.get("transit_stops", details.get("transit", "N/A"))
+                    details_text.append(f"Roads Nearby: {roads}, Transit Stops: {transit}")
+                elif layer == "poi":
+                    comp = details.get("competitors", "N/A")
+                    anchor = details.get("anchors", "N/A")
+                    details_text.append(f"Competitors: {comp}, Anchors: {anchor}")
+                elif layer == "environmental":
+                    aqi = details.get("avg_aqi", details.get("aqi", "N/A"))
+                    flood = details.get("flood_risk", "N/A")
+                    quake = details.get("earthquake_risk", details.get("quake", "N/A"))
+                    details_text.append(f"AQI: {aqi}, Flood Risk: {flood}, Earthquake: {quake}")
+
+            if details_text:
+                elements.append(Spacer(1, 5))
+                detail_style = ParagraphStyle(
+                    'DetailStyle', parent=styles['Normal'],
+                    fontSize=8, textColor=colors.HexColor("#546e7a"),
+                    spaceAfter=2,
+                )
+                for dt in details_text:
+                    elements.append(Paragraph(f"    {dt}", detail_style))
 
             # Threshold violations
             violations = site.get("threshold_violations", [])
             if violations:
                 elements.append(Spacer(1, 5))
+                warn_style = ParagraphStyle(
+                    'WarnStyle', parent=styles['Normal'],
+                    fontSize=9, textColor=colors.HexColor("#e65100"),
+                )
                 for v in violations:
-                    elements.append(Paragraph(f"⚠ {v}", styles['Normal']))
+                    elements.append(Paragraph(f"⚠ {v}", warn_style))
 
             elements.append(Spacer(1, 15))
 
@@ -354,7 +394,7 @@ def _generate_pdf_report(title, sites, weights, preset):
             "error": "reportlab not installed, returning JSON",
             "title": title,
             "sites": sites,
-        }, indent=2)
+        }, indent=2, default=str)
         return io.BytesIO(fallback.encode())
 
 

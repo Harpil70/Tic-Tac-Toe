@@ -3,10 +3,12 @@
  * AI-Powered Location Intelligence for Gujarat, India
  */
 import { useState, useEffect, useCallback } from 'react';
+import LoginPage from './components/LoginPage/LoginPage';
 import Sidebar from './components/Sidebar/Sidebar';
 import MapView from './components/MapView/MapView';
 import ScorePanel from './components/ScorePanel/ScorePanel';
 import ComparePanel from './components/ComparePanel/ComparePanel';
+import { auth, signOut } from './firebase';
 import {
   fetchLayers,
   fetchLayerData,
@@ -35,7 +37,32 @@ const PRESETS = {
 };
 
 export default function App() {
-  // ─── State ─────────────────────────────────────────────────
+  // ─── Auth State ────────────────────────────────────────────
+  const [user, setUser] = useState(() => {
+    try {
+      const saved = localStorage.getItem('geo_user');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const handleLogin = useCallback((userData) => {
+    localStorage.setItem('geo_user', JSON.stringify(userData));
+    setUser(userData);
+  }, []);
+
+  const handleLogout = useCallback(async () => {
+    try {
+      await signOut(auth);
+    } catch (err) {
+      console.warn('Firebase signOut error:', err);
+    }
+    setUser(null);
+    localStorage.removeItem('geo_user');
+  }, []);
+
+  // ─── App State ─────────────────────────────────────────────
   const [layers, setLayers] = useState([]);
   const [layerData, setLayerData] = useState({});
   const [enabledLayers, setEnabledLayers] = useState({
@@ -182,17 +209,23 @@ export default function App() {
   };
 
   const handleExport = async () => {
-    if (compareSites.length === 0) {
-      setError('Pin at least one site to export');
+    // Gather full score data — use compare sites if available, otherwise current scored site
+    let siteResults = [...compareSites];
+    if (siteResults.length === 0 && scoreData) {
+      siteResults = [scoreData];
+    }
+    if (siteResults.length === 0) {
+      setError('Click on the map to score a site first, then export');
       return;
     }
     setLoading(true);
+    setError(null);
     try {
-      const sites = compareSites.map(s => ({ lat: s.lat, lng: s.lng }));
-      await exportReport(sites, 'pdf', weights, preset);
+      // Send the full pre-computed results so the PDF matches the website exactly
+      await exportReport(siteResults, 'pdf', weights, preset);
     } catch (err) {
       console.error('Export error:', err);
-      setError('Failed to export PDF');
+      setError('Failed to export PDF. Check the backend console for errors.');
     }
     setLoading(false);
   };
@@ -208,6 +241,12 @@ export default function App() {
   };
 
   // ─── Render ────────────────────────────────────────────────
+
+  // Show login page if not authenticated
+  if (!user) {
+    return <LoginPage onLogin={handleLogin} />;
+  }
+
   return (
     <div className="app">
       {/* ─── Header ─── */}
@@ -232,6 +271,21 @@ export default function App() {
             <div className={`status-dot ${apiConnected ? '' : 'disconnected'}`}
                  style={{ background: apiConnected ? '#10b981' : '#ef4444' }} />
             <span>{apiConnected ? 'API Connected' : 'Disconnected'}</span>
+          </div>
+
+          {/* User Profile */}
+          <div className="header-user">
+            {user.picture ? (
+              <img src={user.picture} alt="" className="user-avatar" referrerPolicy="no-referrer" />
+            ) : (
+              <div className="user-avatar user-avatar-placeholder">
+                {user.name?.charAt(0)?.toUpperCase() || '?'}
+              </div>
+            )}
+            <span className="user-name">{user.name}</span>
+            <button className="logout-btn" onClick={handleLogout} title="Sign out">
+              ↗ Logout
+            </button>
           </div>
         </div>
       </header>
