@@ -46,7 +46,7 @@
 }
 
 .header-title {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.3px;
   background: var(--gradient-primary);
@@ -56,11 +56,12 @@
 }
 
 .header-subtitle {
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 12px;
+  color: var(--text-secondary);
   margin-left: 8px;
   padding-left: 8px;
   border-left: 1px solid var(--border-color);
+  font-weight: 500;
 }
 
 .header-actions {
@@ -98,8 +99,8 @@
 }
 
 .user-name {
-  font-size: 12px;
-  color: var(--text-secondary);
+  font-size: 13px;
+  color: var(--text-primary);
   font-weight: 500;
   max-width: 120px;
   overflow: hidden;
@@ -111,12 +112,13 @@
   background: rgba(239, 68, 68, 0.1);
   border: 1px solid rgba(239, 68, 68, 0.2);
   border-radius: 6px;
-  padding: 4px 10px;
-  font-size: 11px;
+  padding: 5px 12px;
+  font-size: 12px;
   color: #fb7185;
   cursor: pointer;
   transition: all 0.2s ease;
   font-family: var(--font-main);
+  font-weight: 600;
 }
 
 .logout-btn:hover {
@@ -129,8 +131,9 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 .status-dot {
@@ -167,9 +170,10 @@
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
-  padding: 5px 10px;
+  padding: 6px 10px;
   font-family: var(--font-main);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 500;
   color: var(--text-primary);
   cursor: pointer;
 }
@@ -180,8 +184,9 @@
 }
 
 .preset-selector label {
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
 }
 
 /* ─── Coordinates Display ────────────────────────────────── */
@@ -198,4 +203,39 @@
   color: var(--text-muted);
   border: 1px solid var(--border-color);
   z-index: 90;
+}
+
+/* ─── Polygon Stats Overlay ────────────────────────────────── */
+.polygon-stats-overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  background: rgba(10, 14, 26, 0.9);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  z-index: 1000;
+  width: 220px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.polygon-stats-overlay h4 {
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  color: #e2e8f0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 6px;
+}
+
+.poly-stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.poly-stat:last-child {
+  margin-bottom: 0;
 }

@@ -4,9 +4,6 @@
 
 .compare-panel {
   position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translateX(-50%);
   width: calc(100% - 350px);
   max-width: 900px;
   max-height: 320px;
@@ -29,7 +26,7 @@
 }
 
 .compare-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -60,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: white;
 }
@@ -74,16 +71,16 @@
 
 .compare-card-grade {
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .compare-card-coords {
   text-align: center;
-  font-size: 10px;
+  font-size: 11px;
   font-family: var(--font-mono);
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 10px;
 }
 
@@ -100,11 +97,12 @@
 }
 
 .compare-bar-label {
-  font-size: 9px;
-  color: var(--text-muted);
+  font-size: 10px;
+  color: var(--text-secondary);
   width: 30px;
   text-align: right;
   flex-shrink: 0;
+  font-weight: 500;
 }
 
 .compare-bar-track {
@@ -122,12 +120,13 @@
 }
 
 .compare-bar-value {
-  font-size: 9px;
+  font-size: 10px;
   font-family: var(--font-mono);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   width: 28px;
   text-align: left;
   flex-shrink: 0;
+  font-weight: 500;
 }
 
 .compare-remove {

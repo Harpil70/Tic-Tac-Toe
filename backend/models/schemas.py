@@ -53,12 +53,13 @@ class ClusterRequest(BaseModel):
     eps_km: float = Field(10.0, description="DBSCAN epsilon in km")
     weights: Optional[Dict[str, float]] = None
     preset: Optional[str] = None
+    bounds: Optional[Dict[str, float]] = Field(None, description="Map viewport bounds {min_lat, max_lat, min_lng, max_lng}")
 
 
 class IsochroneRequest(BaseModel):
     lat: float
     lng: float
-    mode: str = Field("driving", description="driving or walking")
+    mode: str = Field("driving", description="driving, walking, or transit")
     intervals: List[int] = Field([10, 20, 30], description="Minutes")
 
 
@@ -76,3 +77,16 @@ class HeatmapRequest(BaseModel):
     bounds: Optional[Dict[str, float]] = None
     weights: Optional[Dict[str, float]] = None
     preset: Optional[str] = None
+
+
+class HeatmapPostRequest(BaseModel):
+    h3_resolution: int = Field(7, ge=4, le=9)
+    bounds: Optional[Dict[str, float]] = None
+    weights: Optional[Dict[str, float]] = Field(None, description="Custom scoring weights from UI sliders")
+    preset: Optional[str] = Field(None, description="Use case preset name")
+
+
+class SmartSearchRequest(BaseModel):
+    query: str = Field(..., description="Natural language search query")
+    current_weights: Optional[Dict[str, float]] = None
+    radius_km: float = Field(5.0, description="Analysis radius in km")

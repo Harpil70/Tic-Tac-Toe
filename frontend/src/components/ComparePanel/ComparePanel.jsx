@@ -2,6 +2,7 @@
  * ComparePanel — Side-by-side comparison of candidate sites.
  */
 import './ComparePanel.css';
+import { useDraggable } from '../../hooks/useDraggable';
 
 const LAYER_COLORS = {
   demographics: '#4fc3f7',
@@ -41,9 +42,19 @@ export default function ComparePanel({ sites, onClose, onRemoveSite }) {
   const ranked = [...sites].sort((a, b) => b.composite_score - a.composite_score);
   ranked.forEach((s, i) => { s.rank = i + 1; });
 
+  // Initialize drag position starting near bottom center
+  const { position, isDragging, dragHandlers } = useDraggable({ x: window.innerWidth / 2 - 450, y: window.innerHeight - 340 });
+
   return (
-    <div className="compare-panel">
-      <div className="compare-header">
+    <div 
+      className="compare-panel"
+      style={{ left: position.x, top: position.y, cursor: isDragging ? 'grabbing' : 'auto' }}
+    >
+      <div 
+        className="compare-header"
+        {...dragHandlers}
+        style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+      >
         <span className="compare-title">⚖️ Site Comparison ({sites.length} sites)</span>
         <button className="score-panel-close" onClick={onClose}>✕</button>
       </div>

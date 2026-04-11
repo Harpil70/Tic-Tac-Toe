@@ -10,6 +10,7 @@ import {
   Popup,
   Polygon,
   CircleMarker,
+  Circle,
   useMapEvents,
   useMap,
 } from 'react-leaflet';
@@ -56,6 +57,24 @@ function getScoreColor(score) {
   return '#ef4444';
 }
 
+function getCustomPin(color) {
+  return L.divIcon({
+    className: 'custom-colored-pin',
+    html: `<div style="
+      background-color: ${color};
+      width: 24px;
+      height: 24px;
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      border: 3px solid white;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+    "></div>`,
+    iconSize: [26, 26],
+    iconAnchor: [13, 26],
+    popupAnchor: [0, -26]
+  });
+}
+
 function getHeatColor(score) {
   // Red (0) -> Yellow (50) -> Green (100)
   if (score <= 30) return `rgba(239, 68, 68, 0.55)`;
@@ -79,6 +98,12 @@ function CoordsTracker({ onMove }) {
       onMove(e.latlng.lat, e.latlng.lng);
     },
   });
+  return null;
+}
+
+function MapRefSetter({ mapRef }) {
+  const map = useMap();
+  if (mapRef) mapRef.current = map;
   return null;
 }
 
@@ -143,9 +168,13 @@ export default function MapView({
   isochroneData,
   compareSites,
   pinMarker,
+  scoreData,
+  radiusKm,
   onMapClick,
   drawMode,
   onPolygonComplete,
+  polygonData,
+  mapRef,
 }) {
   const [coords, setCoords] = useState({ lat: 22.3, lng: 72.0 });
 
@@ -283,6 +312,7 @@ export default function MapView({
 
         {!drawMode && <MapClickHandler onClick={onMapClick} />}
         <CoordsTracker onMove={(lat, lng) => setCoords({ lat, lng })} />
+        <MapRefSetter mapRef={mapRef} />
 
         {drawMode && (
           <DrawPolygonControl active={drawMode} onPolygonComplete={onPolygonComplete} />
@@ -407,6 +437,45 @@ export default function MapView({
           </>
         )}
 
+        {/* ─── Getis-Ord Gi* Hot/Cold Spots ─── */}
+        {clusterData && clusterData.getis_ord_gi && (
+          <>
+              {clusterData.getis_ord_gi
+                .filter(spot => spot.significance !== "not_significant")
+                .map((spot, i) => {
+                  const isHot = spot.significance.startsWith('hot');
+                  const strength = spot.significance.split('_')[1]; // 90, 95, 99
+                  const radius = strength === '99' ? 10 : strength === '95' ? 7 : 5;
+                  
+                  return (
+                    <CircleMarker
+                      key={`gi-${i}`}
+                      center={[spot.lat, spot.lng]}
+                      radius={radius}
+                      pathOptions={{
+                        fillColor: isHot ? '#f59e0b' : '#3b82f6', // distinct from DBSCAN colors
+                        fillOpacity: 0.6,
+                        color: isHot ? '#b45309' : '#1d4ed8',
+                        weight: 1,
+                      }}
+                    >
+                      <Popup>
+                        <div className="custom-popup">
+                          <h4 style={{ color: isHot ? '#f59e0b' : '#3b82f6' }}>
+                            {isHot ? '🔥 Gi* Hot Spot' : '❄️ Gi* Cold Spot'}
+                          </h4>
+                          <div className="popup-score" style={{ color: '#fff', fontSize: '14px' }}>
+                            Z-Score: {spot.z_score}
+                          </div>
+                          <p>Significance: {strength}% confidence</p>
+                        </div>
+                      </Popup>
+                    </CircleMarker>
+                  );
+                })}
+          </>
+        )}
+
         {/* ─── Heatmap Layer (H3 Hexagons) ─── */}
         {heatmapData && heatmapData.geojson && (
           heatmapData.geojson.features.map((f, i) => {
@@ -430,6 +499,36 @@ export default function MapView({
                       {score.toFixed(1)}
                     </div>
                     <p>Grade: {f.properties.grade}</p>
+                  </div>
+                </Popup>
+              </Polygon>
+            );
+          })
+        )}
+
+        {/* ─── Polygon Drawn Area Hexagons ─── */}
+        {polygonData && polygonData.hexagons && (
+          polygonData.hexagons.map((hex, i) => {
+            const coords = hex.boundary.map(c => [c[0], c[1]]); // lat, lng
+            return (
+              <Polygon
+                key={`polyhex-${i}`}
+                positions={coords}
+                pathOptions={{
+                  fillColor: getScoreColor(hex.score),
+                  fillOpacity: 0.5,
+                  color: getScoreColor(hex.score),
+                  weight: 2,
+                  opacity: 0.8,
+                }}
+              >
+                <Popup>
+                  <div className="custom-popup">
+                    <div className="popup-score" style={{ color: getScoreColor(hex.score) }}>
+                      {hex.score.toFixed(1)}
+                    </div>
+                    <p>Grade: {hex.grade}</p>
+                    <p style={{ fontSize: '10px', color: '#94a3b8' }}>Custom Polygon Hexagon</p>
                   </div>
                 </Popup>
               </Polygon>
@@ -506,7 +605,7 @@ export default function MapView({
               >
                 <Popup>
                   <div className="custom-popup">
-                    <h4>{iso.minutes} min drive</h4>
+                    <h4>{iso.minutes} min {iso.mode === 'driving' ? 'drive' : iso.mode === 'transit' ? 'transit' : 'walk'}</h4>
                     <p>Radius: ~{iso.radius_km} km</p>
                     <p>Population: {iso.catchment.population.toLocaleString()}</p>
                   </div>
@@ -518,11 +617,22 @@ export default function MapView({
 
         {/* ─── Pin Marker ─── */}
         {pinMarker && (
-          <Marker position={[pinMarker.lat, pinMarker.lng]}>
+          <Marker 
+            position={[pinMarker.lat, pinMarker.lng]}
+            icon={getCustomPin(scoreData ? getScoreColor(scoreData.composite_score) : '#3b82f6')}
+          >
             <Popup>
               <div className="custom-popup">
                 <h4>📍 Selected Site</h4>
                 <p>{pinMarker.lat.toFixed(4)}°N, {pinMarker.lng.toFixed(4)}°E</p>
+                <p>Analysis Radius: {radiusKm} km</p>
+                {scoreData && (
+                  <p style={{ marginTop: '6px' }}>
+                    Score: <strong style={{ color: getScoreColor(scoreData.composite_score) }}>
+                      {scoreData.composite_score.toFixed(1)} / 100
+                    </strong>
+                  </p>
+                )}
               </div>
             </Popup>
           </Marker>
@@ -562,6 +672,23 @@ export default function MapView({
       {drawMode && (
         <div className="map-instructions">
           ✏️ Click to draw polygon points • Double-click to complete
+        </div>
+      )}
+
+      {/* ─── Polygon Stats Overlay ─── */}
+      {polygonData && !drawMode && (
+        <div className="polygon-stats-overlay">
+          <h4>Polygon Analysis</h4>
+          <div className="poly-stat">
+            <span>Avg Score:</span>
+            <span style={{ color: getScoreColor(polygonData.avg_score), fontWeight: 'bold' }}>
+              {polygonData.avg_score.toFixed(1)}
+            </span>
+          </div>
+          <div className="poly-stat">
+            <span>Hexagons Evaluated:</span>
+            <span>{polygonData.count}</span>
+          </div>
         </div>
       )}
 

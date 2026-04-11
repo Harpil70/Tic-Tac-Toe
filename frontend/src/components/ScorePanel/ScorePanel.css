@@ -4,8 +4,6 @@
 
 .score-panel {
   position: absolute;
-  top: 12px;
-  right: 12px;
   width: 340px;
   max-height: calc(100vh - 100px);
   overflow-y: auto;
@@ -27,7 +25,7 @@
 }
 
 .score-panel-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-primary);
 }
@@ -73,9 +71,10 @@
 }
 
 .score-coords {
-  font-size: 11px;
+  font-size: 12px;
   font-family: var(--font-mono);
-  color: var(--text-muted);
+  color: var(--text-secondary);
+  line-height: 1.5;
 }
 
 .score-violations {
@@ -86,12 +85,13 @@
   display: flex;
   align-items: flex-start;
   gap: 6px;
-  padding: 4px 8px;
+  padding: 5px 8px;
   background: rgba(239, 68, 68, 0.1);
   border-radius: var(--radius-sm);
-  font-size: 11px;
+  font-size: 12px;
   color: var(--accent-rose);
   margin-bottom: 4px;
+  line-height: 1.4;
 }
 
 /* ─── Sub-scores ─────────────────────────────────────────── */
@@ -122,7 +122,7 @@
 }
 
 .subscore-name {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 
@@ -147,11 +147,12 @@
 }
 
 .subscore-detail {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-muted);
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
+  line-height: 1.5;
 }
 
 .subscore-detail span {
@@ -180,9 +181,9 @@
 }
 
 .isochrone-title {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
@@ -199,7 +200,7 @@
   padding: 6px 10px;
   background: rgba(15, 23, 42, 0.4);
   border-radius: var(--radius-sm);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .isochrone-time {
@@ -214,4 +215,66 @@
 
 .isochrone-area {
   color: var(--text-muted);
+}
+
+/* ─── Investment Potential ─────────────────────────── */
+.investment-section {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.investment-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
+.investment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.investment-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 10px 8px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.investment-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateY(-1px);
+}
+
+.investment-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.investment-value {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.investment-high {
+  color: #10b981;
+}
+
+.investment-medium {
+  color: #fbbf24;
+}
+
+.investment-low {
+  color: #ef4444;
 }

@@ -21,11 +21,11 @@
 }
 
 .sidebar-title {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
 }
 
 .sidebar-body {
@@ -39,11 +39,11 @@
 }
 
 .sidebar-section-title {
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   margin-bottom: 10px;
   padding-bottom: 6px;
   border-bottom: 1px solid rgba(148, 163, 184, 0.08);
@@ -78,14 +78,42 @@
 }
 
 .layer-name {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--text-primary);
+  line-height: 1.4;
 }
 
 .layer-count {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* ─── Layer Block (toggle + inline weight) ──────────────── */
+.layer-block {
+  margin-bottom: 2px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.weight-inline {
+  padding: 4px 10px 10px 30px;
+  animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    max-height: 60px;
+    transform: translateY(0);
+  }
 }
 
 /* ─── Weight Slider ──────────────────────────────────────── */
@@ -101,15 +129,16 @@
 }
 
 .weight-label {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   color: var(--text-secondary);
 }
 
 .weight-value {
-  font-size: 11px;
+  font-size: 12px;
   font-family: var(--font-mono);
   color: var(--accent-blue-light);
+  font-weight: 500;
 }
 
 .weight-slider {
@@ -159,12 +188,13 @@
   border: none;
   border-radius: var(--radius-sm);
   font-family: var(--font-main);
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
   width: 100%;
   text-align: left;
+  line-height: 1.4;
 }
 
 .action-btn-heatmap {
@@ -222,12 +252,57 @@
 }
 
 .radius-control label {
-  font-size: 12px;
-  color: var(--text-muted);
+  font-size: 13px;
+  color: var(--text-secondary);
   white-space: nowrap;
+  font-weight: 500;
 }
 
 .radius-input {
   width: 60px;
   text-align: center;
+}
+
+/* ─── Upload Dropzone ────────────────────────────────────── */
+.upload-dropzone {
+  border: 1.5px dashed rgba(148, 163, 184, 0.3);
+  border-radius: var(--radius-md);
+  padding: 16px 12px;
+  text-align: center;
+  transition: all 0.2s ease;
+  background: rgba(10, 14, 26, 0.4);
+}
+
+.upload-dropzone.drag-active {
+  border-color: var(--accent-blue);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.upload-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.upload-dropzone p {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.upload-link {
+  color: var(--accent-blue);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.upload-link:hover {
+  color: var(--accent-blue-light);
+}
+
+.upload-formats {
+  display: block;
+  font-size: 11px;
+  color: var(--text-muted);
 }

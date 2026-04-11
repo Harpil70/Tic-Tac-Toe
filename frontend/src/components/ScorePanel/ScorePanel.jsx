@@ -3,6 +3,7 @@
  */
 import { useState, useEffect } from 'react';
 import { fetchIsochrone } from '../../services/api';
+import { useDraggable } from '../../hooks/useDraggable';
 import './ScorePanel.css';
 
 const LAYER_COLORS = {
@@ -78,15 +79,19 @@ export default function ScorePanel({
 }) {
   const [isoData, setIsoData] = useState(null);
   const [isoLoading, setIsoLoading] = useState(false);
+  const [isoMode, setIsoMode] = useState('driving');
+
+  // Initialize drag position — place panel fully visible, offset from map right edge
+  const { position, isDragging, dragHandlers } = useDraggable({ x: window.innerWidth - 660, y: 70 });
 
   if (!scoreData) return null;
 
-  const { lat, lng, composite_score, grade, sub_scores, threshold_violations } = scoreData;
+  const { lat, lng, composite_score, grade, sub_scores, threshold_violations, investment_potential } = scoreData;
 
   const handleIsochrone = async () => {
     setIsoLoading(true);
     try {
-      const data = await fetchIsochrone(lat, lng, 'driving', [10, 20, 30]);
+      const data = await fetchIsochrone(lat, lng, isoMode, [10, 20, 30]);
       setIsoData(data);
       if (onShowIsochrone) onShowIsochrone(data);
     } catch (err) {
@@ -96,9 +101,16 @@ export default function ScorePanel({
   };
 
   return (
-    <div className="score-panel">
-      <div className="score-panel-header">
-        <span className="score-panel-title">📊 Site Readiness Score</span>
+    <div 
+      className="score-panel"
+      style={{ left: position.x, top: position.y, cursor: isDragging ? 'grabbing' : 'auto' }}
+    >
+      <div 
+        className="score-panel-header" 
+        {...dragHandlers} 
+        style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+      >
+        <span className="score-panel-title">📍 Score Breakdown</span>
         <button className="score-panel-close" onClick={onClose}>✕</button>
       </div>
 
@@ -198,10 +210,65 @@ export default function ScorePanel({
           })}
         </div>
 
+        {/* ─── Investment Potential ─── */}
+        {investment_potential && (
+          <div className="investment-section">
+            <div className="investment-title">💼 Investment Insights</div>
+            <div className="investment-grid">
+              <div className="investment-card">
+                <div className="investment-label">ROI Potential</div>
+                <div className={`investment-value investment-${investment_potential.roi_potential.toLowerCase()}`}>
+                  {investment_potential.roi_potential === 'High' ? '📈' : investment_potential.roi_potential === 'Medium' ? '📊' : '📉'} {investment_potential.roi_potential}
+                </div>
+              </div>
+              <div className="investment-card">
+                <div className="investment-label">Risk Level</div>
+                <div className={`investment-value investment-${investment_potential.risk_level === 'Low' ? 'high' : investment_potential.risk_level === 'High' ? 'low' : 'medium'}`}>
+                  {investment_potential.risk_level === 'Low' ? '🛡️' : investment_potential.risk_level === 'Medium' ? '⚠️' : '🚨'} {investment_potential.risk_level}
+                </div>
+              </div>
+              <div className="investment-card">
+                <div className="investment-label">Growth Potential</div>
+                <div className={`investment-value investment-${investment_potential.growth_potential.toLowerCase()}`}>
+                  {investment_potential.growth_potential === 'High' ? '🚀' : investment_potential.growth_potential === 'Medium' ? '📊' : '📉'} {investment_potential.growth_potential}
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+
         {/* ─── Isochrone ─── */}
         <div className="isochrone-section">
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <span className="isochrone-title">🚗 Drive-Time Catchment</span>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '8px' }}>
+            <span className="isochrone-title">{isoMode === 'driving' ? '🚗' : isoMode === 'transit' ? '🚌' : '🚶‍♂️'} Catchment Area</span>
+            
+            <div style={{ display: 'flex', gap: '4px' }}>
+              <button
+                className={`btn btn-sm ${isoMode === 'driving' ? 'btn-primary' : 'btn-secondary'}`}
+                onClick={() => setIsoMode('driving')}
+                style={{ padding: '2px 6px', fontSize: '10px' }}
+                disabled={isoLoading}
+              >
+                Drive
+              </button>
+              <button
+                className={`btn btn-sm ${isoMode === 'transit' ? 'btn-primary' : 'btn-secondary'}`}
+                onClick={() => setIsoMode('transit')}
+                style={{ padding: '2px 6px', fontSize: '10px' }}
+                disabled={isoLoading}
+              >
+                Transit
+              </button>
+              <button
+                className={`btn btn-sm ${isoMode === 'walking' ? 'btn-primary' : 'btn-secondary'}`}
+                onClick={() => setIsoMode('walking')}
+                style={{ padding: '2px 6px', fontSize: '10px' }}
+                disabled={isoLoading}
+              >
+                Walk
+              </button>
+            </div>
+
             <button
               className="btn btn-sm btn-secondary"
               onClick={handleIsochrone}

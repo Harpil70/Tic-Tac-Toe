@@ -15,6 +15,17 @@ const api = axios.create({
 export const fetchLayers = () => api.get('/layers').then(r => r.data);
 export const fetchLayerData = (name) => api.get(`/layers/${name}`).then(r => r.data);
 
+export const uploadLayer = (file, customName) => {
+  const formData = new FormData();
+  formData.append('file', file);
+  if (customName) formData.append('layer_name', customName);
+  
+  return api.post('/upload', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' },
+    timeout: 60000, // May take larger files
+  }).then(r => r.data);
+};
+
 // ─── Scoring APIs ───────────────────────────────────────────────
 export const scorePoint = (lat, lng, weights = null, preset = null, radiusKm = 5) =>
   api.post('/score', { lat, lng, weights, preset, radius_km: radiusKm }).then(r => r.data);
@@ -23,24 +34,38 @@ export const scorePolygon = (polygon, weights = null, preset = null) =>
   api.post('/score/polygon', { polygon, weights, preset }).then(r => r.data);
 
 // ─── Clustering APIs ─────────────────────────────────────────────
-export const runClustering = (params = {}) =>
-  api.post('/cluster', {
+export const runClustering = (params = {}) => {
+  const bounds = params.bounds || null;
+  const boundsPayload = (bounds && bounds.minLat && bounds.maxLat && bounds.minLng && bounds.maxLng)
+    ? { min_lat: bounds.minLat, max_lat: bounds.maxLat, min_lng: bounds.minLng, max_lng: bounds.maxLng }
+    : null;
+
+  return api.post('/cluster', {
     h3_resolution: params.resolution || 7,
     min_samples: params.minSamples || 3,
     eps_km: params.epsKm || 10,
     weights: params.weights || null,
     preset: params.preset || null,
+    bounds: boundsPayload,
   }).then(r => r.data);
+};
 
 export const fetchHeatmap = (params = {}) => {
-  const query = new URLSearchParams();
-  if (params.resolution) query.set('resolution', params.resolution);
-  if (params.minLat) query.set('min_lat', params.minLat);
-  if (params.maxLat) query.set('max_lat', params.maxLat);
-  if (params.minLng) query.set('min_lng', params.minLng);
-  if (params.maxLng) query.set('max_lng', params.maxLng);
-  if (params.preset) query.set('preset', params.preset);
-  return api.get(`/h3/heatmap?${query}`).then(r => r.data);
+  const bounds = (params.minLat && params.maxLat && params.minLng && params.maxLng)
+    ? {
+        min_lat: params.minLat,
+        max_lat: params.maxLat,
+        min_lng: params.minLng,
+        max_lng: params.maxLng
+      }
+    : null;
+
+  return api.post('/h3/heatmap', {
+    h3_resolution: params.resolution || 7,
+    bounds: bounds,
+    weights: params.weights || null,
+    preset: params.preset || null,
+  }).then(r => r.data);
 };
 
 // ─── Isochrone APIs ──────────────────────────────────────────────
@@ -53,7 +78,7 @@ export const compareSites = (sites, weights = null, preset = null) =>
 
 // ─── Export APIs ─────────────────────────────────────────────────
 export const exportReport = async (siteResults, format = 'pdf', weights = null, preset = null, title = 'Site Readiness Report') => {
-  if (format === 'pdf') {
+  if (format === 'pdf' || format === 'excel') {
     try {
       const response = await api.post('/export', {
         pre_computed_results: siteResults,
@@ -63,14 +88,19 @@ export const exportReport = async (siteResults, format = 'pdf', weights = null, 
         timeout: 60000,
       });
 
-      const blob = new Blob([response.data], { type: 'application/pdf' });
+      const mimeType = format === 'pdf' 
+        ? 'application/pdf' 
+        : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+      const fileExt = format === 'pdf' ? 'pdf' : 'xlsx';
+
+      const blob = new Blob([response.data], { type: mimeType });
       const url = window.URL.createObjectURL(blob);
 
-      // Create a hidden anchor with download attribute to force .pdf filename
+      // Create a hidden anchor with download attribute
       const link = document.createElement('a');
       link.style.display = 'none';
       link.href = url;
-      link.download = 'site_readiness_report.pdf';
+      link.download = `site_readiness_report.${fileExt}`;
       document.body.appendChild(link);
 
       // Use setTimeout to ensure the link is in the DOM before clicking
@@ -81,7 +111,7 @@ export const exportReport = async (siteResults, format = 'pdf', weights = null, 
         }, 100);
       });
 
-      // Clean up after a delay to allow browser to start the download
+      // Clean up after a delay
       setTimeout(() => {
         document.body.removeChild(link);
         window.URL.revokeObjectURL(url);
@@ -89,7 +119,7 @@ export const exportReport = async (siteResults, format = 'pdf', weights = null, 
 
       return { success: true };
     } catch (err) {
-      console.error('PDF export failed:', err);
+      console.error(`${format.toUpperCase()} export failed:`, err);
       throw err;
     }
   }
@@ -102,5 +132,9 @@ export const exportReport = async (siteResults, format = 'pdf', weights = null, 
 export const fetchPresets = () => api.get('/presets').then(r => r.data);
 export const fetchConfig = () => api.get('/config').then(r => r.data);
 export const healthCheck = () => api.get('/health').then(r => r.data);
+
+// ─── Smart Search API ────────────────────────────────────────────
+export const smartSearch = (query, currentWeights = null, radiusKm = 5) =>
+  api.post('/smart-search', { query, current_weights: currentWeights, radius_km: radiusKm }).then(r => r.data);
 
 export default api;

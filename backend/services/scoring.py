@@ -11,10 +11,14 @@ from utils.spatial import (
 def get_weights(custom_weights: Optional[Dict[str, float]] = None,
                 preset: Optional[str] = None) -> Dict[str, float]:
     """Get scoring weights from custom, preset, or default."""
-    if custom_weights:
+    if custom_weights is not None:
         total = sum(custom_weights.values())
         if total > 0:
             return {k: v / total for k, v in custom_weights.items()}
+        else:
+            # User explicitly passed weights but all are 0 (all toggled off)
+            return custom_weights
+
     if preset and preset in WEIGHT_PRESETS:
         return WEIGHT_PRESETS[preset]
     return DEFAULT_WEIGHTS
@@ -287,8 +291,13 @@ def compute_site_score(lat: float, lng: float,
     nearby_summary = {}
 
     for layer_name, scorer in scorers.items():
-        layer_score, details = scorer(lat, lng, radius_km)
         layer_weight = w.get(layer_name, 0.2)
+        
+        # Skip completely if layer is disabled (weight is 0)
+        if layer_weight <= 0:
+            continue
+            
+        layer_score, details = scorer(lat, lng, radius_km)
         weighted = layer_score * layer_weight
 
         sub_scores.append({
@@ -327,6 +336,9 @@ def compute_site_score(lat: float, lng: float,
     penalty = len(threshold_violations) * 5
     composite = max(0, composite - penalty)
 
+    # ─── Investment Potential Analysis ────────────────────────
+    investment = _compute_investment_potential(composite, sub_scores)
+
     result = {
         "lat": lat,
         "lng": lng,
@@ -335,6 +347,50 @@ def compute_site_score(lat: float, lng: float,
         "sub_scores": sub_scores,
         "threshold_violations": threshold_violations,
         "nearby_summary": nearby_summary,
+        "investment_potential": investment,
     }
 
     return result
+
+
+def _compute_investment_potential(composite_score: float, sub_scores: list) -> dict:
+    """Convert technical scores into business investment insights."""
+    # Extract raw layer scores from sub_scores list
+    layer_scores = {}
+    for sub in sub_scores:
+        layer_scores[sub.get("layer", "")] = sub.get("score", 0)
+
+    demo_score = layer_scores.get("demographics", 0)
+    transport_score = layer_scores.get("transportation", 0)
+    landuse_score = layer_scores.get("landuse", 0)
+    env_score = layer_scores.get("environmental", 0)
+
+    # A) ROI Potential
+    if composite_score >= 80:
+        roi = "High"
+    elif composite_score >= 60:
+        roi = "Medium"
+    else:
+        roi = "Low"
+
+    # B) Risk Level
+    if env_score < 50:
+        risk = "High"
+    elif transport_score < 30:
+        risk = "Medium"
+    else:
+        risk = "Low"
+
+    # C) Growth Potential
+    if demo_score > 70 and 50 <= landuse_score <= 80:
+        growth = "High"
+    elif demo_score > 50:
+        growth = "Medium"
+    else:
+        growth = "Low"
+
+    return {
+        "roi_potential": roi,
+        "risk_level": risk,
+        "growth_potential": growth,
+    }

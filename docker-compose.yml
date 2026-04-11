@@ -1,0 +1,24 @@
+# Docker Compose for PostGIS spatial database
+# Usage: docker-compose up -d
+# This starts a PostgreSQL + PostGIS container for the GeoSpatial Analyzer.
+
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    container_name: geospatial-postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: geospatial
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  pgdata:

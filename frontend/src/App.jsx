@@ -2,7 +2,7 @@
  * GeoSpatial Site Readiness Analyzer — Main Application
  * AI-Powered Location Intelligence for Gujarat, India
  */
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import LoginPage from './components/LoginPage/LoginPage';
 import Sidebar from './components/Sidebar/Sidebar';
 import MapView from './components/MapView/MapView';
@@ -16,6 +16,8 @@ import {
   fetchHeatmap,
   runClustering,
   exportReport,
+  uploadLayer,
+  scorePolygon,
   healthCheck,
 } from './services/api';
 import './App.css';
@@ -81,14 +83,34 @@ export default function App() {
   const [heatmapData, setHeatmapData] = useState(null);
   const [clusterData, setClusterData] = useState(null);
   const [isochroneData, setIsochroneData] = useState(null);
+  const [polygonData, setPolygonData] = useState(null);
 
   const [compareMode, setCompareMode] = useState(false);
   const [compareSites, setCompareSites] = useState([]);
+  const compareSitesRef = useRef([]);
+
+  useEffect(() => {
+    compareSitesRef.current = compareSites;
+  }, [compareSites]);
 
   const [drawMode, setDrawMode] = useState(false);
   const [loading, setLoading] = useState(false);
   const [apiConnected, setApiConnected] = useState(false);
   const [error, setError] = useState(null);
+
+  // Map reference for reading current viewport bounds
+  const mapRef = useRef(null);
+
+  const getMapBounds = () => {
+    if (!mapRef.current) return null;
+    const b = mapRef.current.getBounds();
+    return {
+      minLat: b.getSouth(),
+      maxLat: b.getNorth(),
+      minLng: b.getWest(),
+      maxLng: b.getEast(),
+    };
+  };
 
   // ─── Initialize ────────────────────────────────────────────
   useEffect(() => {
@@ -128,6 +150,15 @@ export default function App() {
     setWeights(prev => ({ ...prev, [layer]: value }));
   }, []);
 
+  // Build effective weights: zero out any disabled (toggled-off) layers
+  const getEffectiveWeights = useCallback(() => {
+    const effective = {};
+    for (const [key, val] of Object.entries(weights)) {
+      effective[key] = enabledLayers[key] ? val : 0;
+    }
+    return effective;
+  }, [weights, enabledLayers]);
+
   const handlePresetChange = (e) => {
     setPreset(e.target.value);
   };
@@ -140,7 +171,7 @@ export default function App() {
     setError(null);
 
     try {
-      const result = await scorePoint(lat, lng, weights, preset, radiusKm);
+      const result = await scorePoint(lat, lng, getEffectiveWeights(), preset, radiusKm);
       setScoreData(result);
       setIsochroneData(null);
 
@@ -152,13 +183,14 @@ export default function App() {
       setError('Failed to compute score. Is the backend running?');
     }
     setLoading(false);
-  }, [weights, preset, radiusKm, drawMode, compareMode]);
+  }, [getEffectiveWeights, preset, radiusKm, drawMode, compareMode]);
 
   const handleRunHeatmap = async () => {
     setLoading(true);
     setError(null);
     try {
-      const data = await fetchHeatmap({ resolution: 7, preset });
+      const bounds = getMapBounds();
+      const data = await fetchHeatmap({ resolution: 7, preset, weights: getEffectiveWeights(), ...bounds });
       setHeatmapData(data);
     } catch (err) {
       console.error('Heatmap error:', err);
@@ -171,7 +203,8 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const data = await runClustering({ preset });
+      const bounds = getMapBounds();
+      const data = await runClustering({ preset, weights: getEffectiveWeights(), bounds });
       setClusterData(data);
     } catch (err) {
       console.error('Cluster error:', err);
@@ -208,7 +241,7 @@ export default function App() {
     setCompareSites(prev => prev.filter((_, i) => i !== idx));
   };
 
-  const handleExport = async () => {
+  const handleExport = async (format = 'pdf') => {
     // Gather full score data — use compare sites if available, otherwise current scored site
     let siteResults = [...compareSites];
     if (siteResults.length === 0 && scoreData) {
@@ -221,11 +254,11 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      // Send the full pre-computed results so the PDF matches the website exactly
-      await exportReport(siteResults, 'pdf', weights, preset);
+      // Send the full pre-computed results so the file matches the website exactly
+      await exportReport(siteResults, format, weights, preset);
     } catch (err) {
       console.error('Export error:', err);
-      setError('Failed to export PDF. Check the backend console for errors.');
+      setError(`Failed to export ${format.toUpperCase()}. Check the backend console for errors.`);
     }
     setLoading(false);
   };
@@ -236,9 +269,84 @@ export default function App() {
 
   const handlePolygonComplete = async (polygon) => {
     setDrawMode(false);
-    // TODO: Score polygon area
-    console.log('Polygon drawn:', polygon);
+    setLoading(true);
+    setError(null);
+    try {
+      const result = await scorePolygon(polygon, getEffectiveWeights(), preset);
+      setPolygonData(result);
+    } catch (err) {
+      console.error('Polygon score error:', err);
+      setError('Failed to score polygon area');
+    }
+    setLoading(false);
   };
+
+  const handleUploadLayer = async (file, customName) => {
+    setLoading(true);
+    setError(null);
+    try {
+      await uploadLayer(file, customName);
+      
+      // Refresh layers
+      const layerInfo = await fetchLayers();
+      setLayers(layerInfo.layers || []);
+
+      // Pre-load layer data again
+      const allData = {};
+      for (const layer of (layerInfo.layers || [])) {
+        try {
+          const data = await fetchLayerData(layer.name);
+          allData[layer.name] = data;
+        } catch (err) {
+          console.warn(`Failed to load layer ${layer.name}:`, err);
+        }
+      }
+      setLayerData(allData);
+
+      // Successfully processed, you might want to show a success toast here
+    } catch (err) {
+      console.error('Upload error:', err);
+      setError('Failed to upload data. Please check the format and try again.');
+    }
+    setLoading(false);
+  };
+
+  // ─── Dynamic Rescore Effect ────────────────────────────────
+  const weightsStr = JSON.stringify(weights);
+  const enabledStr = JSON.stringify(enabledLayers);
+
+  useEffect(() => {
+    // Only run if we actually have a selected site and we're not drawing
+    if (!pinMarker || drawMode) return;
+
+    let isCancelled = false;
+
+    const runDynamicUpdates = async () => {
+      try {
+        // 1. Update the primary selected site silently
+        const result = await scorePoint(pinMarker.lat, pinMarker.lng, getEffectiveWeights(), preset, radiusKm);
+        if (isCancelled) return;
+        setScoreData(result);
+
+        // 2. Update any comparison sites dynamically
+        const currentCompare = compareSitesRef.current;
+        if (currentCompare.length > 0) {
+          const newCompare = await Promise.all(
+            currentCompare.map(site => scorePoint(site.lat, site.lng, getEffectiveWeights(), preset, radiusKm))
+          );
+          if (!isCancelled) setCompareSites(newCompare);
+        }
+      } catch (err) {
+        console.error('Dynamic score update failed:', err);
+      }
+    };
+
+    runDynamicUpdates();
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [weightsStr, enabledStr, preset, radiusKm, pinMarker, drawMode, getEffectiveWeights]);
 
   // ─── Render ────────────────────────────────────────────────
 
@@ -304,9 +412,12 @@ export default function App() {
           onRunClustering={handleRunClustering}
           onToggleCompare={handleToggleCompare}
           onExport={handleExport}
+          onUploadLayer={handleUploadLayer}
           compareMode={compareMode}
           compareSites={compareSites}
           loading={loading}
+          drawMode={drawMode}
+          onToggleDrawMode={() => setDrawMode(!drawMode)}
         />
 
         <div className="map-container">
@@ -316,11 +427,15 @@ export default function App() {
             heatmapData={heatmapData}
             clusterData={clusterData}
             isochroneData={isochroneData}
+            polygonData={polygonData}
             compareSites={compareSites}
             pinMarker={pinMarker}
+            scoreData={scoreData}
+            radiusKm={radiusKm}
             onMapClick={handleMapClick}
             drawMode={drawMode}
             onPolygonComplete={handlePolygonComplete}
+            mapRef={mapRef}
           />
 
           {/* Score Panel */}

@@ -105,7 +105,10 @@ def compute_heatmap(bounds: Optional[Dict[str, float]] = None,
     # Limit hexagons for performance
     if len(hexagons) > max_hexagons:
         import random
-        random.seed(42)
+        # Seed based on bounds for consistency within the same view
+        seed_val = int((bounds["min_lat"] + bounds["max_lat"]) * 1000
+                       + (bounds["min_lng"] + bounds["max_lng"]) * 100)
+        random.seed(seed_val)
         hexagons = random.sample(hexagons, max_hexagons)
 
     features = []
@@ -178,12 +181,12 @@ def detect_clusters(heatmap_data: Dict[str, Any],
     p75 = stats.get("p75", 60)
     p25 = stats.get("p25", 30)
 
-    # Simple distance-based clustering (DBSCAN-like)
+    # Separate hot and cold points for clustering
     hot_points = [p for p in points if p["score"] >= p75]
     cold_points = [p for p in points if p["score"] <= p25]
 
-    hot_clusters = _simple_dbscan(hot_points, eps_km, min_samples)
-    cold_clusters = _simple_dbscan(cold_points, eps_km, min_samples)
+    hot_clusters = _sklearn_dbscan(hot_points, eps_km, min_samples)
+    cold_clusters = _sklearn_dbscan(cold_points, eps_km, min_samples)
 
     # Format results
     hot_spots = []
@@ -214,70 +217,127 @@ def detect_clusters(heatmap_data: Dict[str, Any],
             "hexagons": [p["hex_id"] for p in cluster],
         })
 
+    # Getis-Ord Gi* Statistic
+    gi_star_results = compute_getis_ord_gi(points, eps_km)
+
     return {
         "hot_spots": hot_spots,
         "cold_spots": cold_spots,
+        "getis_ord_gi": gi_star_results,
         "total_hexagons": len(points),
         "stats": stats,
     }
 
 
-def _simple_dbscan(points: List[Dict], eps_km: float, min_samples: int) -> List[List[Dict]]:
-    """Simple DBSCAN implementation for spatial clustering."""
+def compute_getis_ord_gi(points: List[Dict], eps_km: float) -> List[Dict]:
+    """Calculate Getis-Ord Gi* z-score for each point to find statistically significant clusters."""
+    import math
     from utils.spatial import haversine_distance
+
+    n = len(points)
+    if n <= 1:
+        return []
+
+    # Calculate global mean and variance
+    scores = [p["score"] for p in points]
+    mean_score = sum(scores) / n
+    variance = sum((x - mean_score) ** 2 for x in scores) / n
+    std_dev = math.sqrt(variance) if variance > 0 else 0
+
+    if std_dev == 0:
+        return []
+
+    results = []
+    
+    for i in range(n):
+        point_i = points[i]
+        
+        # Spatial weights: 1 if neighbor (including self within eps_km), else 0
+        w_sum = 0
+        wx_sum = 0
+        w_sq_sum = 0
+        
+        for j in range(n):
+            dist = haversine_distance(
+                point_i["lat"], point_i["lng"],
+                points[j]["lat"], points[j]["lng"]
+            )
+            # Binary distance weight
+            if dist <= eps_km:
+                w_ij = 1
+                w_sum += w_ij
+                wx_sum += w_ij * points[j]["score"]
+                w_sq_sum += w_ij ** 2
+
+        if w_sum > 0:
+            # Getis-Ord Gi* formula
+            numerator = wx_sum - (mean_score * w_sum)
+            denominator = std_dev * math.sqrt((n * w_sq_sum - w_sum**2) / (n - 1)) if n > 1 else 1
+            
+            z_score = numerator / denominator if denominator > 0 else 0
+            
+            # Classification
+            if z_score > 2.58:
+                significance = "hot_99"
+            elif z_score > 1.96:
+                significance = "hot_95"
+            elif z_score > 1.65:
+                significance = "hot_90"
+            elif z_score < -2.58:
+                significance = "cold_99"
+            elif z_score < -1.96:
+                significance = "cold_95"
+            elif z_score < -1.65:
+                significance = "cold_90"
+            else:
+                significance = "not_significant"
+
+            results.append({
+                "hex_id": point_i["hex_id"],
+                "lat": point_i["lat"],
+                "lng": point_i["lng"],
+                "z_score": round(z_score, 3),
+                "significance": significance
+            })
+
+    return results
+
+
+def _sklearn_dbscan(points: List[Dict], eps_km: float, min_samples: int) -> List[List[Dict]]:
+    """
+    DBSCAN spatial clustering using scikit-learn with haversine metric.
+    eps_km is converted to radians for the haversine distance metric.
+    """
+    import numpy as np
+    from sklearn.cluster import DBSCAN
 
     n = len(points)
     if n == 0:
         return []
 
-    visited = [False] * n
-    clusters = []
+    # Prepare coordinates in radians for haversine metric
+    coords_rad = np.radians([[p["lat"], p["lng"]] for p in points])
 
-    for i in range(n):
-        if visited[i]:
+    # Convert eps from km to radians (Earth radius ≈ 6371 km)
+    eps_rad = eps_km / 6371.0
+
+    # Run scikit-learn DBSCAN with haversine metric
+    db = DBSCAN(
+        eps=eps_rad,
+        min_samples=min_samples,
+        metric="haversine",
+        algorithm="ball_tree",
+    )
+    labels = db.fit_predict(coords_rad)
+
+    # Group points by cluster label (label -1 = noise)
+    cluster_map: Dict[int, List[Dict]] = {}
+    for i, label in enumerate(labels):
+        if label == -1:
             continue
+        if label not in cluster_map:
+            cluster_map[label] = []
+        cluster_map[label].append(points[i])
 
-        # Find neighbors
-        neighbors = []
-        for j in range(n):
-            if i != j:
-                dist = haversine_distance(
-                    points[i]["lat"], points[i]["lng"],
-                    points[j]["lat"], points[j]["lng"]
-                )
-                if dist <= eps_km:
-                    neighbors.append(j)
+    return list(cluster_map.values())
 
-        if len(neighbors) >= min_samples - 1:
-            # Start new cluster
-            cluster = [points[i]]
-            visited[i] = True
-
-            # Expand cluster
-            queue = list(neighbors)
-            while queue:
-                j = queue.pop(0)
-                if visited[j]:
-                    continue
-                visited[j] = True
-                cluster.append(points[j])
-
-                # Find j's neighbors
-                j_neighbors = []
-                for k in range(n):
-                    if k != j:
-                        dist = haversine_distance(
-                            points[j]["lat"], points[j]["lng"],
-                            points[k]["lat"], points[k]["lng"]
-                        )
-                        if dist <= eps_km:
-                            j_neighbors.append(k)
-
-                if len(j_neighbors) >= min_samples - 1:
-                    for nn in j_neighbors:
-                        if not visited[nn] and nn not in queue:
-                            queue.append(nn)
-
-            clusters.append(cluster)
-
-    return clusters

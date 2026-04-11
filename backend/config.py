@@ -4,6 +4,13 @@ import os
 # Data directory
 DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
 
+# PostGIS database URL (set to "" to disable PostGIS and use in-memory only)
+# Override via environment variable: export DATABASE_URL="postgresql://user:pass@host:5432/dbname"
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL",
+    "postgresql://postgres:postgres@localhost:5432/geospatial"
+)
+
 # H3 resolution for hexagonal binning
 H3_RESOLUTION = 7  # ~5.16 km² per hexagon
 

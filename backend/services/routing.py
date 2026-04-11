@@ -11,8 +11,9 @@ def compute_isochrone(lat: float, lng: float,
                       mode: str = "driving",
                       intervals: List[int] = None) -> Dict[str, Any]:
     """
-    Compute drive-time or walk-time isochrones from a point.
-    Uses OSRM public API or generates approximate isochrones.
+    Compute drive-time, walk-time, or transit isochrones from a point.
+    Attempts to use OSRM routing API for realistic road-network isochrones;
+    falls back to approximate polygon generation if OSRM is unavailable.
     """
     if intervals is None:
         intervals = [10, 20, 30]
@@ -20,17 +21,24 @@ def compute_isochrone(lat: float, lng: float,
     isochrones = []
 
     for minutes in sorted(intervals):
-        # Estimate distance based on time
+        # Speed estimates by mode
         if mode == "driving":
             speed_kmh = 40  # Average urban driving speed in Gujarat
+        elif mode == "transit":
+            speed_kmh = 25  # Approx. bus/auto-rickshaw speed in Gujarat metro areas
         else:
-            speed_kmh = 5  # Walking speed
+            speed_kmh = 5   # Walking speed
 
         radius_km = speed_kmh * minutes / 60
 
-        # Generate approximate isochrone polygon
-        # In production, use OSRM's actual isochrone service
-        polygon = _generate_isochrone_polygon(lat, lng, radius_km, num_points=32)
+        # Try OSRM-based isochrone first (for driving/walking)
+        polygon = None
+        if mode in ("driving", "walking"):
+            polygon = _osrm_isochrone(lat, lng, radius_km, mode, num_points=24)
+
+        # Fallback to approximate polygon
+        if polygon is None:
+            polygon = _generate_isochrone_polygon(lat, lng, radius_km, num_points=32)
 
         # Compute catchment area stats
         catchment = _compute_catchment(lat, lng, radius_km)
@@ -48,6 +56,76 @@ def compute_isochrone(lat: float, lng: float,
         "mode": mode,
         "isochrones": isochrones,
     }
+
+
+def _osrm_isochrone(lat: float, lng: float, radius_km: float,
+                    mode: str = "driving", num_points: int = 24) -> Optional[Dict]:
+    """
+    Build an isochrone by querying OSRM route durations to sample points
+    around the origin. Uses the OSRM table service to get travel times
+    to radial probe points, then adjusts radii based on actual driving time.
+    """
+    try:
+        profile = "driving" if mode == "driving" else "foot"
+
+        # Generate probe points at the estimated radius
+        lat_deg_per_km = 1.0 / 111.32
+        lng_deg_per_km = 1.0 / (111.32 * math.cos(math.radians(lat)))
+
+        probe_coords = []
+        for i in range(num_points):
+            angle = 2 * math.pi * i / num_points
+            dlat = radius_km * math.sin(angle) * lat_deg_per_km
+            dlng = radius_km * math.cos(angle) * lng_deg_per_km
+            probe_coords.append((round(lng + dlng, 6), round(lat + dlat, 6)))
+
+        # Build OSRM table request: origin is index 0, probes are 1..N
+        coords_str = f"{lng},{lat}"
+        for plng, plat in probe_coords:
+            coords_str += f";{plng},{plat}"
+
+        url = (
+            f"{OSRM_BASE_URL}/table/v1/{profile}/{coords_str}"
+            f"?sources=0&annotations=duration"
+        )
+
+        response = requests.get(url, timeout=10)
+        if response.status_code != 200:
+            return None
+
+        data = response.json()
+        if data.get("code") != "Ok":
+            return None
+
+        durations = data["durations"][0]  # durations from source (index 0)
+
+        # Build polygon using actual travel-time scaling
+        # target_seconds is the time budget for this radius
+        target_seconds = (radius_km / (40 if mode == "driving" else 5)) * 3600
+        coordinates = []
+
+        for i in range(num_points):
+            dur = durations[i + 1]  # skip index 0 (self)
+            if dur is None or dur == 0:
+                scale = 1.0
+            else:
+                scale = min(1.5, max(0.3, target_seconds / dur))
+
+            angle = 2 * math.pi * i / num_points
+            r = radius_km * scale
+            dlng = r * math.cos(angle) * lng_deg_per_km
+            dlat = r * math.sin(angle) * lat_deg_per_km
+            coordinates.append([
+                round(lng + dlng, 6),
+                round(lat + dlat, 6),
+            ])
+
+        coordinates.append(coordinates[0])  # close ring
+        return {"type": "Polygon", "coordinates": [coordinates]}
+
+    except Exception as e:
+        print(f"OSRM isochrone failed (falling back to approximation): {e}")
+        return None
 
 
 def _generate_isochrone_polygon(lat: float, lng: float,

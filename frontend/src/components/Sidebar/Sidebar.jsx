@@ -24,11 +24,15 @@ export default function Sidebar({
   onRunClustering,
   onToggleCompare,
   onExport,
+  onUploadLayer,
   compareMode,
   compareSites,
   loading,
+  drawMode,
+  onToggleDrawMode,
 }) {
   const [collapsed, setCollapsed] = useState({});
+  const [dragActive, setDragActive] = useState(false);
 
   const toggleSection = (key) => {
     setCollapsed(prev => ({ ...prev, [key]: !prev[key] }));
@@ -41,77 +45,68 @@ export default function Sidebar({
       </div>
 
       <div className="sidebar-body">
-        {/* ─── Layer Toggles ─── */}
+        {/* ─── Data Layers & Weights (unified) ─── */}
         <div className="sidebar-section">
           <div
             className="sidebar-section-title"
             onClick={() => toggleSection('layers')}
             style={{ cursor: 'pointer' }}
           >
-            {collapsed.layers ? '▶' : '▼'} Data Layers
+            {collapsed.layers ? '▶' : '▼'} Data Layers & Weights
           </div>
           {!collapsed.layers && layers.map(layer => {
             const meta = LAYER_META[layer.name] || {};
+            const isEnabled = !!enabledLayers[layer.name];
+            const weightVal = weights[layer.name] ?? 0;
             return (
-              <div
-                key={layer.name}
-                className="layer-item"
-                onClick={() => onToggleLayer(layer.name)}
-              >
+              <div key={layer.name} className="layer-block">
                 <div
-                  className="layer-dot"
-                  style={{
-                    background: meta.color,
-                    opacity: enabledLayers[layer.name] ? 1 : 0.3,
-                  }}
-                />
-                <div className="layer-info">
-                  <div className="layer-name">{meta.icon} {meta.name || layer.name}</div>
-                  <div className="layer-count">{layer.feature_count} features</div>
-                </div>
-                <label className="toggle" onClick={e => e.stopPropagation()}>
-                  <input
-                    type="checkbox"
-                    checked={!!enabledLayers[layer.name]}
-                    onChange={() => onToggleLayer(layer.name)}
+                  className="layer-item"
+                  onClick={() => onToggleLayer(layer.name)}
+                >
+                  <div
+                    className="layer-dot"
+                    style={{
+                      background: meta.color,
+                      opacity: isEnabled ? 1 : 0.3,
+                    }}
                   />
-                  <span className="toggle-slider" />
-                </label>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* ─── Weight Config ─── */}
-        <div className="sidebar-section">
-          <div
-            className="sidebar-section-title"
-            onClick={() => toggleSection('weights')}
-            style={{ cursor: 'pointer' }}
-          >
-            {collapsed.weights ? '▶' : '▼'} Scoring Weights
-          </div>
-          {!collapsed.weights && Object.entries(weights).map(([key, value]) => {
-            const meta = LAYER_META[key] || {};
-            return (
-              <div key={key} className="weight-item">
-                <div className="weight-header">
-                  <span className="weight-label" style={{ color: meta.color }}>
-                    {meta.name || key}
-                  </span>
-                  <span className="weight-value">{Math.round(value * 100)}%</span>
+                  <div className="layer-info">
+                    <div className="layer-name">{meta.icon} {meta.name || layer.name}</div>
+                    <div className="layer-count">{layer.feature_count} features</div>
+                  </div>
+                  <label className="toggle" onClick={e => e.stopPropagation()}>
+                    <input
+                      type="checkbox"
+                      checked={isEnabled}
+                      onChange={() => onToggleLayer(layer.name)}
+                    />
+                    <span className="toggle-slider" />
+                  </label>
                 </div>
-                <input
-                  type="range"
-                  className="weight-slider"
-                  min="0"
-                  max="100"
-                  value={Math.round(value * 100)}
-                  onChange={e => onWeightChange(key, parseInt(e.target.value) / 100)}
-                  style={{
-                    background: `linear-gradient(to right, ${meta.color} ${value * 100}%, rgba(148,163,184,0.15) ${value * 100}%)`,
-                  }}
-                />
+
+                {/* Weight slider — only visible when layer is toggled ON */}
+                {isEnabled && (
+                  <div className="weight-inline">
+                    <div className="weight-header">
+                      <span className="weight-label" style={{ color: meta.color }}>
+                        Weight
+                      </span>
+                      <span className="weight-value">{Math.round(weightVal * 100)}%</span>
+                    </div>
+                    <input
+                      type="range"
+                      className="weight-slider"
+                      min="0"
+                      max="100"
+                      value={Math.round(weightVal * 100)}
+                      onChange={e => onWeightChange(layer.name, parseInt(e.target.value) / 100)}
+                      style={{
+                        background: `linear-gradient(to right, ${meta.color} ${weightVal * 100}%, rgba(148,163,184,0.15) ${weightVal * 100}%)`,
+                      }}
+                    />
+                  </div>
+                )}
               </div>
             );
           })}
@@ -132,6 +127,46 @@ export default function Sidebar({
             />
           </div>
         </div>
+
+        {/* ─── Upload Data ─── */}
+        <div className="sidebar-section">
+          <div
+            className="sidebar-section-title"
+            onClick={() => toggleSection('upload')}
+            style={{ cursor: 'pointer' }}
+          >
+            {collapsed.upload ? '▶' : '▼'} Upload Data Layer
+          </div>
+          {!collapsed.upload && (
+            <div
+              className={`upload-dropzone ${dragActive ? 'drag-active' : ''}`}
+              onDragEnter={(e) => { e.preventDefault(); setDragActive(true); }}
+              onDragLeave={(e) => { e.preventDefault(); setDragActive(false); }}
+              onDragOver={(e) => e.preventDefault()}
+              onDrop={(e) => {
+                e.preventDefault();
+                setDragActive(false);
+                if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+                  const file = e.dataTransfer.files[0];
+                  let name = prompt('Enter a layer name (or leave empty for auto):', file.name.split('.')[0]);
+                  if (name === null) return; // Cancelled
+                  onUploadLayer(file, name);
+                }
+              }}
+            >
+              <div className="upload-icon">📁</div>
+              <p>Drag & drop or <label className="upload-link">click to browse<input type="file" style={{ display: 'none' }} accept=".geojson,.json,.zip,.shp,.tif,.tiff,.wkt,.txt" onChange={(e) => {
+                if (e.target.files && e.target.files[0]) {
+                  const file = e.target.files[0];
+                  let name = prompt('Enter a layer name (or leave empty for auto):', file.name.split('.')[0]);
+                  if (name === null) return;
+                  onUploadLayer(file, name);
+                }
+              }} /></label></p>
+              <span className="upload-formats">Requires: .geojson, .tif, .wkt, .zip (.shp)</span>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* ─── Action Buttons ─── */}
@@ -143,6 +178,15 @@ export default function Sidebar({
         >
           <span className="action-btn-icon">🗺️</span>
           {loading ? 'Computing...' : 'Generate H3 Heatmap'}
+        </button>
+
+        <button
+          className={`action-btn ${drawMode ? 'active' : ''}`}
+          onClick={onToggleDrawMode}
+          style={drawMode ? { background: 'rgba(59,130,246,0.25)', color: '#60a5fa' } : { borderColor: 'rgba(59,130,246,0.15)', color: '#60a5fa' }}
+        >
+          <span className="action-btn-icon">✏️</span>
+          {drawMode ? 'Cancel Drawing' : 'Draw Polygon Area'}
         </button>
 
         <button
@@ -165,14 +209,27 @@ export default function Sidebar({
             : 'Compare Sites'}
         </button>
 
-        <button
-          className="action-btn action-btn-export"
-          onClick={onExport}
-          disabled={compareSites.length === 0}
-        >
-          <span className="action-btn-icon">📄</span>
-          Export Report (PDF)
-        </button>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button
+            className="action-btn action-btn-export"
+            onClick={() => onExport('pdf')}
+            disabled={loading}
+            style={{ flex: 1 }}
+          >
+            <span className="action-btn-icon">📄</span>
+            Export PDF
+          </button>
+          
+          <button
+            className="action-btn action-btn-export"
+            onClick={() => onExport('excel')}
+            disabled={loading}
+            style={{ flex: 1, background: 'rgba(16, 185, 129, 0.12)', color: '#34d399', border: '1px solid rgba(16, 185, 129, 0.15)' }}
+          >
+            <span className="action-btn-icon">📊</span>
+            Export Excel
+          </button>
+        </div>
       </div>
     </div>
   );
