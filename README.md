@@ -24,8 +24,6 @@ find the optimal locations for their next operations.*
 
 ## 📋 Table of Contents
 
-<img width="1919" height="972" alt="Screenshot 2026-04-12 110258" src="https://github.com/user-attachments/assets/e1678f71-0571-4ee9-96b5-9d6bf74c0be3" />
-
 - [Overview](#-overview)
 - [Core Features](#-core-features)
 - [Technology Stack](#-technology-stack)
@@ -35,6 +33,7 @@ find the optimal locations for their next operations.*
 - [Authors]
 
 ---
+<img width="1919" height="972" alt="Screenshot 2026-04-12 110258" src="https://github.com/user-attachments/assets/e1678f71-0571-4ee9-96b5-9d6bf74c0be3" />
 
 ## 🔭 Overview
 
