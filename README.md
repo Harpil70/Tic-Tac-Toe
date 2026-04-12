@@ -180,31 +180,31 @@ geo-spatial-analyzer/
 │
 ├── backend/
 │   ├── app/
-│   │   ├── api/                    # 🚀 Routes / Controllers
-│   │   │   ├── routes/
-│   │   │   │   ├── upload.py
-│   │   │   │   ├── analysis.py
-│   │   │   │   └── health.py
+│   │   ├── api/                         # 🚀 Routes / Controllers
+│   │   │   └── routes/
+│   │   │       ├── upload.py
+│   │   │       ├── analysis.py
+│   │   │       └── health.py
 │   │   │
-│   │   ├── services/              # 🧠 Business logic
+│   │   ├── services/                    # 🧠 Business Logic
 │   │   │   ├── clustering.py
 │   │   │   ├── scoring.py
 │   │   │   ├── routing.py
 │   │   │   └── ingestion.py
 │   │   │
-│   │   ├── models/                # 📦 Schemas
+│   │   ├── models/                      # 📦 Schemas
 │   │   │   └── schemas.py
 │   │   │
-│   │   ├── core/                  # ⚙️ Config & settings
+│   │   ├── core/                        # ⚙️ Config & DB
 │   │   │   ├── config.py
 │   │   │   └── database.py
 │   │   │
-│   │   ├── utils/                 # 🔧 Helpers
+│   │   ├── utils/                       # 🔧 Helpers
 │   │   │   └── spatial.py
 │   │   │
-│   │   └── main.py                # Entry point
+│   │   └── main.py                      # 🚪 Entry point
 │   │
-│   ├── data/                      # 📊 ONLY data
+│   ├── data/                            # 📊 Data ONLY
 │   │   ├── raw/
 │   │   └── processed/
 │   │
@@ -212,22 +212,26 @@ geo-spatial-analyzer/
 │
 ├── frontend/
 │   ├── src/
-│   │   ├── pages/                 # 📄 Screens (IMPORTANT)
+│   │   ├── pages/                       # 📄 Screens (IMPORTANT)
 │   │   │   ├── Home.jsx
 │   │   │   ├── Upload.jsx
 │   │   │   └── Dashboard.jsx
 │   │   │
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── services/
+│   │   ├── components/                  # 🧩 UI Components
+│   │   ├── hooks/                       # 🔁 Custom Hooks
+│   │   ├── services/                    # 🌐 API Calls
+│   │   │
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   │
-│   └── package.json
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.js
 │
 ├── .env
 ├── docker-compose.yml
 └── README.md
+
 ## 📡 API Reference
 
 | Method | Endpoint | Description |
