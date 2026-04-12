@@ -176,63 +176,58 @@ built directly into the frontend.
 
 # 📁 Project Structure
 
-```
-Tic-Tac-Toe/
+geo-spatial-analyzer/
 │
-├── 📂 backend/
-│   ├── 📂 data/                            # Geospatial data layer
-│   │   ├── demographics.geojson            #   Population, income, density data
-│   │   ├── environmental.geojson           #   Flood zones, pollution, hazards
-│   │   ├── landuse.geojson                 #   Zoning & land classification
-│   │   ├── poi.geojson                     #   Points of interest
-│   │   ├── transportation.geojson          #   Road networks & transit routes
-│   │   └── generate_data.py               #   Script to generate sample datasets
+├── backend/
+│   ├── app/
+│   │   ├── api/                    # 🚀 Routes / Controllers
+│   │   │   ├── routes/
+│   │   │   │   ├── upload.py
+│   │   │   │   ├── analysis.py
+│   │   │   │   └── health.py
+│   │   │
+│   │   ├── services/              # 🧠 Business logic
+│   │   │   ├── clustering.py
+│   │   │   ├── scoring.py
+│   │   │   ├── routing.py
+│   │   │   └── ingestion.py
+│   │   │
+│   │   ├── models/                # 📦 Schemas
+│   │   │   └── schemas.py
+│   │   │
+│   │   ├── core/                  # ⚙️ Config & settings
+│   │   │   ├── config.py
+│   │   │   └── database.py
+│   │   │
+│   │   ├── utils/                 # 🔧 Helpers
+│   │   │   └── spatial.py
+│   │   │
+│   │   └── main.py                # Entry point
 │   │
-│   ├── 📂 models/                          # Data models & validation
-│   │   ├── __init__.py
-│   │   └── schemas.py                      #   Pydantic request/response schemas
+│   ├── data/                      # 📊 ONLY data
+│   │   ├── raw/
+│   │   └── processed/
 │   │
-│   ├── 📂 services/                        # Core business logic
-│   │   ├── __init__.py
-│   │   ├── clustering.py                   #   Spatial clustering algorithms
-│   │   ├── data_ingestion.py               #   GeoJSON / Shapefile / KML parsing
-│   │   ├── routing.py                      #   Isochrone & catchment generation
-│   │   ├── scoring.py                      #   Composite site scoring engine
-│   │   └── upload.py                       #   File upload handling
-│   │
-│   ├── 📂 utils/                           # Shared utilities
-│   │   ├── __init__.py
-│   │   └── spatial.py                      #   GeoPandas / Shapely / H3 helpers
-│   │
-│   ├── config.py                           # App configuration & env variables
-│   ├── database.py                         # Database connection management
-│   ├── main.py                             # FastAPI application entry point
-│   └── requirements.txt                    # Python dependencies
+│   └── requirements.txt
 │
-├── 📂 frontend/
-│   ├── 📂 src/
-│   │   ├── 📂 components/                  # React UI components
-│   │   │   └── ...                         #   Map, Scoring, Comparison, etc.
-│   │   ├── 📂 hooks/                       # Custom React hooks
-│   │   │   └── ...                         #   useMap, useScoring, useAuth, etc.
-│   │   ├── 📂 services/                    # API client & data fetching
-│   │   │   └── ...                         #   Axios / fetch wrappers
-│   │   ├── App.css                         # Global application styles
-│   │   ├── App.jsx                         # Root application component
-│   │   ├── firebase.js                     # Firebase auth configuration
-│   │   ├── index.css                       # Base CSS reset & design tokens
-│   │   └── main.jsx                        # React DOM entry point
+├── frontend/
+│   ├── src/
+│   │   ├── pages/                 # 📄 Screens (IMPORTANT)
+│   │   │   ├── Home.jsx
+│   │   │   ├── Upload.jsx
+│   │   │   └── Dashboard.jsx
+│   │   │
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   │
-│   ├── index.html                          # HTML shell
-│   ├── package.json                        # Node.js dependencies & scripts
-│   ├── package-lock.json                   # Dependency lockfile
-│   └── vite.config.js                      # Vite build configuration
+│   └── package.json
 │
-├── .gitignore                              # Git ignore rules
-├── docker-compose.yml                      # Multi-service container orchestration
-├── login_design.png                        # Login page design reference
-└── README.md                               # ← You are here
-```
+├── .env
+├── docker-compose.yml
+└── README.md
 ## 📡 API Reference
 
 | Method | Endpoint | Description |
