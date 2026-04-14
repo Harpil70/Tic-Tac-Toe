@@ -3,7 +3,9 @@
  */
 import axios from 'axios';
 
-const API_BASE = '/api';
+// In production (Vercel), VITE_API_URL should point to the Render backend (e.g. https://geospatial-backend.onrender.com/api)
+// In local development, the vite proxy handles requests starting with /api
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 const api = axios.create({
   baseURL: API_BASE,
